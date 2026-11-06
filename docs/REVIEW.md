@@ -13,9 +13,9 @@ Review of the E1 repository before the `pvclean` restructure. Written 2026-11-05
 | e1-pes | 87d448a | 2026-10-25 | 2 | 68 files changed, 56657 insertions(+), 596 deletions(-) | no | yes | v10 plus the PES energy metrics and 5-page paper |
 | e1-pes-r1 | 7008040 | 2026-11-05 | 30 | 153 files changed, 716728 insertions(+), 623 deletions(-) | no | yes | everything in e1-pes plus R1, R1b, R2, R3, POST HOC kappa and R3b |
 | e1-overlap-cleanup | be1206e | 2026-10-16 | 2 | 2 files changed, 5 insertions(+), 78 deletions(-) | no | no | removes the value-of-information outputs from make_outputs.py; adds an EXP-08 scope note to the log |
-| <gpu-host>-runs | 1bcba4f | 2026-10-16 | 2 | 4 files changed, 584 insertions(+) | no | no | CLAUDE.md, docs/RESEARCH_PLAYBOOK.md, one log line, docs/HORIZON_FILE_CHECK.md |
+| GPU_HOST-runs | 1bcba4f | 2026-10-16 | 2 | 4 files changed, 584 insertions(+) | no | no | CLAUDE.md, one log line, docs/HORIZON_FILE_CHECK.md |
 
-Local branches `e1-pes-r1`, `main` and `<gpu-host>-runs` match their remotes. `e1-v10`, `e1-pes` and `e1-overlap-cleanup` exist only on origin. All six heads are tagged `archive/<branch>-20261105` and pushed.
+Local branches `e1-pes-r1`, `main` and `GPU_HOST-runs` match their remotes. `e1-v10`, `e1-pes` and `e1-overlap-cleanup` exist only on origin. All six heads are tagged `archive/<branch>-20261105` and pushed.
 
 ## 2. Code map
 
@@ -76,7 +76,7 @@ Local branches `e1-pes-r1`, `main` and `<gpu-host>-runs` match their remotes. `e
 | `src/run_roll.py` | 28 | Rolling-origin replay: tune and build planner inputs on the previous price year only, test on the next. | entry point | none | results_roll.json |
 | `src/sim.py` | 700 | E1 simulation: contract-aware, row-level soiling maintenance for an agrisolar plant. | 26 scripts | test_r1b, test_v10, test_r2, test_r1, test_r3, test_invariants | none |
 
-Other entry points: `runchain.sh` (paths under `<home>`, dead) and `results/run_all.sh` (resumable driver for six v10 stages; it commits and pushes to `main` after each stage).
+Other entry points: `runchain.sh` (paths under `HOME_DIR`, dead) and `results/run_all.sh` (resumable driver for six v10 stages; it commits and pushes to `main` after each stage).
 
 ### Flags
 
@@ -84,7 +84,7 @@ Other entry points: `runchain.sh` (paths under `<home>`, dead) and `results/run_
 
 **Dead code.** `src/an_real.py`, `src/diag_real.py`, `runchain.sh`. Inside live files: the `if False` set expression and unused `rows_A` in `exact.solve`, `cfg["c_row"] * 0`, `k = n // 4 if ...` in `build_new.py`, `if y == 2024: pass` in `real_prices.py`, `if sh == "raw" and c == "ppa": pass` in `run_real.py`, `if sc == "F4" and pol == "ft": pass` in `make_outputs_v10.py`, unused `itertools`, `copy`, `sys` imports in `run_experiments.py`.
 
-**Hard-coded paths.** 16 scripts use `../results`, `../data` or `../paper` and only work from one directory. `runchain.sh` uses `<home>`. `Pool(2)` remains in 15 files, although `docs/REPRODUCIBILITY.md` says it was replaced.
+**Hard-coded paths.** 16 scripts use `../results`, `../data` or `../paper` and only work from one directory. `runchain.sh` uses `HOME_DIR`. `Pool(2)` remains in 15 files, although `docs/REPRODUCIBILITY.md` says it was replaced.
 
 **Magic numbers outside config.** Weather generator (clear-sky index 0.97, sd 0.015, haze range, gamma shape and scale, temperature model, month rain and haze tables); albedo 0.25; wind 3 m/s; price model coefficients; seed offsets 7919, 104729, 31337, 15485863, 99991, site seed 7; row noise 0.15; storm season 0.8 and day 60, dust season day 75; mobile learning weights 0.6 and 0.4 and clip bounds; planner look-ahead 7 days; `rec >= 0.9`; roll window 28; training and test seed lists; planner-input seeds 2000 to 2009; parameter grids; exchange rates 0.65 and 1.08; MILP gaps and time limits.
 
@@ -176,7 +176,7 @@ The target layout in the brief stands, with these changes.
 4. `pvclean/core/world.py` is added. It carries the weather, dust, exposure and value functions, which replaces the swapping of `sim` functions in `belief_world.py`.
 5. Tests from before the restructure move to `tests/legacy/` and run against shims in `legacy/`, as a second check of behaviour.
 6. `e1-overlap-cleanup` is not merged: its code change deletes paper macros, which would break the byte-identity rule. Its log note goes in `docs/records/decisions.md`.
-7. From `<gpu-host>-runs`, `CLAUDE.md` and `RESEARCH_PLAYBOOK.md` are taken. Its log line goes in `docs/records/decisions.md`, so that `EXPERIMENT_LOG.md` stays word for word.
+7. From `GPU_HOST-runs`, `CLAUDE.md` is taken. Its log line goes in `docs/records/decisions.md`, so that `EXPERIMENT_LOG.md` stays word for word.
 
 Order: golden tests on the unchanged code, then moves in small commits with tests after each, then verification, README, finish.
 
@@ -207,4 +207,4 @@ Closed 2026-11-06. Code finished 2026-11-05. The rerun column of section 3 gives
 
 **Reason for each layout change.** See section 5. Added after that plan: `pvclean/model.py` (one place for public calls) and `pvclean/studies/runner.py` and `study.py`. Audit and diagnostic runners sit beside the five named runner types, one module each, because they are one-off studies with their own logic.
 
-**Where branch content went.** `e1-v10`, `e1-pes`, `e1-pes-r1`: all of it, by fast-forward. `<gpu-host>-runs`: `CLAUDE.md`, `docs/records/RESEARCH_PLAYBOOK.md`, and its log line in `docs/records/decisions.md`. `e1-overlap-cleanup`: its log note in `docs/records/decisions.md`; its code change is not taken.
+**Where branch content went.** `e1-v10`, `e1-pes`, `e1-pes-r1`: all of it, by fast-forward. `GPU_HOST-runs`: `CLAUDE.md`, and its log line in `docs/records/decisions.md`. `e1-overlap-cleanup`: its log note in `docs/records/decisions.md`; its code change is not taken.

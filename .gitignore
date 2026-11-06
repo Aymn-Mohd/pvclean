@@ -18,6 +18,10 @@ data/*
 # Run outputs
 runs/
 
+# Written by pvclean report
+papers/e1_pes/table_real.tex
+results/figures/
+
 # LaTeX
 papers/**/*.aux
 papers/**/*.log

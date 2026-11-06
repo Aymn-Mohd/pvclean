@@ -2,7 +2,7 @@
 
 **ANALYSIS (not pre-registered).** This is a file-integrity and transcription check. No experiment, solver or GPU job was run.
 
-- Date: 2026-10-16 (<gpu-host>, <gpu-host>)
+- Date: 2026-10-16 (GPU_HOST, GPU_HOST)
 - Path: `results/results_horizon.json` (the only copy under `~`; `find ~ -name results_horizon.json -not -path "*/.cache/*"`)
 - Size: 288 851 bytes; mtime 2026-10-11 19:41:57 +0400 (end of the `horizon_sensitivity.py` run in EXPERIMENT_LOG.md)
 - sha256: `329c702d7208178f83af8d5fddee924223c682110ec8e8066de6e306741e783a`

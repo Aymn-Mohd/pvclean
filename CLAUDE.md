@@ -1,8 +1,8 @@
-# CLAUDE.md (<gpu-host>)
+# CLAUDE.md (GPU_HOST)
 
-Machine: <gpu-host>, Ubuntu 22.04, RTX 4070 Laptop 8 GB, i7-13700HX, 32 GB. Headless; reached over SSH from the Mac.
+Machine: GPU_HOST, Ubuntu 22.04, RTX 4070 Laptop 8 GB, i7-13700HX, 32 GB. Headless; reached over SSH from the Mac.
 
-Project: E1 (PV cleaning). Role: CPU executor. E1 has no GPU queue. There is no scripts/run_queue.py, configs/queue/ or <project>-queue service in this repo.
+Project: E1 (PV cleaning). Role: CPU executor. E1 has no GPU queue. There is no scripts/run_queue.py, configs/queue/ or `<project>-queue` service in this repo.
 
 Layout: package `pvclean/`; one YAML per study in `configs/studies/`; stored results in `results/`; paper in `papers/e1_pes/`; records in `docs/records/`; data outside git in `$PVCLEAN_DATA` or `~/.cache/pvclean/data`. Start with `README.md`, `docs/USAGE.md` and `docs/MIGRATION.md`.
 
@@ -21,6 +21,5 @@ Rules:
 - Disclose every deviation or fix in docs/records/EXPERIMENT_LOG.md and in the final report.
 - Paper numbers come only from `python -m pvclean report`, generated from results/; never typed.
 - In repo text, describe the package plainly by what it does. Do not use the words in the BANNED list in tests/test_repo_rules.py.
-- End every task with the report format in docs/records/RESEARCH_PLAYBOOK.md 10.F.
 
-Branches: main = code; <gpu-host>-runs = results pushed by the <gpu-host>; restructure = the pvclean package. Old heads are tagged archive/<branch>-20261105.
+Branches: main = code; GPU_HOST-runs = results pushed by the GPU_HOST; restructure = the pvclean package. Old heads are tagged `archive/<branch>-20261105`.

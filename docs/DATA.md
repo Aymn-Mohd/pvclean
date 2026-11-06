@@ -28,7 +28,7 @@ python -m pvclean download omie         # December 2022 files, warm-up only
 | `dubai_wx.npz` | `pvclean.weather.build.dubai()` | yes, from `new/nasa_dubai.csv.gz` |
 | `real_prices.npz` | older pipeline | **no**: its input `data/aemo_merged/` no longer exists |
 
-`real_prices.npz` feeds `real`, `roll`, `oracle`, `spain`, `forecast`, `replay` and `forecast_audit`. It cannot be rebuilt from public sources and is available from the authors on request. Its sha256 is `5e27fc53bf5e44cc5e124ac0bee22e3f47c8e519a4ec350bb2e94dc049630a67`.
+`real_prices.npz` feeds `real`, `roll`, `oracle`, `spain`, `forecast`, `replay` and `forecast_audit`. It cannot be rebuilt from public sources and is available from the corresponding author on request (contact in CITATION.cff). Its sha256 is `5e27fc53bf5e44cc5e124ac0bee22e3f47c8e519a4ec350bb2e94dc049630a67`.
 
 ## What a fresh clone can do
 

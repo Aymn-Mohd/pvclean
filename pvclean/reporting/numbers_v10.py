@@ -95,7 +95,7 @@ def build(R: str, OUT: str, RES_OUT: str) -> None:
             hz = {k: {a: float(np.mean(v)) for a, v in d.items()} for k, d in hz.items()}
             hzsrc = "computed from results_horizon.json (680 runs)"
     if hz is None:
-        t = json.load(open(R + "horizon_summary_transcribed.json")); hz = t["mean_gain"]; hzsrc = "transcribed from <gpu-host> OPTIMISATION_DIAGNOSTICS.md"
+        t = json.load(open(R + "horizon_summary_transcribed.json")); hz = t["mean_gain"]; hzsrc = "transcribed from GPU_HOST OPTIMISATION_DIAGNOSTICS.md"
     SET = [("fixed", 4.0), ("fixed", 12.0), ("merchant", 4.0), ("merchant", 12.0)]
     texact = ["\\begin{table}[!t]", "\\centering",
               "\\caption{Exact benchmark, 20 instances of 6 rows and 60 days: clairvoyant optimum (USD over no cleaning) and share of it reached by the receding-horizon MILP (14 days; 30 days with a 30-day tail) and by the tuned policies. Settings: contract, cleaning cost per row (USD).}",

@@ -1,6 +1,6 @@
 # Claims registry (EXP-09)
 
-Every numeric macro used by the manuscript, its value and the file that defines it. Both files are generated from `results/*.json` by `src/make_outputs.py` / `src/make_outputs_v10.py`; none is typed by hand except where `make_outputs_v10.py` marks a transcribed <gpu-host> summary.
+Every numeric macro used by the manuscript, its value and the file that defines it. Both files are generated from `results/*.json` by `src/make_outputs.py` / `src/make_outputs_v10.py`; none is typed by hand except where `make_outputs_v10.py` marks a transcribed GPU_HOST summary.
 
 | macro | value | defined in |
 |---|---|---|

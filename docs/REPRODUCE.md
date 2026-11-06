@@ -1,6 +1,6 @@
 # Reproduce
 
-Every stored result, the study that reruns it, and how close the rerun came. Reruns used `pvclean` on the <gpu-host> on 2026-11-05, 24 workers, nice 10, Python 3.13.16, with the pinned versions in `pyproject.toml`.
+Every stored result, the study that reruns it, and how close the rerun came. Reruns used `pvclean` on the GPU_HOST on 2026-11-05, 24 workers, nice 10, Python 3.13.16, with the pinned versions in `pyproject.toml`.
 
 ## Paper outputs
 

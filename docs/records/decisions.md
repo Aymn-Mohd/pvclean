@@ -4,9 +4,9 @@ Blockers and decisions from the `pvclean` restructure, 2026-11-05.
 
 ## Folded from other branches
 
-From `<gpu-host>-runs`: `CLAUDE.md` (rewritten for the new layout), `docs/RESEARCH_PLAYBOOK.md` (now in `docs/records/`), and this log line, kept here so that `EXPERIMENT_LOG.md` stays word for word:
+From `GPU_HOST-runs`: `CLAUDE.md` (rewritten for the new layout), and this log line, kept here so that `EXPERIMENT_LOG.md` stays word for word:
 
-> - 2026-10-16 (ANALYSIS, not pre-registered): horizon file check of `results/results_horizon.json` (sha256 329c702d…783a): 680 records, 0 duplicate keys, all 36 856 solves status 0; recomputed H-arm mean gains vs docs/OPTIMISATION_DIAGNOSTICS.md → MATCH (max |diff| 0.0049). Blockers: `~/RESEARCH_PLAYBOOK.md` missing (copied from <home>/Desktop/icmre-sensing/docs, matches the pasted text); `src/make_outputs_v10.py` missing (means computed directly). See docs/HORIZON_FILE_CHECK.md.
+> - 2026-10-16 (ANALYSIS, not pre-registered): horizon file check of `results/results_horizon.json` (sha256 329c702d…783a): 680 records, 0 duplicate keys, all 36 856 solves status 0; recomputed H-arm mean gains vs docs/OPTIMISATION_DIAGNOSTICS.md → MATCH (max |diff| 0.0049). Blockers: a working-practice document missing (copied from HOME_DIR/Desktop/icmre-sensing/docs, matches the pasted text); `src/make_outputs_v10.py` missing (means computed directly). See docs/HORIZON_FILE_CHECK.md.
 
 From `e1-overlap-cleanup`, the log note only:
 
@@ -31,6 +31,8 @@ Repo text describes the package by what it does, and says nothing about its ambi
 
 ## Public release brief, 2026-11-06
 
-The brief for the public release was cut off in the middle of Part B step 2, after "the results/*.json the paper macros need,". The rest of the keep list and any later steps did not arrive. Creating the public repository was refused by the session's permission check, so `<user>/pvclean` does not exist yet. The export was staged locally and nothing was published.
+The brief for the public release was cut off in the middle of Part B step 2, after "the results/*.json the paper macros need,". The rest of the keep list and any later steps did not arrive. Creating the public repository was refused by the session's permission check, so `GH_USER/pvclean` does not exist yet. The export was staged locally and nothing was published.
 
-Update, 2026-11-06: `<user>/pvclean` was created, public and empty, after the owner allowed it. Nothing has been pushed to it. The rest of the brief is still missing.
+Update, 2026-11-06: `GH_USER/pvclean` was created, public and empty, after the owner allowed it. Nothing has been pushed to it. The rest of the brief is still missing.
+
+2026-11-06: public release v1.0.0 pushed to Aymn-Mohd/pvclean (commit 85ea272); v1.0.1 fixes listed in CHANGELOG.md.

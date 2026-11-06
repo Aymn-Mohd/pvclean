@@ -81,13 +81,13 @@ status 0 and a gap ≤ 9.9e-5.
 ## 2026-10-11 — cloud session (2 vCPU): EXP-01, EXP-09 and cross-machine check
 
 - **EXP-01** (`experiments/reproduce_v9.py`, full v9 chain in a clean directory from the shipped v9 code zip): every re-run v9 result file is bit-identical to the shipped JSON except `results.json` field `runtime_s` (359 s vs 836 s, wall-clock only). 461 of 462 paper macros equal; the one difference is the same runtime figure. Output: `results/exp01_reproduce_v9.json`.
-- **Cross-machine check**: forecast-matched threshold and real-market replay numbers computed on the cloud 2-vCPU container equal the <gpu-host> numbers (`results_ft_synthetic.json`, `results_replay.json`), as expected from per-run seeding.
-- **Horizon study locally**: only 123 of 680 runs were completed in the cloud session (jobs were interrupted). The manuscript horizon column (Table III) therefore uses `results/horizon_summary_transcribed.json`, a transcription of the <gpu-host> `EXPERIMENT_RESULTS.md` values. `make_outputs_v10.py` switches to `results_horizon.json` automatically once it has at least 680 runs. Replace the local file with the <gpu-host> `results/results_horizon.json` and rerun `make_outputs_v10.py` to remove this dependency.
+- **Cross-machine check**: forecast-matched threshold and real-market replay numbers computed on the cloud 2-vCPU container equal the GPU_HOST numbers (`results_ft_synthetic.json`, `results_replay.json`), as expected from per-run seeding.
+- **Horizon study locally**: only 123 of 680 runs were completed in the cloud session (jobs were interrupted). The manuscript horizon column (Table III) therefore uses `results/horizon_summary_transcribed.json`, a transcription of the GPU_HOST `EXPERIMENT_RESULTS.md` values. `make_outputs_v10.py` switches to `results_horizon.json` automatically once it has at least 680 runs. Replace the local file with the GPU_HOST `results/results_horizon.json` and rerun `make_outputs_v10.py` to remove this dependency.
 - **EXP-09** (`src/claims_registry.py`): `docs/CLAIMS_REGISTRY.md` lists all 140 numeric macros used in the paper and supplement and the file defining each. No undefined macro.
 - **Tests**: 27 passed (`tests/`).
 - **Manuscript**: `paper/main.tex` compiles to 6 pages with Fig. 1 in the main text (v9 layout kept), no undefined references. The regimes and sensitivity section is now a short paragraph in the paper and a full section with Fig. 1 in `paper/supplement.tex`.
 
-## EXP-08 VoI sensing-quality sweep — smoke run only (2026-10-12, <gpu-host>, 24 logical CPUs)
+## EXP-08 VoI sensing-quality sweep — smoke run only (2026-10-12, GPU_HOST, 24 logical CPUs)
 
 Design: `docs/VOI_DESIGN.md`. Code: `src/voi.py`, `experiments/voi_sweep.py`, `tests/test_voi.py`.
 `src/sim.py` change: one line, `cost_insp += cfg.get("insp_cost_scale", 1.0) * (c_mission + c_insp · n)`; the
@@ -98,7 +98,7 @@ does not exist in the repository.
 - Smoke: `python experiments/voi_sweep.py --test-seeds 3 --out <scratch>/smoke_voi.json --log <scratch>/smoke_voi.txt`
   (all 102 arms × 4 contracts, full tuning on seeds 1000–1004, test seeds 0–2; 75 888 simulations, 377 s, 201 sims/s).
   Smoke output was written outside `results/` and is not committed.
-- **Runtime estimate for the full sweep** (50 test seeds, 114 240 simulations): **≈ 9.5 min** on the <gpu-host>.
+- **Runtime estimate for the full sweep** (50 test seeds, 114 240 simulations): **≈ 9.5 min** on the GPU_HOST.
   Command: `python experiments/voi_sweep.py` → `results/results_voi.json`, `results/log_voi.txt`. **Not yet run.**
 
 Smoke observations (3 seeds only; not results):
@@ -113,13 +113,13 @@ Smoke observations (3 seeds only; not results):
 2026-10-16: moved out of E1 with the sensing paper scope change; code removed from e1-v10 and kept in main's history (94c699b).
 
 ## 2026-10-16: v10.1 changes
-- ANALYSIS (not pre-registered): <gpu-host> horizon file check. `results/results_horizon.json` has 680 records, 0 duplicate keys and 36,856 solves, all with status 0. Its sha256 is `329c702d7208178f83af8d5fddee924223c682110ec8e8066de6e306741e783a`, and the file has been in git since commit 7076564. The check was committed as `1bcba4f` on `<gpu-host>-runs`. All 21 means used in Table III match the transcription to 2 dp; the largest unrounded difference is 0.0049. Verdict: MATCH. Table III numbers are unchanged, and `horizon_summary_transcribed.json` now records the check.
+- ANALYSIS (not pre-registered): GPU_HOST horizon file check. `results/results_horizon.json` has 680 records, 0 duplicate keys and 36,856 solves, all with status 0. Its sha256 is `329c702d7208178f83af8d5fddee924223c682110ec8e8066de6e306741e783a`, and the file has been in git since commit 7076564. The check was committed as `1bcba4f` on `GPU_HOST-runs`. All 21 means used in Table III match the transcription to 2 dp; the largest unrounded difference is 0.0049. Verdict: MATCH. Table III numbers are unchanged, and `horizon_summary_transcribed.json` now records the check.
 - Scope: row-level sensing (mobile and perfect information regimes, value of information, patrol cost) moves to the separate sensing paper. Two changes:
   - The supplement no longer has the "perfect row-level information is worth at most ... against a weekly patrol" sentence.
   - The System Model now describes the station regime only, which all E1 results use.
   - Main text: 6 pages, 0 undefined references, 0 overfull boxes. 137 macros, 0 unknown.
-- Noted: the <gpu-host> repo (branch `<gpu-host>-runs`) does not contain the v10 code (`src/make_outputs_v10.py`, `src/claims_registry.py`, `experiments/`, `tests/test_v10.py`). Those files exist only in `E1_v10_research_code.zip` until they are committed.
-- 2026-10-16, later: the full <gpu-host> `results_horizon.json` is now in `results/`. It came from the Mac upload of `origin/<gpu-host>-runs` at 1bcba4f, and its sha256 (329c702d...e783a) matches the manifest. It replaces the 123-run partial cloud file. `make_outputs_v10.py` now prints "horizon source: computed from results_horizon.json (680 runs)". `numbers_v10.tex` and `table_exact.tex` are byte-identical to the transcription-based build. The transcribed summary file stays as a record only.
+- Noted: the GPU_HOST repo (branch `GPU_HOST-runs`) does not contain the v10 code (`src/make_outputs_v10.py`, `src/claims_registry.py`, `experiments/`, `tests/test_v10.py`). Those files exist only in `E1_v10_research_code.zip` until they are committed.
+- 2026-10-16, later: the full GPU_HOST `results_horizon.json` is now in `results/`. It came from the Mac upload of `origin/GPU_HOST-runs` at 1bcba4f, and its sha256 (329c702d...e783a) matches the manifest. It replaces the 123-run partial cloud file. `make_outputs_v10.py` now prints "horizon source: computed from results_horizon.json (680 runs)". `numbers_v10.tex` and `table_exact.tex` are byte-identical to the transcription-based build. The transcribed summary file stays as a record only.
 - 2026-10-23: PES version. ANALYSIS energy metrics from existing RQ1 results (src/make_outputs_pes.py), no new runs. Main text 5 pages, 0 undefined references, 0 overfull boxes, 144 macros, 0 unknown.
 
 ---

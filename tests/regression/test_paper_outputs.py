@@ -1,6 +1,6 @@
 """Regenerates every papers/e1_pes/numbers*.tex, table_*.tex and results/macros_*.json from the stored results into a temporary directory, and compares them byte for byte
 with the files in the repository. With the data cache absent this still runs: the data-derived numbers come from results/macro_inputs.json."""
-import filecmp, glob, os
+import filecmp, glob, os, subprocess
 import pytest
 from pvclean.data import repo_root
 from pvclean.reporting import build_all
@@ -8,7 +8,17 @@ from pvclean.reporting import build_all
 ROOT = repo_root()
 PAPER = os.path.join(ROOT, "papers", "e1_pes")
 RECORDS = os.path.join(ROOT, "docs", "records")
-TEX = sorted(os.path.basename(f) for f in glob.glob(os.path.join(PAPER, "numbers*.tex")) + glob.glob(os.path.join(PAPER, "table_*.tex")))
+UNTRACKED = {"table_real.tex"}   # written by `pvclean report`, not used by the paper
+
+
+def tracked_tex():
+    """The tracked numbers*.tex and table_*.tex. Outside a git checkout: the same files, found by name."""
+    r = subprocess.run(["git", "ls-files", "papers/e1_pes"], cwd=ROOT, capture_output=True, text=True)
+    names = [os.path.basename(f) for f in r.stdout.split()] if r.returncode == 0 and r.stdout.strip() else [os.path.basename(f) for f in glob.glob(os.path.join(PAPER, "*.tex"))]
+    return sorted(n for n in names if n.endswith(".tex") and n.startswith(("numbers", "table_")) and n not in UNTRACKED)
+
+
+TEX = tracked_tex()
 MACROS = sorted(os.path.basename(f) for f in glob.glob(os.path.join(ROOT, "results", "macros_*.json")))
 SUMMARIES = ["R1_SUMMARY.md", "R2_SUMMARY.md", "R3_SUMMARY.md", "CLAIMS_REGISTRY.md"]
 

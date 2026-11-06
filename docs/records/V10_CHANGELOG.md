@@ -18,18 +18,18 @@
 
 ## Not done / open
 - L2 (+next-24h prices) never cleans; its `dayahead` mode also swaps the rolling profile beyond 24 h. Reported, not investigated.
-- Horizon table uses the transcribed <gpu-host> summary until the <gpu-host> `results_horizon.json` is dropped into `results/` (see `EXPERIMENT_LOG.md`).
-- `\todo` placeholders: author emails, ARC co-author, funding, repository link. PES GM 2027 venue, deadline and page limit unverified. Three references were read as abstracts only. Cost assumptions need supervisor review.
+- Horizon table uses the transcribed GPU_HOST summary until the GPU_HOST `results_horizon.json` is dropped into `results/` (see `EXPERIMENT_LOG.md`).
+- `\todo` placeholders: author emails, funding, repository link. PES GM 2027 venue, deadline and page limit unverified. Three references were read as abstracts only. Cost assumptions need supervisor review.
 
 ## v10.1 (2026-10-16)
 - Row-level sensing removed from E1 (moved to the sensing paper). The System Model describes the station regime only, and the supplement drops the value-of-information sentence.
-- Horizon column of Table III verified against the <gpu-host> `results_horizon.json` (ANALYSIS check, verdict MATCH). The numbers are unchanged.
-- Horizon column now computed directly from the full <gpu-host> `results_horizon.json` (680 runs). The output is byte-identical to the earlier transcription-based build, so the transcription dependency is closed.
+- Horizon column of Table III verified against the GPU_HOST `results_horizon.json` (ANALYSIS check, verdict MATCH). The numbers are unchanged.
+- Horizon column now computed directly from the full GPU_HOST `results_horizon.json` (680 runs). The output is byte-identical to the earlier transcription-based build, so the transcription dependency is closed.
 
 ## PES GM 2027 version (2026-10-23)
 - Target: IEEE PES General Meeting 2027 (CFP: 5-page maximum, submission by 10 November 2026). The main text is now 5 pages.
 - Title: "Contract-Aware Soiling Mitigation for Photovoltaic Plants Under Historical Electricity Market Prices".
-- Author block: Ayman Mohammed Mohamed Rafiq, Mohamad Nassereddine; ARC co-author still a `\todo`.
+- Author block: Ayman Mohammed Mohamed Rafiq, Mohamad Nassereddine.
 - Energy framing: the abstract, introduction and discussion now lead with energy recovery and the value of a recovered MWh under each contract. Keywords are updated.
 - New ANALYSIS metrics, post-processed from `results/results.json` with no new runs, in `src/make_outputs_pes.py`, which writes `paper/numbers_pes.tex` and `paper/table_rq1_pes.tex`:
   - recovered energy;
@@ -45,4 +45,4 @@
   - experimental-design units shortened;
   - the MAE rank-agreement detail and the deterministic-check detail condensed.
 - `main.tex` is now edited directly. `paper/build_main_v10.py` exits unless `--force` is given. The v10.1 text is kept as `paper/main_v10.1_frozen.tex`.
-- 2026-10-23: removed ARC co-author and funding placeholders; authors are Ayman Mohammed Mohamed Rafiq and Mohamad Nassereddine.
+- 2026-10-23: removed funding placeholders; authors are Ayman Mohammed Mohamed Rafiq and Mohamad Nassereddine.

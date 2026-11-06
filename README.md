@@ -144,7 +144,7 @@ AEMO, OMIE and NASA POWER data are downloaded with `pvclean download` and are no
 | OMIE | day-ahead prices, Spain | OMIE terms of use; check them before reuse |
 | NASA POWER | hourly weather | NASA POWER terms; cite the source |
 
-`real_prices.npz`, used by the `real`, `roll`, `oracle`, `spain`, `forecast`, `replay` and `forecast_audit` studies, cannot be rebuilt from public sources and is available from the authors on request. Some other inputs have no download path. `docs/DATA.md` lists each file.
+`real_prices.npz`, used by the `real`, `roll`, `oracle`, `spain`, `forecast`, `replay` and `forecast_audit` studies, cannot be rebuilt from public sources and is available from the corresponding author on request (contact in CITATION.cff). Some other inputs have no download path. `docs/DATA.md` lists each file.
 
 ## Testing
 
@@ -156,6 +156,7 @@ python -m pytest
 - `tests/regression/`: golden files from the code before the restructure, and a byte-for-byte check of paper macros. Golden files are never regenerated to make a test pass.
 - `tests/test_smoke.py`: the quickstart through the command line.
 - `tests/test_extending.py`: toy additions.
+- `tests/test_report_then_suite.py`: `pvclean report`, then the full suite in the same folder.
 
 Without the data cache, tests that need data are skipped.
 
