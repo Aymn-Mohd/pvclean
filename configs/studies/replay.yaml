@@ -1,0 +1,7 @@
+study: replay
+runner: replay
+output: results_replay.json
+params:
+  modes: {F0: clim, F2: roll, F3: dayahead, F4: perfect}
+  markets: [SA1_aligned, QLD1_aligned, ES_raw]
+  contracts: [merchant, ppa]

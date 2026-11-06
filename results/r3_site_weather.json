@@ -1,0 +1,503 @@
+{
+ "SA1_raw": {
+  "site": "adelaide",
+  "lat": -34.93,
+  "lon": 138.6,
+  "azimuth": 0.0,
+  "years": {
+   "2002": {
+    "dc_kwh_kwp": 1981.8873464930084,
+    "rain_mm": 365.25,
+    "rain_days_1mm": 77,
+    "rain_days_5mm": 18
+   },
+   "2003": {
+    "dc_kwh_kwp": 1952.641191680358,
+    "rain_mm": 545.6700000000001,
+    "rain_days_1mm": 104,
+    "rain_days_5mm": 35
+   },
+   "2004": {
+    "dc_kwh_kwp": 1978.2378706386976,
+    "rain_mm": 473.5300000000001,
+    "rain_days_1mm": 92,
+    "rain_days_5mm": 31
+   },
+   "2005": {
+    "dc_kwh_kwp": 1972.6460592792723,
+    "rain_mm": 543.19,
+    "rain_days_1mm": 94,
+    "rain_days_5mm": 35
+   },
+   "2006": {
+    "dc_kwh_kwp": 2018.9546657366586,
+    "rain_mm": 332.88,
+    "rain_days_1mm": 69,
+    "rain_days_5mm": 22
+   },
+   "2007": {
+    "dc_kwh_kwp": 2013.8542979680956,
+    "rain_mm": 540.31,
+    "rain_days_1mm": 105,
+    "rain_days_5mm": 28
+   },
+   "2008": {
+    "dc_kwh_kwp": 2001.0762302661337,
+    "rain_mm": 406.42,
+    "rain_days_1mm": 90,
+    "rain_days_5mm": 21
+   },
+   "2009": {
+    "dc_kwh_kwp": 1973.7691856868428,
+    "rain_mm": 492.48999999999995,
+    "rain_days_1mm": 97,
+    "rain_days_5mm": 26
+   },
+   "2010": {
+    "dc_kwh_kwp": 1900.3085335606474,
+    "rain_mm": 608.96,
+    "rain_days_1mm": 110,
+    "rain_days_5mm": 34
+   },
+   "2011": {
+    "dc_kwh_kwp": 1914.3954848170226,
+    "rain_mm": 528.16,
+    "rain_days_1mm": 93,
+    "rain_days_5mm": 25
+   },
+   "2012": {
+    "dc_kwh_kwp": 1981.900420868143,
+    "rain_mm": 481.05999999999995,
+    "rain_days_1mm": 92,
+    "rain_days_5mm": 30
+   },
+   "2013": {
+    "dc_kwh_kwp": 1944.5958027093216,
+    "rain_mm": 534.5600000000001,
+    "rain_days_1mm": 103,
+    "rain_days_5mm": 33
+   },
+   "2014": {
+    "dc_kwh_kwp": 1975.766048583082,
+    "rain_mm": 459.74,
+    "rain_days_1mm": 86,
+    "rain_days_5mm": 26
+   },
+   "2015": {
+    "dc_kwh_kwp": 1955.9527393486887,
+    "rain_mm": 353.15000000000003,
+    "rain_days_1mm": 75,
+    "rain_days_5mm": 16
+   },
+   "2016": {
+    "dc_kwh_kwp": 1930.6415258406396,
+    "rain_mm": 374.28000000000003,
+    "rain_days_1mm": 68,
+    "rain_days_5mm": 26
+   },
+   "2017": {
+    "dc_kwh_kwp": 1941.9103448697792,
+    "rain_mm": 163.39,
+    "rain_days_1mm": 44,
+    "rain_days_5mm": 5
+   },
+   "2018": {
+    "dc_kwh_kwp": 1967.3434899459353,
+    "rain_mm": 144.59,
+    "rain_days_1mm": 43,
+    "rain_days_5mm": 6
+   },
+   "2019": {
+    "dc_kwh_kwp": 2041.8153650777986,
+    "rain_mm": 151.81,
+    "rain_days_1mm": 37,
+    "rain_days_5mm": 12
+   },
+   "2020": {
+    "dc_kwh_kwp": 1975.420713903218,
+    "rain_mm": 497.79999999999995,
+    "rain_days_1mm": 78,
+    "rain_days_5mm": 25
+   },
+   "2021": {
+    "dc_kwh_kwp": 2007.5711700401375,
+    "rain_mm": 349.87,
+    "rain_days_1mm": 78,
+    "rain_days_5mm": 22
+   },
+   "2022": {
+    "dc_kwh_kwp": 1881.5954074133197,
+    "rain_mm": 544.03,
+    "rain_days_1mm": 105,
+    "rain_days_5mm": 33
+   },
+   "2023": {
+    "dc_kwh_kwp": 1969.8143141657988,
+    "rain_mm": 310.0,
+    "rain_days_1mm": 69,
+    "rain_days_5mm": 18
+   },
+   "2024": {
+    "dc_kwh_kwp": 2028.3670308489698,
+    "rain_mm": 310.35,
+    "rain_days_1mm": 71,
+    "rain_days_5mm": 17
+   },
+   "2025": {
+    "dc_kwh_kwp": 2033.456609801978,
+    "rain_mm": 303.91,
+    "rain_days_1mm": 62,
+    "rain_days_5mm": 16
+   }
+  },
+  "wind_fixed_3ms_dc": {
+   "2023": 1956.0912756216176,
+   "2024": 2014.2755158272466,
+   "2025": 2015.5747722074084
+  },
+  "opposite_azimuth_dc": {
+   "2023": 1440.669943437947,
+   "2024": 1461.7966145899818,
+   "2025": 1459.2924695130287
+  },
+  "mean_2002_2025": {
+   "dc_kwh_kwp": 1972.6634103976478,
+   "rain_days_1mm": 80.91666666666667,
+   "rain_days_5mm": 23.333333333333332
+  }
+ },
+ "QLD1_raw": {
+  "site": "brisbane",
+  "lat": -27.47,
+  "lon": 153.03,
+  "azimuth": 0.0,
+  "years": {
+   "2002": {
+    "dc_kwh_kwp": 1983.789239429016,
+    "rain_mm": 820.4300000000001,
+    "rain_days_1mm": 116,
+    "rain_days_5mm": 44
+   },
+   "2003": {
+    "dc_kwh_kwp": 1883.9934978705214,
+    "rain_mm": 1133.21,
+    "rain_days_1mm": 140,
+    "rain_days_5mm": 63
+   },
+   "2004": {
+    "dc_kwh_kwp": 1953.6325504825245,
+    "rain_mm": 1268.75,
+    "rain_days_1mm": 122,
+    "rain_days_5mm": 51
+   },
+   "2005": {
+    "dc_kwh_kwp": 1903.417818498643,
+    "rain_mm": 1121.9299999999998,
+    "rain_days_1mm": 146,
+    "rain_days_5mm": 60
+   },
+   "2006": {
+    "dc_kwh_kwp": 1905.864140012911,
+    "rain_mm": 1044.93,
+    "rain_days_1mm": 135,
+    "rain_days_5mm": 58
+   },
+   "2007": {
+    "dc_kwh_kwp": 1895.47841506531,
+    "rain_mm": 1010.31,
+    "rain_days_1mm": 145,
+    "rain_days_5mm": 57
+   },
+   "2008": {
+    "dc_kwh_kwp": 1849.3537928618873,
+    "rain_mm": 1344.7,
+    "rain_days_1mm": 156,
+    "rain_days_5mm": 68
+   },
+   "2009": {
+    "dc_kwh_kwp": 1937.9079761571375,
+    "rain_mm": 1259.29,
+    "rain_days_1mm": 144,
+    "rain_days_5mm": 64
+   },
+   "2010": {
+    "dc_kwh_kwp": 1690.031005422201,
+    "rain_mm": 1730.7800000000002,
+    "rain_days_1mm": 180,
+    "rain_days_5mm": 78
+   },
+   "2011": {
+    "dc_kwh_kwp": 1848.5995014257933,
+    "rain_mm": 1283.2799999999997,
+    "rain_days_1mm": 154,
+    "rain_days_5mm": 75
+   },
+   "2012": {
+    "dc_kwh_kwp": 1884.4030510797738,
+    "rain_mm": 1383.4099999999999,
+    "rain_days_1mm": 140,
+    "rain_days_5mm": 61
+   },
+   "2013": {
+    "dc_kwh_kwp": 1879.994739760004,
+    "rain_mm": 1393.91,
+    "rain_days_1mm": 147,
+    "rain_days_5mm": 67
+   },
+   "2014": {
+    "dc_kwh_kwp": 1931.8250687748891,
+    "rain_mm": 827.8500000000001,
+    "rain_days_1mm": 114,
+    "rain_days_5mm": 40
+   },
+   "2015": {
+    "dc_kwh_kwp": 1872.617278231202,
+    "rain_mm": 1264.03,
+    "rain_days_1mm": 147,
+    "rain_days_5mm": 51
+   },
+   "2016": {
+    "dc_kwh_kwp": 1917.5529535764636,
+    "rain_mm": 694.46,
+    "rain_days_1mm": 107,
+    "rain_days_5mm": 36
+   },
+   "2017": {
+    "dc_kwh_kwp": 1958.6661947783743,
+    "rain_mm": 949.46,
+    "rain_days_1mm": 113,
+    "rain_days_5mm": 51
+   },
+   "2018": {
+    "dc_kwh_kwp": 1951.5913667154423,
+    "rain_mm": 802.95,
+    "rain_days_1mm": 118,
+    "rain_days_5mm": 43
+   },
+   "2019": {
+    "dc_kwh_kwp": 1990.3567792494348,
+    "rain_mm": 557.09,
+    "rain_days_1mm": 97,
+    "rain_days_5mm": 31
+   },
+   "2020": {
+    "dc_kwh_kwp": 1896.1158601672778,
+    "rain_mm": 1037.1,
+    "rain_days_1mm": 114,
+    "rain_days_5mm": 46
+   },
+   "2021": {
+    "dc_kwh_kwp": 1873.275310563608,
+    "rain_mm": 1116.94,
+    "rain_days_1mm": 142,
+    "rain_days_5mm": 67
+   },
+   "2022": {
+    "dc_kwh_kwp": 1766.3409040847928,
+    "rain_mm": 1438.4499999999998,
+    "rain_days_1mm": 139,
+    "rain_days_5mm": 60
+   },
+   "2023": {
+    "dc_kwh_kwp": 1941.3322511988727,
+    "rain_mm": 710.1400000000001,
+    "rain_days_1mm": 101,
+    "rain_days_5mm": 37
+   },
+   "2024": {
+    "dc_kwh_kwp": 1823.5069246893884,
+    "rain_mm": 1219.5900000000001,
+    "rain_days_1mm": 165,
+    "rain_days_5mm": 70
+   },
+   "2025": {
+    "dc_kwh_kwp": 1889.0008888719678,
+    "rain_mm": 1232.5700000000002,
+    "rain_days_1mm": 144,
+    "rain_days_5mm": 54
+   }
+  },
+  "wind_fixed_3ms_dc": {
+   "2023": 1930.748921885423,
+   "2024": 1811.8730529792033,
+   "2025": 1876.048598889934
+  },
+  "opposite_azimuth_dc": {
+   "2023": 1493.776908203065,
+   "2024": 1422.0549795512002,
+   "2025": 1484.9802708240181
+  },
+  "mean_2002_2025": {
+   "dc_kwh_kwp": 1892.8603128736431,
+   "rain_days_1mm": 134.41666666666666,
+   "rain_days_5mm": 55.5
+  }
+ },
+ "ES_raw": {
+  "site": "seville",
+  "lat": 37.39,
+  "lon": -5.99,
+  "azimuth": 180.0,
+  "years": {
+   "2002": {
+    "dc_kwh_kwp": 1860.9693319623311,
+    "rain_mm": 456.49000000000007,
+    "rain_days_1mm": 70,
+    "rain_days_5mm": 24
+   },
+   "2003": {
+    "dc_kwh_kwp": 1872.7680757016356,
+    "rain_mm": 596.39,
+    "rain_days_1mm": 67,
+    "rain_days_5mm": 37
+   },
+   "2004": {
+    "dc_kwh_kwp": 1902.5708910473807,
+    "rain_mm": 342.54,
+    "rain_days_1mm": 53,
+    "rain_days_5mm": 20
+   },
+   "2005": {
+    "dc_kwh_kwp": 1994.5683932032002,
+    "rain_mm": 245.72000000000003,
+    "rain_days_1mm": 33,
+    "rain_days_5mm": 16
+   },
+   "2006": {
+    "dc_kwh_kwp": 1859.6368781773353,
+    "rain_mm": 595.1700000000001,
+    "rain_days_1mm": 68,
+    "rain_days_5mm": 35
+   },
+   "2007": {
+    "dc_kwh_kwp": 1911.0153487047978,
+    "rain_mm": 332.6,
+    "rain_days_1mm": 59,
+    "rain_days_5mm": 18
+   },
+   "2008": {
+    "dc_kwh_kwp": 1906.3416831893342,
+    "rain_mm": 483.12,
+    "rain_days_1mm": 68,
+    "rain_days_5mm": 28
+   },
+   "2009": {
+    "dc_kwh_kwp": 1901.7137305197061,
+    "rain_mm": 505.23,
+    "rain_days_1mm": 59,
+    "rain_days_5mm": 28
+   },
+   "2010": {
+    "dc_kwh_kwp": 1820.7197715626373,
+    "rain_mm": 830.89,
+    "rain_days_1mm": 88,
+    "rain_days_5mm": 56
+   },
+   "2011": {
+    "dc_kwh_kwp": 1918.053586058843,
+    "rain_mm": 440.42,
+    "rain_days_1mm": 58,
+    "rain_days_5mm": 28
+   },
+   "2012": {
+    "dc_kwh_kwp": 1974.043994600217,
+    "rain_mm": 354.13,
+    "rain_days_1mm": 49,
+    "rain_days_5mm": 21
+   },
+   "2013": {
+    "dc_kwh_kwp": 1910.1043108437393,
+    "rain_mm": 411.52,
+    "rain_days_1mm": 61,
+    "rain_days_5mm": 28
+   },
+   "2014": {
+    "dc_kwh_kwp": 1907.9536700652125,
+    "rain_mm": 540.62,
+    "rain_days_1mm": 71,
+    "rain_days_5mm": 39
+   },
+   "2015": {
+    "dc_kwh_kwp": 1941.1472008597236,
+    "rain_mm": 314.74,
+    "rain_days_1mm": 54,
+    "rain_days_5mm": 20
+   },
+   "2016": {
+    "dc_kwh_kwp": 1909.4758249550791,
+    "rain_mm": 585.62,
+    "rain_days_1mm": 73,
+    "rain_days_5mm": 40
+   },
+   "2017": {
+    "dc_kwh_kwp": 2001.2594494657033,
+    "rain_mm": 392.18000000000006,
+    "rain_days_1mm": 42,
+    "rain_days_5mm": 25
+   },
+   "2018": {
+    "dc_kwh_kwp": 1868.914451820266,
+    "rain_mm": 620.94,
+    "rain_days_1mm": 87,
+    "rain_days_5mm": 42
+   },
+   "2019": {
+    "dc_kwh_kwp": 2006.6644044563373,
+    "rain_mm": 254.02999999999997,
+    "rain_days_1mm": 43,
+    "rain_days_5mm": 13
+   },
+   "2020": {
+    "dc_kwh_kwp": 1901.2063394910413,
+    "rain_mm": 481.13,
+    "rain_days_1mm": 61,
+    "rain_days_5mm": 32
+   },
+   "2021": {
+    "dc_kwh_kwp": 1917.0255728779816,
+    "rain_mm": 342.01,
+    "rain_days_1mm": 55,
+    "rain_days_5mm": 20
+   },
+   "2022": {
+    "dc_kwh_kwp": 1892.5518297632634,
+    "rain_mm": 416.14,
+    "rain_days_1mm": 62,
+    "rain_days_5mm": 23
+   },
+   "2023": {
+    "dc_kwh_kwp": 1968.396718638474,
+    "rain_mm": 303.05999999999995,
+    "rain_days_1mm": 45,
+    "rain_days_5mm": 17
+   },
+   "2024": {
+    "dc_kwh_kwp": 1872.5817370060593,
+    "rain_mm": 546.72,
+    "rain_days_1mm": 53,
+    "rain_days_5mm": 31
+   },
+   "2025": {
+    "dc_kwh_kwp": 1866.1879642556537,
+    "rain_mm": 722.8199999999999,
+    "rain_days_1mm": 83,
+    "rain_days_5mm": 43
+   }
+  },
+  "wind_fixed_3ms_dc": {
+   "2023": 1966.156050675399,
+   "2024": 1869.3926361529975,
+   "2025": 1862.6316780960997
+  },
+  "opposite_azimuth_dc": {
+   "2023": 1371.9578362435461,
+   "2024": 1352.6843785496792,
+   "2025": 1357.6760825418733
+  },
+  "mean_2002_2025": {
+   "dc_kwh_kwp": 1911.9112983010812,
+   "rain_days_1mm": 60.916666666666664,
+   "rain_days_5mm": 28.5
+  }
+ }
+}

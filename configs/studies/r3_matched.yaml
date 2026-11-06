@@ -1,0 +1,6 @@
+study: r3_matched
+label: MAIN-R3
+runner: matched
+output: results_matched_r3.json
+params:
+  soil: [soil0.30, soil0.11]

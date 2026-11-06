@@ -1,0 +1,7 @@
+study: forecast
+runner: forecast
+output: results_forecast.json
+params:
+  modes: [clim, roll, dayahead, perfect]
+  markets: [SA1_aligned, QLD1_aligned, ES_raw]
+  contracts: [merchant, ppa]

@@ -1,0 +1,1 @@
+{study: r1b_failure_diag, label: DESCRIPTIVE, runner: failure_diag, output: failure_diag.json}

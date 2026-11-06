@@ -1,0 +1,727 @@
+{
+ "retrieved": "2026-10-26",
+ "note": "Raw downloads are not committed (data/raw/ is git-ignored); rebuild with src/real_prices_v2.py.",
+ "files": [
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202206_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202206_QLD1.csv",
+   "bytes": 400110,
+   "sha256": "7417635388c178cf507866a80c3370278764033d6521a4ef9138f8a28ab86038"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202206_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202206_SA1.csv",
+   "bytes": 391672,
+   "sha256": "9f18388b7c2bb6fe991257f1b7a50e864ad5d3df5d944f4725fde1155c0738ab"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202207_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202207_QLD1.csv",
+   "bytes": 410692,
+   "sha256": "931d55054eda48adc3e85e857dec3130bd005f7eef4504c91ba3e7e222600827"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202207_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202207_SA1.csv",
+   "bytes": 406510,
+   "sha256": "3018494ab745fdcc4d7e6d29dbe5fcf96c7add53822edc85d4fcb5fc0549eaf8"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202208_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202208_QLD1.csv",
+   "bytes": 409026,
+   "sha256": "56f786227cab8d185f970c674e20831f92cfec7c48a476be5beb84d59599bb91"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202208_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202208_SA1.csv",
+   "bytes": 404807,
+   "sha256": "0486a0fad6fae5769633916f250ad9d14d9b2823101b38ecafae405e1841659c"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202209_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202209_QLD1.csv",
+   "bytes": 399334,
+   "sha256": "0afc8a5eca30cef4e322c577dbc4ab6939c31ec873d2f88a7380cfee1edc4207"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202209_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202209_SA1.csv",
+   "bytes": 390872,
+   "sha256": "8953ab8289060403bf375c3ffee6ae0d3bea84321b28dc302b83e70603122a8b"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202210_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202210_QLD1.csv",
+   "bytes": 413824,
+   "sha256": "35a4e33ed2ad94a863a23608f86b407ae98757e391328bcb0df0798deb87a415"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202210_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202210_SA1.csv",
+   "bytes": 403517,
+   "sha256": "311413235564a706b41cbd0b09797912d739f407ad60d1f9f23021e4d42d98be"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202211_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202211_QLD1.csv",
+   "bytes": 396964,
+   "sha256": "f018409934111fee50c84ed61bb5029b86e29ea39277f5dbc3e7303bb7fcb049"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202211_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202211_SA1.csv",
+   "bytes": 388936,
+   "sha256": "4f8f2ad9fb86bbda366e472f58ce288f815fb9b60c31eccd105861205b52ae05"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202212_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202212_QLD1.csv",
+   "bytes": 408105,
+   "sha256": "5add70806c6adca2d0fcbd461cb635f733cdff259355f7bfeda0d2f4ee6263f0"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202212_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202212_SA1.csv",
+   "bytes": 400322,
+   "sha256": "ef1223989d91ce6bfcc22697160b6899b2a2827e077974a99f4cf8c3bfc22321"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202301_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202301_QLD1.csv",
+   "bytes": 407205,
+   "sha256": "ad104826bb1e0fff2b704f5bfbac2494c51e536ab1d5690f375d464cb258e2b2"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202301_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202301_SA1.csv",
+   "bytes": 402224,
+   "sha256": "37848ecc1b4eaaf2caa3f19b2f7ff03b083aa948c301a0d7acc31cea65daf921"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202302_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202302_QLD1.csv",
+   "bytes": 371105,
+   "sha256": "4e305fa2c893a21172d6493853440e6915e679cdfb0f3698366682d5268ae204"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202302_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202302_SA1.csv",
+   "bytes": 363139,
+   "sha256": "eb40d7aa55c793a2b5fad20456826095fcf3cde870a11e132b063f8c8cbd09ea"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202303_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202303_QLD1.csv",
+   "bytes": 412472,
+   "sha256": "380efd7697ac85561e50e753d516331e6d045a6d4c46912a2cd14cd5d5ebec5f"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202303_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202303_SA1.csv",
+   "bytes": 402060,
+   "sha256": "b8124bf37fdcee6bc46c595be9252030139701cbaf1693b8c59bbae0ef62f5a2"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202304_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202304_QLD1.csv",
+   "bytes": 399681,
+   "sha256": "d7b603d79998625f4f91e2b2306bae2d15d70180b5f8f8e75a077e955546552b"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202304_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202304_SA1.csv",
+   "bytes": 388849,
+   "sha256": "4dd522f632a47cb50327a91cb9f36021ede9e94979636dabf5a5f15c99cc186d"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202305_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202305_QLD1.csv",
+   "bytes": 413973,
+   "sha256": "5b412dc67716dd184587228027ae1e7d3b68ef7c542800e6f626dedd8bf2c651"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202305_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202305_SA1.csv",
+   "bytes": 404973,
+   "sha256": "22100c61ed1d4f1c557cd328973557f041013ce5e58244b95eab457f53b42217"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202306_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202306_QLD1.csv",
+   "bytes": 398394,
+   "sha256": "c926a8b5b7e6939a9c1196dec76e020c0013604eb015f5e8b7e0ec3e2b48249d"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202306_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202306_SA1.csv",
+   "bytes": 389308,
+   "sha256": "9b1c91d3e243d7a202d5b54b4a242998e16c49e283321ff1b17bfd437a01a118"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202307_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202307_QLD1.csv",
+   "bytes": 411007,
+   "sha256": "ad292ea6d41deb3db34e9e60e30e80492f605eb47e6352c84651029255cd137d"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202307_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202307_SA1.csv",
+   "bytes": 402997,
+   "sha256": "339a50f49381a2c8f5f8af85c4392b4f08e19fac317679f5e2edc32ba476e7ea"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202308_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202308_QLD1.csv",
+   "bytes": 410569,
+   "sha256": "7600d7e0b5c1a53ed3620aa3c470c4acb96735074a554d5dadc1882e6ce29460"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202308_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202308_SA1.csv",
+   "bytes": 402061,
+   "sha256": "3f62c0e3fb383dc9120d6e184f7eecdc713ecf475b71c39b5e02c09724d27c0b"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202309_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202309_QLD1.csv",
+   "bytes": 398399,
+   "sha256": "06448162da7666b4e49d5871c6413c11d066f3b54aa4170f20c04bad573923f9"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202309_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202309_SA1.csv",
+   "bytes": 386796,
+   "sha256": "ed578f521a9bff284752494a36cfc6a2e664c37fcafcd86f8c62aaee5440f7af"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202310_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202310_QLD1.csv",
+   "bytes": 410980,
+   "sha256": "df2d739ea9eaf32c85d1c26b96226736151f56cc479b900d8cf0518054f4a803"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202310_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202310_SA1.csv",
+   "bytes": 398766,
+   "sha256": "d85f7c32355c98805ada0388dcb78818c74611f4762bbd52041d70a7ec0053e9"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202311_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202311_QLD1.csv",
+   "bytes": 397736,
+   "sha256": "fd7749914eef04f23caf5292d1cfe722c6544f7c264f2e02e1493add6696a8a0"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202311_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202311_SA1.csv",
+   "bytes": 386919,
+   "sha256": "0aca2d692ab9709ba84adc95618368245fa8ae9b1db1f8832b0d680aef6c8399"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202312_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202312_QLD1.csv",
+   "bytes": 410980,
+   "sha256": "a02e35f3e0c730f6f74b649b52ab17677d653de4f1170efbe6c4501b363649a9"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202312_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202312_SA1.csv",
+   "bytes": 400658,
+   "sha256": "3113efe4395c000df503e415733ed3c0ed9d0de39e01705a4242a44e02255b82"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202401_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202401_QLD1.csv",
+   "bytes": 411154,
+   "sha256": "2d97cce6d441d642271c999864ec20098bda70c657807b7a69f4149495185f16"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202401_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202401_SA1.csv",
+   "bytes": 400206,
+   "sha256": "b0e3a569fe9a83b28f5be9c1f05211659348cefe6f43510df6b0667c9398ee0b"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202402_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202402_QLD1.csv",
+   "bytes": 385181,
+   "sha256": "5efb5224048585f4755c4d2f0578b1e757158d9a19b920a3f7ed011795581e44"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202402_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202402_SA1.csv",
+   "bytes": 374505,
+   "sha256": "3d0de2c5498169d1596eb3ca3efa1ad6fd84d31a3f90c43b9c6f2eae96612505"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202403_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202403_QLD1.csv",
+   "bytes": 411162,
+   "sha256": "f6318e6db111b1781aedd9c2c14e934749546df05ee4b52730500c944f681174"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202403_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202403_SA1.csv",
+   "bytes": 400967,
+   "sha256": "eefba42b745ceade8fa9358ce64f3006ce8b4b59a462f008aaab8aa8677899f5"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202404_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202404_QLD1.csv",
+   "bytes": 399761,
+   "sha256": "364aadf36bfc09f899b49e2396d7e6889043ead69404c93e32f1ef3ca7f401cd"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202404_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202404_SA1.csv",
+   "bytes": 389117,
+   "sha256": "fb9543382f94dc276c25674c021fd0fc007db058d4551b578615ce643ddfa725"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202405_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202405_QLD1.csv",
+   "bytes": 414139,
+   "sha256": "1bfd4c45b0d576028de012520f9ecab9a0393f412e5309c8cd9fe7980a6714f0"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202405_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202405_SA1.csv",
+   "bytes": 403687,
+   "sha256": "7c85c3a5279ed3d0e140f61ceea2000ebd8ab90cbd9883297d3c256bcbe6763d"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202406_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202406_QLD1.csv",
+   "bytes": 401465,
+   "sha256": "2a5e09be48e4eff20db0cc089f050af6506b8b1660e3bc18b5fc313835e1825b"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202406_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202406_SA1.csv",
+   "bytes": 391688,
+   "sha256": "5a276624943d3955d84ddbe4b2a37f8bce780c1ffaed157cc3800e8d50f3d887"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202407_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202407_QLD1.csv",
+   "bytes": 413987,
+   "sha256": "91e1ba70fbdf8370d1abea97535f5f5474fb4c2e0884ed26a26222d9134aafc6"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202407_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202407_SA1.csv",
+   "bytes": 403751,
+   "sha256": "18741badb34eade22f07dcfc38839bf54e6683c5aa54c87dd26af29b168a4eb5"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202408_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202408_QLD1.csv",
+   "bytes": 414404,
+   "sha256": "6920997cae5fb3ef0aa70ca4281392e0f566c58e92dc8db299c4cc8b04d221bd"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202408_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202408_SA1.csv",
+   "bytes": 402125,
+   "sha256": "076a4c14dfd17cb02a4df6059aad5433012ed285e244f13467508d61d6994d37"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202409_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202409_QLD1.csv",
+   "bytes": 399526,
+   "sha256": "69b381e028c34bccca011fc98090f8eeb858be417156b8dcc2225ed1d4e1c815"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202409_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202409_SA1.csv",
+   "bytes": 385808,
+   "sha256": "64932e72cd5107cf1c0052c91aa0dfed1dcedcd0f7260f111633cc311572dd53"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202410_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202410_QLD1.csv",
+   "bytes": 413662,
+   "sha256": "8a8f5da75bfc76717be16e9769c884ffa8240c193913891e85983a329c7d510e"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202410_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202410_SA1.csv",
+   "bytes": 398346,
+   "sha256": "0c4ffb0f4b549fe0682115762b2a8ed5df816d4054a4d77e53d2ce03b501405b"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202411_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202411_QLD1.csv",
+   "bytes": 400110,
+   "sha256": "a9a33fe8e38127d40655d7bdd163fcf77fab7b4a48b11250a4021a49a195fd67"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202411_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202411_SA1.csv",
+   "bytes": 387606,
+   "sha256": "dee6297a132b25697079a009b594654b4df7d0c922a7cf8330fc406f03b638b0"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202412_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202412_QLD1.csv",
+   "bytes": 413690,
+   "sha256": "512f3ec7f180d20e392c7a0535165119a4b2ba0c7014afc31addd40789ccbe28"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202412_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202412_SA1.csv",
+   "bytes": 400897,
+   "sha256": "391e549d2179d743de47e296e349a48b654a4f706cb1cb5321b4d798ce615773"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202501_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202501_QLD1.csv",
+   "bytes": 412633,
+   "sha256": "7f215c7b6c221c567716af08b07794ad9db4c630da1f2d63204624ac99f829d1"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202501_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202501_SA1.csv",
+   "bytes": 400288,
+   "sha256": "669fa809aa5a77a82d44cc9017da9427fccee90351f266bbf4e7f1a4b13287c9"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202502_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202502_QLD1.csv",
+   "bytes": 371803,
+   "sha256": "1f96afcd610860a9f560cb87cd6229b50b79ae0ba80cddf78ac49a8eb1c7fe8b"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202502_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202502_SA1.csv",
+   "bytes": 361767,
+   "sha256": "bbf7884b0e8d5ebbc82da99904eeeb13276f5c66ba3cc2bf288636502d4f9fd4"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202503_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202503_QLD1.csv",
+   "bytes": 411790,
+   "sha256": "e32ef7ac40d49cb03e7c1baae5348a22f37c219cef34741b6948a58f37aeefe4"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202503_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202503_SA1.csv",
+   "bytes": 401180,
+   "sha256": "cf0336e47fba7ffe4ac385b65223f150f577c3e35cca25c906c38948a1a42b8b"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202504_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202504_QLD1.csv",
+   "bytes": 399547,
+   "sha256": "a0a571ddbfc39d146bda16fe1c9fdd249547df14cfcfb623a8bd023921fd357d"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202504_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202504_SA1.csv",
+   "bytes": 387797,
+   "sha256": "fedb6872e237ea0d64512987a0dc540420a456daab646c5997535732b48326b1"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202505_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202505_QLD1.csv",
+   "bytes": 412528,
+   "sha256": "0641d799e78d581a10deba4d61a0a6b8ef740d7bd491d7c42a0ffadfabcb0920"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202505_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202505_SA1.csv",
+   "bytes": 400940,
+   "sha256": "06a84aeee4aeb23918a5ac901c65bd07bbd189140365ba49fa5a310eb84278be"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202506_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202506_QLD1.csv",
+   "bytes": 399794,
+   "sha256": "d559e41c51ded95e912c0f6f6d1851c3875f77252cc7a44866a1db0fc237564b"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202506_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202506_SA1.csv",
+   "bytes": 389998,
+   "sha256": "a8c58d736c6040951f11f8c2ef68b5488ea6e359a32c9b2398e82d03c8a33616"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202507_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202507_QLD1.csv",
+   "bytes": 411800,
+   "sha256": "4d975cfa7e7dfea8619b2ee77fdf81c88e1f0772fd03fa4deb813edadbc4ff1a"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202507_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202507_SA1.csv",
+   "bytes": 400222,
+   "sha256": "0a06521ff77ca8ce3ce1b8349ed2917866489988866feab31ea3463ef7254bed"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202508_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202508_QLD1.csv",
+   "bytes": 412842,
+   "sha256": "5870c707c25090c43e969fad71275806ec3ef5bfea680ca150fe906d4d49daab"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202508_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202508_SA1.csv",
+   "bytes": 399977,
+   "sha256": "654f6215b1227f13c76cb7f888e248bb7082ab41e2a735ab64de827659a9700a"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202509_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202509_QLD1.csv",
+   "bytes": 399304,
+   "sha256": "8e8d3d49092593d7498e7a57a3a8eb77257057d3103a434cf0428372570606b7"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202509_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202509_SA1.csv",
+   "bytes": 385462,
+   "sha256": "f5bf4c96bd869e34bb1bb056edf0c4288bcdb5ab79f765b8cfbc12fea7ae383b"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202510_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202510_QLD1.csv",
+   "bytes": 412116,
+   "sha256": "87622bf84a7993660bab5275d982e567eebef34224578d0c01cf04f58cf59f7b"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202510_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202510_SA1.csv",
+   "bytes": 398541,
+   "sha256": "39982a7c1311b2abdc30af1a685672865ab6faf08fceb2ce3fe95fa65773fcce"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202511_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202511_QLD1.csv",
+   "bytes": 398213,
+   "sha256": "8bf7a55dbfd5e626536ebe0434970b4a1f3788dc0448d4b033275a45cb3ff909"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202511_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202511_SA1.csv",
+   "bytes": 385384,
+   "sha256": "304233c73ef63fda203f8c17725b7c72c141911598831322653c1753f1cb7b9b"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202512_QLD1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202512_QLD1.csv",
+   "bytes": 409903,
+   "sha256": "bdae26a9a703708b3ab782cf1c9698674af5b1cf731440befa5994f698212362"
+  },
+  {
+   "path": "data/raw/aemo/PRICE_AND_DEMAND_202512_SA1.csv",
+   "url": "https://www.aemo.com.au/aemo/data/nem/priceanddemand/PRICE_AND_DEMAND_202512_SA1.csv",
+   "bytes": 397769,
+   "sha256": "d050a82385d9c96e7b9f64c9591c616b80f520947488677fd7e309195835d8f5"
+  },
+  {
+   "path": "data/raw/omie/marginalpdbc_2022.zip",
+   "url": "https://www.omie.es/es/file-download?parents%5B0%5D=marginalpdbc&filename=marginalpdbc_2022.zip",
+   "bytes": 117437,
+   "sha256": "f93cb4eadabca09ca0275c388f0aec0e97190e7430101685b1c4355b1376cdaa",
+   "used": "members marginalpdbc_20221201.1 .. marginalpdbc_20221231.1 (Dec 2022 warm-up)"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221201.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 703,
+   "sha256": "ac9f09c429da95a202b6873573a71fca98f30844f72abe5c818e0c6cf423d1a8"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221202.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 693,
+   "sha256": "1151a7e7a5cb79fec097356e6b87f2cadf9bdcf727b52d95c43e72d36d14e343"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221203.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 687,
+   "sha256": "64f74a4a6737449bdda51b27851797882c031535f2421a10c3f079bdb3334dfc"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221204.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 683,
+   "sha256": "0dd8871e75d88080a27802299bdcd638484bf29d26ae6f30ea7d5c9729997576"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221205.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 707,
+   "sha256": "d7e34a58bacef7f1e4161dca92719190d639acc40e8359cfbb67ab5bb0572f89"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221206.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 713,
+   "sha256": "7d52111b165cba43c4e377bd3305af05e42df188171fca7929bdda4f805c4f91"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221207.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 713,
+   "sha256": "92d4b579567ce48ed67881c7697c060530c4fc040dbe23f8a26860231a69b676"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221208.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 691,
+   "sha256": "897764b3511e4ba6a162816ffcf5faa689c5976815cd336cb22706f7436ae06b"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221209.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 649,
+   "sha256": "63ec50325f07f1094e9abceba9ce42b0a3b95e7f75ccbf76cbbab2607d05dbbc"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221210.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 673,
+   "sha256": "9db1623bfb94e4b6920fa7963a42da5936162218014752597aca7ae2034bcd81"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221211.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 699,
+   "sha256": "66e3b441a79710f2efcbeb48488e77b6b0984704bf7635ee7ddc86689dcba322"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221212.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 663,
+   "sha256": "ba5aa216c5165016dd05394dd3c9b2acfaa64bff3fbd5e483f453f623bd5e5e4"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221213.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 661,
+   "sha256": "88287bd547aae0c7dfbf230cb83346704cacb131287709f517b0de6faf61f4ae"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221214.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 641,
+   "sha256": "2d90e1ad40fcb12c255df7fe2b4b1af9b7613a7c197b602bcdbf053cda875766"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221215.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 684,
+   "sha256": "1455b3d50ee21730fc7145ddf1a8c8fdb778998776563e2dcc80ee16d3e54315"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221216.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 693,
+   "sha256": "672563e3815656ddcb0389931674f808a6128c53627a927880a69b3e073430b7"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221217.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 679,
+   "sha256": "f108a7208f76e4f2928519b122f93c4a5a8882e1db33b3fbb1fe5e5cc7fb73d3"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221218.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 631,
+   "sha256": "2e5a615010f9f1bd7f096e723e3d08ae22e709ca3d39a54b23cbdf5b5a31bf9a"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221219.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 629,
+   "sha256": "c4ac0fd6fec7ae3e08da19f2b62c9f84a07f33fb3399b5ce9ba986617ba4e76b"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221220.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 632,
+   "sha256": "53f9969853f323ecfda15d83172e3dbdc454d873ece62a9b15a8130cb91673a2"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221221.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 607,
+   "sha256": "3483658c703265f9c3827ff7893ed2c91a4b7833a1ac1df4dd6462fdd7128b26"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221222.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 601,
+   "sha256": "7377490157409b492119c01388afd958f05f482fd6233a04207ffb27d4643ee2"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221223.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 607,
+   "sha256": "b86f66807198237dfc12ee410d9ce84c8d30325fba80b3f982416e8164dcc1cd"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221224.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 640,
+   "sha256": "7a1613401f9b3e23e391642f6303bf7f1c647445dcb991ba705b3e783064b9a0"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221225.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 627,
+   "sha256": "5b7179f4ef19eb625c1afd3971597afba16a28cc16ef182ed6d79445f0097bb1"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221226.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 657,
+   "sha256": "336efd3efd3d5ed47859b6ea11bf1a7c0352641c6da5d9110cec110ae74e25fc"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221227.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 661,
+   "sha256": "eab705687be48675e2daf0bc2a72295dff66e743ad693d702cdc12deb5554bc6"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221228.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 647,
+   "sha256": "38e832904d5116201c98cdb03a2cb8f699ce8a9eef11a7439d8e9288bb08474f"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221229.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 641,
+   "sha256": "22683a9c55323def7d36a87483e9dd85e6749cef54bba689a52ca885414444f5"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221230.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 621,
+   "sha256": "cbc65f173c66dbe3c0d39c096fe00a77adecb3e96c3963dfcc18e4e3ca608de3"
+  },
+  {
+   "path": "data/raw/omie/2022/marginalpdbc_20221231.1",
+   "url": "(member of marginalpdbc_2022.zip)",
+   "bytes": 586,
+   "sha256": "e62a24c180caf69a618a7db69fe3ce38f7dc1eaaa8173f18732b07dab84b2481"
+  },
+  {
+   "path": "data/new/omie.csv",
+   "url": "(existing repo file)",
+   "bytes": 1724319,
+   "sha256": "b480d9cff4c1cd5b7a4e4b56626ef3e736792b10373f97e5062fa1c7a5ee802d"
+  },
+  {
+   "path": "data/real_prices.npz",
+   "url": "(existing repo file)",
+   "bytes": 1262962,
+   "sha256": "5e27fc53bf5e44cc5e124ac0bee22e3f47c8e519a4ec350bb2e94dc049630a67"
+  }
+ ]
+}

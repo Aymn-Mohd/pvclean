@@ -1,0 +1,10 @@
+study: nrel
+runner: nrel
+output: results_nrel.json
+params:
+  policies: [fixed, threshold, econ, proposed, proposed_noval]
+  contracts: [fixed, merchant]
+  cells:
+    med: {soil_mean: 0.0011, season_amp: 0.16}
+    p90: {soil_mean: 0.0019, season_amp: 0.16}
+    def_amp: {soil_mean: 0.003, season_amp: 0.16}

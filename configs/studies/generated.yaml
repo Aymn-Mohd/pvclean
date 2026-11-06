@@ -1,0 +1,29 @@
+study: generated
+label: MAIN
+runner: generated
+output: results.json
+params:
+  rq1_policies: [fixed, threshold, econ, proposed, proposed_noval, proposed_nobatch]
+  core_policies: [fixed, threshold, econ, proposed]
+  noval_policies: [fixed, threshold, econ, proposed, proposed_noval]
+  het_fig: [0.5, 1.0, 1.5]
+  het_sweep: [0.0, 0.5, 1.0, 1.5, 2.0]
+  soil: [0.0015, 0.003, 0.0045]
+  crow: [2.0, 4.0, 8.0, 12.0]
+  price_scales: [0.0, 1.0, 1.5, 2.0, 3.0]
+  regimes_full:
+  - [site, 0.0, 7]
+  - [mobile, 0.005, 7]
+  - [mobile, 0.01, 7]
+  - [mobile, 0.02, 7]
+  - [mobile, 0.04, 7]
+  - [mobile, 0.01, 28]
+  - [perfect, 0.0, 7]
+  regimes_cv:
+  - [site, 0.0, 7]
+  - [mobile, 0.01, 7]
+  - [mobile, 0.01, 28]
+  - [perfect, 0.0, 7]
+  rq3_contracts: [fixed, merchant]
+  sens_contracts: [fixed, merchant]
+  price_contracts: [merchant, ppa]

@@ -1,0 +1,42 @@
+{
+ "retrieved": "2026-11-05",
+ "client": "User-Agent e1-r3b-research-client, one request per URL, no retries",
+ "note": "No gauge data was obtained, so no data file exists. sha256 and bytes describe the reply to each request (a block page or an empty body), not rainfall data. The client IP in the BoM reply is left out of this record.",
+ "gauge_files": [],
+ "attempts": [
+  {
+   "site": "adelaide",
+   "source": "BoM Climate Data Online, daily rainfall",
+   "station": "023090 Adelaide (Kent Town)",
+   "url": "http://www.bom.gov.au/jsp/ncc/cdio/weatherData/av?p_nccObsCode=136&p_display_type=dailyDataFile&p_startYear=&p_stn_num=023090",
+   "http_status": 403,
+   "reply_bytes": 1385,
+   "reply_sha256": "c37b01c4c5b75c8dace0504a03103aa7c0e3e191f51db3be6093f955b947e1c6",
+   "reference_error": "0.d6aa645f.1793888027.15b44f5d",
+   "outcome": "BLOCKED",
+   "error": "Your access is blocked due to the detection of a potential automated access request. The Bureau of Meteorology website does not support web scraping: if you are trying to access Bureau data through automated means, you should stop."
+  },
+  {
+   "site": "brisbane",
+   "source": "BoM Climate Data Online, daily rainfall",
+   "station": "040913 Brisbane",
+   "url": "https://www.bom.gov.au/jsp/ncc/cdio/weatherData/av?p_nccObsCode=136&p_display_type=dailyDataFile&p_startYear=&p_stn_num=040913",
+   "http_status": 403,
+   "reply_bytes": 1383,
+   "reply_sha256": "0169cd7be02eeaf2d59ff3f15a8191b7b57a9e1a7afaa6917173d3ee9846e6a6",
+   "outcome": "BLOCKED",
+   "error": "Your access is blocked due to the detection of a potential automated access request. The Bureau of Meteorology website does not support web scraping: if you are trying to access Bureau data through automated means, you should stop."
+  },
+  {
+   "site": "seville",
+   "source": "AEMET OpenData, daily climatological values",
+   "station": "5783 Sevilla Aeropuerto",
+   "url": "https://opendata.aemet.es/opendata/api/valores/climatologicos/diarios/datos/fechaini/2023-01-01T00:00:00UTC/fechafin/2023-06-30T23:59:59UTC/estacion/5783",
+   "http_status": 200,
+   "reply_bytes": 0,
+   "reply_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "outcome": "NO DATA WITHOUT API KEY",
+   "error": "HTTP 200 with an empty body when no api_key is sent; the portal issues API keys through registration."
+  }
+ ]
+}

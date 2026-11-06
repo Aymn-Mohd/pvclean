@@ -1,0 +1,14 @@
+study: r1b_robust
+label: SENSITIVITY
+runner: robustness
+output: results_robust.json
+params:
+  policies: [fixed, threshold, econ, ft, proposed]
+  variants:
+    a_noaccess:
+      blackouts: []
+    b_bias+25: {station_bias: 0.25}
+    b_bias-25: {station_bias: -0.25}
+    c_eff098: {clean_residual: 0.02}
+    d_continuous: {carry: true, wrap_horizon: true}
+  chain_seed_offsets: [0, 10000, 20000]

@@ -1,0 +1,9 @@
+name: adelaide
+lat: -34.93
+lon: 138.60
+tilt: 25.0
+azimuth: 0.0
+tz: Etc/GMT-10          # fixed offset: only sets the positional month x hour grid
+time_base: Etc/GMT-10   # the clock of the prices (NEM time)
+market: SA1_raw
+weather_source: nasa_site

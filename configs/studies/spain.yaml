@@ -1,0 +1,7 @@
+study: spain
+runner: spain
+output: results_spain.json
+params:
+  policies: [fixed, threshold, econ, proposed, proposed_noval]
+  market: ES_raw
+  contracts: [merchant, ppa]

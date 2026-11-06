@@ -1,0 +1,9 @@
+study: real
+runner: real
+output: results_real.json
+params:
+  policies: [fixed, threshold, econ, proposed, proposed_noval]
+  regions: [SA1, QLD1]
+  shapes: [aligned, raw]
+  vexp_q: [null, 0.99, 0.95]
+  contracts: [merchant, ppa]

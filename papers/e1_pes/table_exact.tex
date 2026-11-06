@@ -1,0 +1,17 @@
+\begin{table}[!t]
+\centering
+\caption{Exact benchmark, 20 instances of 6 rows and 60 days: clairvoyant optimum (USD over no cleaning) and share of it reached by the receding-horizon MILP (14 days; 30 days with a 30-day tail) and by the tuned policies. Settings: contract, cleaning cost per row (USD).}
+\label{tab:exact}
+\scriptsize
+\setlength{\tabcolsep}{2.3pt}
+\begin{tabular}{lcccccccc}
+\toprule
+Setting & Clairv. & MILP 14 & MILP 30+30 & Fixed & Thr. & Econ & FT & Prop. \\
+\midrule
+Fixed, 4 & 154 & 92 & 96 & 95 & 90 & 91 & 95 & 91 \\
+Fixed, 12 & 87 & 87 & 94 & 59 & 74 & 81 & 91 & 78 \\
+Merchant, 4 & 65 & 95 & 96 & 67 & 81 & 80 & 92 & 64 \\
+Merchant, 12 & 22 & 9 & 72 & 27 & 12 & 35 & 17 & 21 \\
+\bottomrule
+\end{tabular}
+\end{table}

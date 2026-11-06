@@ -1,0 +1,166 @@
+{
+ "fixed|belief": {
+  "run": 656.359390355209,
+  "sched": [],
+  "tables": {
+   "dtype": "float64",
+   "sha256": "98c77a8904aa1bdcfb25b1f420d6cb5ef19eb201d25ca5e463de3b2e5187aef3",
+   "shape": [
+    4,
+    24,
+    24
+   ]
+  },
+  "value": 734.4583597312552
+ },
+ "fixed|inc": {
+  "dtype": "float64",
+  "sha256": "8e24c6d7a87f4ecfb565e4448da0e4287797a0d2b0e57ec14e597ad596931abb",
+  "shape": [
+   365
+  ]
+ },
+ "fixed|mpc": {
+  "a": [
+   737.230706637149,
+   []
+  ],
+  "b": [
+   737.230706637149,
+   []
+  ],
+  "status": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "fixed|solve": {
+  "none": 739.6468113642006,
+  "sched": [],
+  "status": 0,
+  "value": 739.6468113642006,
+  "viol": 0
+ },
+ "fixed|tables": [
+  {
+   "dtype": "float64",
+   "sha256": "0e8c0df31101f37c81be24896d888b1843d095958864ed74e4dfed1af27f0617",
+   "shape": [
+    4,
+    24,
+    24
+   ]
+  },
+  {
+   "dtype": "float64",
+   "sha256": "020abed39347369f9d903c19b9d88e5dd2323fe418063b19a52f6f75b988225f",
+   "shape": [
+    4,
+    24,
+    24
+   ]
+  }
+ ],
+ "merchant|belief": {
+  "run": 92.62189640214584,
+  "sched": [],
+  "tables": {
+   "dtype": "float64",
+   "sha256": "f03c1dacf9ab0fcc9619733bc61babd83e5709723652ad3ceec83c40f07fce31",
+   "shape": [
+    4,
+    24,
+    24
+   ]
+  },
+  "value": 192.68462896282378
+ },
+ "merchant|inc": {
+  "dtype": "float64",
+  "sha256": "8e24c6d7a87f4ecfb565e4448da0e4287797a0d2b0e57ec14e597ad596931abb",
+  "shape": [
+   365
+  ]
+ },
+ "merchant|mpc": {
+  "a": [
+   191.06305467148405,
+   []
+  ],
+  "b": [
+   191.06305467148405,
+   []
+  ],
+  "status": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "merchant|solve": {
+  "none": 225.19753586111992,
+  "sched": [],
+  "status": 0,
+  "value": 225.19753586111992,
+  "viol": 0
+ },
+ "merchant|tables": [
+  {
+   "dtype": "float64",
+   "sha256": "13442970ec931aae23f7ec3ed7852aac7b46e59201ea5ea9fa64351d88473e7b",
+   "shape": [
+    4,
+    24,
+    24
+   ]
+  },
+  {
+   "dtype": "float64",
+   "sha256": "5fb8e0fcaa58402476cd0537efe82bf4d26b4308dd6188983f6c12751567ddf6",
+   "shape": [
+    4,
+    24,
+    24
+   ]
+  }
+ ]
+}

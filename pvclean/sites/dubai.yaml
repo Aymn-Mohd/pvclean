@@ -1,0 +1,8 @@
+name: dubai
+lat: 25.2
+lon: 55.3
+tilt: 25.0
+azimuth: 180.0      # pvlib convention: 0 = north, 180 = south
+tz: Asia/Dubai
+market: generated
+weather_source: generated

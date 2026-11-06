@@ -1,0 +1,6 @@
+study: r1b_claims
+label: ANALYSIS
+runner: claims_recheck
+output: claims_recheck.json
+params:
+  price_scales: [0.0, 1.0, 1.5, 2.0, 3.0]

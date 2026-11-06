@@ -1,0 +1,566 @@
+{
+ "nlr": {
+  "files": {
+   "data/new/nlr_monthly.csv": "a4ae1bd5aa8ae13a07d5a82697c6bbf0338e07c0786965ca7d2f805e13f15f8d",
+   "data/new/nlr_sites.csv": "ae0961d2c0d106fd507b1bca843d10406c10f276241bc9fd418694ecb0b5e321"
+  },
+  "sites_in_table": 255,
+  "sites_without_monthly_rates": 109,
+  "sites_with_monthly_rates": 146,
+  "monthly_rows": 1752,
+  "monthly_rows_missing_rate": 27,
+  "site_months_used": 1725,
+  "median_site_month_pct_day": 0.1,
+  "q1": 0.08,
+  "q3": 0.13999999999999999,
+  "site_mean_median": 0.1075,
+  "site_mean_p90": 0.18583333333333335,
+  "site_mean_max": 0.29583333333333334,
+  "site_max_id": "13040_ac_power_inv_23331",
+  "measurement_types": {
+   "PV System": 244,
+   "Soiling Station": 11
+  },
+  "states": 15,
+  "paper_macros": {
+   "NrelSites": "146",
+   "NrelMedian": "0.10",
+   "NrelSiteMax": "0.30",
+   "NrelSitePn": "0.19",
+   "NrelSiteMedian": "0.11"
+  }
+ },
+ "mae_pairs": {
+  "n": 54,
+  "rule": "6 market-contract cases x 3 test years x scenarios F0, F2, F3; x = production-weighted MAE of the 7-day value forecast (results_forecast_audit.json mae_prod_w), y = mean planner gain over no cleaning (results_replay.json)",
+  "spearman_rho": -0.1149631211018989,
+  "spearman_p": 0.40779215526662643,
+  "pairs": [
+   {
+    "market": "SA1_aligned",
+    "contract": "merchant",
+    "test_year": 0,
+    "scenario": "F0",
+    "mae_prod_w": 0.03330051896405791,
+    "planner_gain_mean": 13024.701931514284
+   },
+   {
+    "market": "SA1_aligned",
+    "contract": "merchant",
+    "test_year": 0,
+    "scenario": "F2",
+    "mae_prod_w": 0.034788353948071754,
+    "planner_gain_mean": 12965.524675072247
+   },
+   {
+    "market": "SA1_aligned",
+    "contract": "merchant",
+    "test_year": 0,
+    "scenario": "F3",
+    "mae_prod_w": 0.029971288468392726,
+    "planner_gain_mean": 13503.138961548551
+   },
+   {
+    "market": "SA1_aligned",
+    "contract": "merchant",
+    "test_year": 1,
+    "scenario": "F0",
+    "mae_prod_w": 0.0341025372331665,
+    "planner_gain_mean": 12037.696327004747
+   },
+   {
+    "market": "SA1_aligned",
+    "contract": "merchant",
+    "test_year": 1,
+    "scenario": "F2",
+    "mae_prod_w": 0.04054026840249806,
+    "planner_gain_mean": 12057.688574643838
+   },
+   {
+    "market": "SA1_aligned",
+    "contract": "merchant",
+    "test_year": 1,
+    "scenario": "F3",
+    "mae_prod_w": 0.03490055461592139,
+    "planner_gain_mean": 12446.496687618235
+   },
+   {
+    "market": "SA1_aligned",
+    "contract": "merchant",
+    "test_year": 2,
+    "scenario": "F0",
+    "mae_prod_w": 0.027213421501062048,
+    "planner_gain_mean": 7947.578332831256
+   },
+   {
+    "market": "SA1_aligned",
+    "contract": "merchant",
+    "test_year": 2,
+    "scenario": "F2",
+    "mae_prod_w": 0.023660648156417156,
+    "planner_gain_mean": 8326.980063111661
+   },
+   {
+    "market": "SA1_aligned",
+    "contract": "merchant",
+    "test_year": 2,
+    "scenario": "F3",
+    "mae_prod_w": 0.020382177877649146,
+    "planner_gain_mean": 8514.178559755552
+   },
+   {
+    "market": "SA1_aligned",
+    "contract": "ppa",
+    "test_year": 0,
+    "scenario": "F0",
+    "mae_prod_w": 0.0198709911341596,
+    "planner_gain_mean": 8759.814425452849
+   },
+   {
+    "market": "SA1_aligned",
+    "contract": "ppa",
+    "test_year": 0,
+    "scenario": "F2",
+    "mae_prod_w": 0.02118047404897034,
+    "planner_gain_mean": 8865.287805989237
+   },
+   {
+    "market": "SA1_aligned",
+    "contract": "ppa",
+    "test_year": 0,
+    "scenario": "F3",
+    "mae_prod_w": 0.01821460687691231,
+    "planner_gain_mean": 9002.726297968422
+   },
+   {
+    "market": "SA1_aligned",
+    "contract": "ppa",
+    "test_year": 1,
+    "scenario": "F0",
+    "mae_prod_w": 0.019166431194898803,
+    "planner_gain_mean": 8892.826192675377
+   },
+   {
+    "market": "SA1_aligned",
+    "contract": "ppa",
+    "test_year": 1,
+    "scenario": "F2",
+    "mae_prod_w": 0.018473485978478966,
+    "planner_gain_mean": 9026.57590696682
+   },
+   {
+    "market": "SA1_aligned",
+    "contract": "ppa",
+    "test_year": 1,
+    "scenario": "F3",
+    "mae_prod_w": 0.015887420496701096,
+    "planner_gain_mean": 9114.516266193254
+   },
+   {
+    "market": "SA1_aligned",
+    "contract": "ppa",
+    "test_year": 2,
+    "scenario": "F0",
+    "mae_prod_w": 0.019481889809287854,
+    "planner_gain_mean": 7626.249887558828
+   },
+   {
+    "market": "SA1_aligned",
+    "contract": "ppa",
+    "test_year": 2,
+    "scenario": "F2",
+    "mae_prod_w": 0.019693674296426364,
+    "planner_gain_mean": 7650.479041128977
+   },
+   {
+    "market": "SA1_aligned",
+    "contract": "ppa",
+    "test_year": 2,
+    "scenario": "F3",
+    "mae_prod_w": 0.016907282392459512,
+    "planner_gain_mean": 7782.186540142662
+   },
+   {
+    "market": "QLD1_aligned",
+    "contract": "merchant",
+    "test_year": 0,
+    "scenario": "F0",
+    "mae_prod_w": 0.019149225058216104,
+    "planner_gain_mean": 13215.668928099722
+   },
+   {
+    "market": "QLD1_aligned",
+    "contract": "merchant",
+    "test_year": 0,
+    "scenario": "F2",
+    "mae_prod_w": 0.01902774063352277,
+    "planner_gain_mean": 13835.11424775099
+   },
+   {
+    "market": "QLD1_aligned",
+    "contract": "merchant",
+    "test_year": 0,
+    "scenario": "F3",
+    "mae_prod_w": 0.01638034472517308,
+    "planner_gain_mean": 13950.256628607782
+   },
+   {
+    "market": "QLD1_aligned",
+    "contract": "merchant",
+    "test_year": 1,
+    "scenario": "F0",
+    "mae_prod_w": 0.02259934396423201,
+    "planner_gain_mean": 12431.322505740556
+   },
+   {
+    "market": "QLD1_aligned",
+    "contract": "merchant",
+    "test_year": 1,
+    "scenario": "F2",
+    "mae_prod_w": 0.025664006294138147,
+    "planner_gain_mean": 13590.012784003611
+   },
+   {
+    "market": "QLD1_aligned",
+    "contract": "merchant",
+    "test_year": 1,
+    "scenario": "F3",
+    "mae_prod_w": 0.022110747448498842,
+    "planner_gain_mean": 13837.027647133822
+   },
+   {
+    "market": "QLD1_aligned",
+    "contract": "merchant",
+    "test_year": 2,
+    "scenario": "F0",
+    "mae_prod_w": 0.020934563208480923,
+    "planner_gain_mean": 8264.992136414257
+   },
+   {
+    "market": "QLD1_aligned",
+    "contract": "merchant",
+    "test_year": 2,
+    "scenario": "F2",
+    "mae_prod_w": 0.017061679606045776,
+    "planner_gain_mean": 8581.323036223568
+   },
+   {
+    "market": "QLD1_aligned",
+    "contract": "merchant",
+    "test_year": 2,
+    "scenario": "F3",
+    "mae_prod_w": 0.01470242118122796,
+    "planner_gain_mean": 8717.11203342254
+   },
+   {
+    "market": "QLD1_aligned",
+    "contract": "ppa",
+    "test_year": 0,
+    "scenario": "F0",
+    "mae_prod_w": 0.017288145112750074,
+    "planner_gain_mean": 15780.77247793895
+   },
+   {
+    "market": "QLD1_aligned",
+    "contract": "ppa",
+    "test_year": 0,
+    "scenario": "F2",
+    "mae_prod_w": 0.015317543463006088,
+    "planner_gain_mean": 15903.881181496945
+   },
+   {
+    "market": "QLD1_aligned",
+    "contract": "ppa",
+    "test_year": 0,
+    "scenario": "F3",
+    "mae_prod_w": 0.013199208555136416,
+    "planner_gain_mean": 15931.111168895713
+   },
+   {
+    "market": "QLD1_aligned",
+    "contract": "ppa",
+    "test_year": 1,
+    "scenario": "F0",
+    "mae_prod_w": 0.017646882969826992,
+    "planner_gain_mean": 14548.173190142512
+   },
+   {
+    "market": "QLD1_aligned",
+    "contract": "ppa",
+    "test_year": 1,
+    "scenario": "F2",
+    "mae_prod_w": 0.01662222463874572,
+    "planner_gain_mean": 14650.947570263459
+   },
+   {
+    "market": "QLD1_aligned",
+    "contract": "ppa",
+    "test_year": 1,
+    "scenario": "F3",
+    "mae_prod_w": 0.014336615267584627,
+    "planner_gain_mean": 14698.961190104224
+   },
+   {
+    "market": "QLD1_aligned",
+    "contract": "ppa",
+    "test_year": 2,
+    "scenario": "F0",
+    "mae_prod_w": 0.019054306620199822,
+    "planner_gain_mean": 11074.47148647799
+   },
+   {
+    "market": "QLD1_aligned",
+    "contract": "ppa",
+    "test_year": 2,
+    "scenario": "F2",
+    "mae_prod_w": 0.019382250046671472,
+    "planner_gain_mean": 11202.980699737842
+   },
+   {
+    "market": "QLD1_aligned",
+    "contract": "ppa",
+    "test_year": 2,
+    "scenario": "F3",
+    "mae_prod_w": 0.016668351935887074,
+    "planner_gain_mean": 11304.035781479493
+   },
+   {
+    "market": "ES_raw",
+    "contract": "merchant",
+    "test_year": 0,
+    "scenario": "F0",
+    "mae_prod_w": 0.04870003608698722,
+    "planner_gain_mean": 29756.6094431951
+   },
+   {
+    "market": "ES_raw",
+    "contract": "merchant",
+    "test_year": 0,
+    "scenario": "F2",
+    "mae_prod_w": 0.034147353895112594,
+    "planner_gain_mean": 35120.25296069794
+   },
+   {
+    "market": "ES_raw",
+    "contract": "merchant",
+    "test_year": 0,
+    "scenario": "F3",
+    "mae_prod_w": 0.02944851806650683,
+    "planner_gain_mean": 35262.477255254555
+   },
+   {
+    "market": "ES_raw",
+    "contract": "merchant",
+    "test_year": 1,
+    "scenario": "F0",
+    "mae_prod_w": 0.037491903974735764,
+    "planner_gain_mean": 25152.73633410785
+   },
+   {
+    "market": "ES_raw",
+    "contract": "merchant",
+    "test_year": 1,
+    "scenario": "F2",
+    "mae_prod_w": 0.027286805401137603,
+    "planner_gain_mean": 25924.343691860577
+   },
+   {
+    "market": "ES_raw",
+    "contract": "merchant",
+    "test_year": 1,
+    "scenario": "F3",
+    "mae_prod_w": 0.02355189372991478,
+    "planner_gain_mean": 26095.40837016234
+   },
+   {
+    "market": "ES_raw",
+    "contract": "merchant",
+    "test_year": 2,
+    "scenario": "F0",
+    "mae_prod_w": 0.03775471547975285,
+    "planner_gain_mean": 15186.974583110812
+   },
+   {
+    "market": "ES_raw",
+    "contract": "merchant",
+    "test_year": 2,
+    "scenario": "F2",
+    "mae_prod_w": 0.027917887442241694,
+    "planner_gain_mean": 15878.581329984754
+   },
+   {
+    "market": "ES_raw",
+    "contract": "merchant",
+    "test_year": 2,
+    "scenario": "F3",
+    "mae_prod_w": 0.024089241376130176,
+    "planner_gain_mean": 16057.085044160965
+   },
+   {
+    "market": "ES_raw",
+    "contract": "ppa",
+    "test_year": 0,
+    "scenario": "F0",
+    "mae_prod_w": 0.005647831892016065,
+    "planner_gain_mean": 20622.294599231813
+   },
+   {
+    "market": "ES_raw",
+    "contract": "ppa",
+    "test_year": 0,
+    "scenario": "F2",
+    "mae_prod_w": 1.990223825858654e-17,
+    "planner_gain_mean": 20898.42221745405
+   },
+   {
+    "market": "ES_raw",
+    "contract": "ppa",
+    "test_year": 0,
+    "scenario": "F3",
+    "mae_prod_w": 1.7057556222585958e-17,
+    "planner_gain_mean": 20898.42221745405
+   },
+   {
+    "market": "ES_raw",
+    "contract": "ppa",
+    "test_year": 1,
+    "scenario": "F0",
+    "mae_prod_w": 0.00593169196904014,
+    "planner_gain_mean": 19562.438388001276
+   },
+   {
+    "market": "ES_raw",
+    "contract": "ppa",
+    "test_year": 1,
+    "scenario": "F2",
+    "mae_prod_w": 0.005700926285134486,
+    "planner_gain_mean": 19589.846569794136
+   },
+   {
+    "market": "ES_raw",
+    "contract": "ppa",
+    "test_year": 1,
+    "scenario": "F3",
+    "mae_prod_w": 0.004908287794517758,
+    "planner_gain_mean": 19624.19258228192
+   },
+   {
+    "market": "ES_raw",
+    "contract": "ppa",
+    "test_year": 2,
+    "scenario": "F0",
+    "mae_prod_w": 0.008147804046140609,
+    "planner_gain_mean": 17935.309513530134
+   },
+   {
+    "market": "ES_raw",
+    "contract": "ppa",
+    "test_year": 2,
+    "scenario": "F2",
+    "mae_prod_w": 0.008402359561209698,
+    "planner_gain_mean": 18037.339128536303
+   },
+   {
+    "market": "ES_raw",
+    "contract": "ppa",
+    "test_year": 2,
+    "scenario": "F3",
+    "mae_prod_w": 0.007249308571012697,
+    "planner_gain_mean": 18086.66885862521
+   }
+  ]
+ },
+ "leakage_checks": {
+  "n": 23562,
+  "stored_checks": 23562,
+  "stored_failures": 0,
+  "matches": true,
+  "rule": "every (market, contract, test year, deployable scenario) x decision day d = 1..357; F4 (oracle) is not audited; F1 exists only for test years 1 and 2. Per check the forecast is recomputed with all realised values at or after info_cutoff set to NaN and must be finite and identical (experiments/forecast_audit.py).",
+  "markets": 3,
+  "contracts": 2,
+  "test_years": 3,
+  "scenario_year_combos_per_case": 11,
+  "decision_days": 357,
+  "arithmetic": "6 cases x (3 + 4 + 4) scenario-years x 357 days = 23562",
+  "combos_by_case": {
+   "SA1_aligned|merchant": [
+    "year0:F0",
+    "year0:F2",
+    "year0:F3",
+    "year1:F0",
+    "year1:F2",
+    "year1:F3",
+    "year1:F1",
+    "year2:F0",
+    "year2:F2",
+    "year2:F3",
+    "year2:F1"
+   ],
+   "SA1_aligned|ppa": [
+    "year0:F0",
+    "year0:F2",
+    "year0:F3",
+    "year1:F0",
+    "year1:F2",
+    "year1:F3",
+    "year1:F1",
+    "year2:F0",
+    "year2:F2",
+    "year2:F3",
+    "year2:F1"
+   ],
+   "QLD1_aligned|merchant": [
+    "year0:F0",
+    "year0:F2",
+    "year0:F3",
+    "year1:F0",
+    "year1:F2",
+    "year1:F3",
+    "year1:F1",
+    "year2:F0",
+    "year2:F2",
+    "year2:F3",
+    "year2:F1"
+   ],
+   "QLD1_aligned|ppa": [
+    "year0:F0",
+    "year0:F2",
+    "year0:F3",
+    "year1:F0",
+    "year1:F2",
+    "year1:F3",
+    "year1:F1",
+    "year2:F0",
+    "year2:F2",
+    "year2:F3",
+    "year2:F1"
+   ],
+   "ES_raw|merchant": [
+    "year0:F0",
+    "year0:F2",
+    "year0:F3",
+    "year1:F0",
+    "year1:F2",
+    "year1:F3",
+    "year1:F1",
+    "year2:F0",
+    "year2:F2",
+    "year2:F3",
+    "year2:F1"
+   ],
+   "ES_raw|ppa": [
+    "year0:F0",
+    "year0:F2",
+    "year0:F3",
+    "year1:F0",
+    "year1:F2",
+    "year1:F3",
+    "year1:F1",
+    "year2:F0",
+    "year2:F2",
+    "year2:F3",
+    "year2:F1"
+   ]
+  }
+ }
+}

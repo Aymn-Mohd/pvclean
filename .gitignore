@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+*.egg-info/
+build/
+dist/
+
+# Data never goes in git: the cache is outside the repository. Only provenance records are tracked.
+data/*
+!data/provenance/
+*.npz
+*.csv
+*.csv.gz
+*.parquet
+
+# Run outputs
+runs/
+
+# LaTeX
+papers/**/*.aux
+papers/**/*.log
+papers/**/*.out
+papers/**/fig_*.pdf
+*.log
+*.out
+
+# System
+.DS_Store
+**/.DS_Store
+
+# Old trees
+_v9repro/
+_v9code/
+_v9paper/

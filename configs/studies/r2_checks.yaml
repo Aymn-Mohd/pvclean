@@ -1,0 +1,30 @@
+study: r2_checks
+label: UNREGISTERED DIAGNOSTIC
+runner: r2_checks
+output: r2_checks.json
+params:
+  policies: [fixed, threshold, econ, ft, proposed]
+  settings:
+    default: {}
+    night240: {night_min: 240.0}
+    night480: {night_min: 480.0}
+    service15: {service_min: 15.0}
+    service40: {service_min: 40.0}
+    speed0.25: {speed_mps: 0.25}
+    speed1.0: {speed_mps: 1.0}
+    battery6: {battery_rows: 6}
+    battery10: {battery_rows: 10}
+    avail0.9: {availability: 0.9}
+    avail0.8: {availability: 0.8}
+  tight: [night240, service40, battery6]
+  low:
+    battery1: {battery_rows: 1}
+    battery2: {battery_rows: 2}
+    battery3: {battery_rows: 3}
+    battery4: {battery_rows: 4}
+    avail0.5: {availability: 0.5}
+    avail0.25: {availability: 0.25}
+  retune:
+    train1005: [1005, 1006, 1007, 1008, 1009]
+    train1010: [1010, 1011, 1012, 1013, 1014]
+    train1015: [1015, 1016, 1017, 1018, 1019]

@@ -1,0 +1,6 @@
+study: r1_decomp
+label: ANALYSIS
+runner: rq1_decomp
+output: results_rq1_decomp.json
+params:
+  policies: [fixed, threshold, econ, ft, proposed, proposed_noval, proposed_nobatch]

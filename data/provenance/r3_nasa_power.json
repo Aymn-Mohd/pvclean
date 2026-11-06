@@ -1,0 +1,509 @@
+{
+ "retrieved": "2026-11-05",
+ "source": "NASA POWER hourly point API, community RE, time-standard UTC",
+ "note": "Raw downloads are not committed (data/raw/ is git-ignored). Rebuild with src/download_nasa_r3.py, then `python build_new.py sites` from src/.",
+ "sites": {
+  "adelaide": {
+   "lat": -34.93,
+   "lon": 138.6
+  },
+  "brisbane": {
+   "lat": -27.47,
+   "lon": 153.03
+  },
+  "seville": {
+   "lat": 37.39,
+   "lon": -5.99
+  }
+ },
+ "parameters": [
+  "ALLSKY_SFC_SW_DWN",
+  "ALLSKY_SFC_SW_DNI",
+  "ALLSKY_SFC_SW_DIFF",
+  "CLRSKY_SFC_SW_DWN",
+  "T2M",
+  "WS10M",
+  "PRECTOTCORR"
+ ],
+ "files": [
+  {
+   "path": "data/raw/nasa_power/adelaide_2001.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=138.6&latitude=-34.93&start=20010101&end=20011231&format=CSV&time-standard=UTC",
+   "bytes": 428593,
+   "sha256": "3c0e25e4775445281623ffc3537869ae0fbe801444ad312fb810ca16f6cbd0cc"
+  },
+  {
+   "path": "data/raw/nasa_power/adelaide_2002.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=138.6&latitude=-34.93&start=20020101&end=20021231&format=CSV&time-standard=UTC",
+   "bytes": 428061,
+   "sha256": "ddb119638f1ac0ee94383e99f35effaadec85b399e1e56fe74f3b825a2078e14"
+  },
+  {
+   "path": "data/raw/nasa_power/adelaide_2003.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=138.6&latitude=-34.93&start=20030101&end=20031231&format=CSV&time-standard=UTC",
+   "bytes": 427889,
+   "sha256": "86c8e368dddf6d16a004cf5f9d200f7dde41dde96689290becab837a173a5886"
+  },
+  {
+   "path": "data/raw/nasa_power/adelaide_2004.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=138.6&latitude=-34.93&start=20040101&end=20041231&format=CSV&time-standard=UTC",
+   "bytes": 429108,
+   "sha256": "704ca3a2445177c4309cba74bd51487ff73d858380280be26d6b4a4e919f0851"
+  },
+  {
+   "path": "data/raw/nasa_power/adelaide_2005.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=138.6&latitude=-34.93&start=20050101&end=20051231&format=CSV&time-standard=UTC",
+   "bytes": 427907,
+   "sha256": "e58c34831d535a8291ab462b635a5cc036d53a3598f02bab1b553fcb77f18a17"
+  },
+  {
+   "path": "data/raw/nasa_power/adelaide_2006.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=138.6&latitude=-34.93&start=20060101&end=20061231&format=CSV&time-standard=UTC",
+   "bytes": 427627,
+   "sha256": "e1671e36ba403327c242c9b15bd4d52c3318190828c966e0a257b0347508be3b"
+  },
+  {
+   "path": "data/raw/nasa_power/adelaide_2007.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=138.6&latitude=-34.93&start=20070101&end=20071231&format=CSV&time-standard=UTC",
+   "bytes": 428158,
+   "sha256": "7e708366d519fa05d50867bde65ace28cec63120f80e2d8e1c74f67870644c6f"
+  },
+  {
+   "path": "data/raw/nasa_power/adelaide_2008.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=138.6&latitude=-34.93&start=20080101&end=20081231&format=CSV&time-standard=UTC",
+   "bytes": 429273,
+   "sha256": "2482939d4cf06bd12d2beb9c32cd0a78b6c5bd9b8bc0085ca69d7056e6492857"
+  },
+  {
+   "path": "data/raw/nasa_power/adelaide_2009.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=138.6&latitude=-34.93&start=20090101&end=20091231&format=CSV&time-standard=UTC",
+   "bytes": 428294,
+   "sha256": "d833e26fde837fdf52c802df996f724e726f7b0cb9b45747ba3b970356df503e"
+  },
+  {
+   "path": "data/raw/nasa_power/adelaide_2010.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=138.6&latitude=-34.93&start=20100101&end=20101231&format=CSV&time-standard=UTC",
+   "bytes": 428426,
+   "sha256": "36be0b54fb49971d1059e2241a4b9ba52bcc35766e57904caa3d763c511b84d7"
+  },
+  {
+   "path": "data/raw/nasa_power/adelaide_2011.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=138.6&latitude=-34.93&start=20110101&end=20111231&format=CSV&time-standard=UTC",
+   "bytes": 427993,
+   "sha256": "4d0c73b24ebf26d2528fc147d348b284c29731a344495c7565f651b56fb61288"
+  },
+  {
+   "path": "data/raw/nasa_power/adelaide_2012.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=138.6&latitude=-34.93&start=20120101&end=20121231&format=CSV&time-standard=UTC",
+   "bytes": 429414,
+   "sha256": "d03f4876542092c4cd7673b54fb6615152478565aa3177ee48638daf55458e1a"
+  },
+  {
+   "path": "data/raw/nasa_power/adelaide_2013.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=138.6&latitude=-34.93&start=20130101&end=20131231&format=CSV&time-standard=UTC",
+   "bytes": 428619,
+   "sha256": "12093e19fe0ca877f20dcc6813ab9487a0ae9067cd2667c6db9af656ad4a62c3"
+  },
+  {
+   "path": "data/raw/nasa_power/adelaide_2014.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=138.6&latitude=-34.93&start=20140101&end=20141231&format=CSV&time-standard=UTC",
+   "bytes": 428070,
+   "sha256": "608da542eec30bd6a6032ef143ce3203517d4207449e6d35b8fc7f9c5ffef6d2"
+  },
+  {
+   "path": "data/raw/nasa_power/adelaide_2015.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=138.6&latitude=-34.93&start=20150101&end=20151231&format=CSV&time-standard=UTC",
+   "bytes": 427733,
+   "sha256": "11b434e375524596a8dff2f6bc77eb5a1aac2fa19070e7b4803589f5b260cf6c"
+  },
+  {
+   "path": "data/raw/nasa_power/adelaide_2016.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=138.6&latitude=-34.93&start=20160101&end=20161231&format=CSV&time-standard=UTC",
+   "bytes": 428546,
+   "sha256": "0dbc6b0a87f57c75032420b2439263eb8260db466a7bc2dc061d10676fc5e350"
+  },
+  {
+   "path": "data/raw/nasa_power/adelaide_2017.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=138.6&latitude=-34.93&start=20170101&end=20171231&format=CSV&time-standard=UTC",
+   "bytes": 426684,
+   "sha256": "3e1fe6124f6c939139d1dd016f6cdb99fe9058437542fb042e6dc0c2519af3e0"
+  },
+  {
+   "path": "data/raw/nasa_power/adelaide_2018.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=138.6&latitude=-34.93&start=20180101&end=20181231&format=CSV&time-standard=UTC",
+   "bytes": 426676,
+   "sha256": "951d791b5982c87310d785f7dd488799f34142b2457f7732aed35e2a378c3047"
+  },
+  {
+   "path": "data/raw/nasa_power/adelaide_2019.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=138.6&latitude=-34.93&start=20190101&end=20191231&format=CSV&time-standard=UTC",
+   "bytes": 426941,
+   "sha256": "780a9462304b610305e81fc3252610d573b8f8b85bf0ebfd471b1220583f1d58"
+  },
+  {
+   "path": "data/raw/nasa_power/adelaide_2020.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=138.6&latitude=-34.93&start=20200101&end=20201231&format=CSV&time-standard=UTC",
+   "bytes": 428441,
+   "sha256": "f5d873493e1727a4a2afe8d289b707d9f064a5df3e528f97cce1190d3802956f"
+  },
+  {
+   "path": "data/raw/nasa_power/adelaide_2021.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=138.6&latitude=-34.93&start=20210101&end=20211231&format=CSV&time-standard=UTC",
+   "bytes": 427616,
+   "sha256": "02cbd56839c14203e0ba04cbfa58dd6183036178bf31d11c00ff609d8a20687e"
+  },
+  {
+   "path": "data/raw/nasa_power/adelaide_2022.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=138.6&latitude=-34.93&start=20220101&end=20221231&format=CSV&time-standard=UTC",
+   "bytes": 427902,
+   "sha256": "955d8d31298ba505a153218208a736d77b79e3a2d12504311746b7f2c55edf32"
+  },
+  {
+   "path": "data/raw/nasa_power/adelaide_2023.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=138.6&latitude=-34.93&start=20230101&end=20231231&format=CSV&time-standard=UTC",
+   "bytes": 427620,
+   "sha256": "9939953a4f3bfe5729070a7ff729ba87db4dd0d4e391519ae60c2ece8d3938a4"
+  },
+  {
+   "path": "data/raw/nasa_power/adelaide_2024.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=138.6&latitude=-34.93&start=20240101&end=20241231&format=CSV&time-standard=UTC",
+   "bytes": 428249,
+   "sha256": "e9c95ebfaa0bd5ca953094878284c52f8a0de00f8d65beb5320ae214d15d7a39"
+  },
+  {
+   "path": "data/raw/nasa_power/adelaide_2025.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=138.6&latitude=-34.93&start=20250101&end=20251231&format=CSV&time-standard=UTC",
+   "bytes": 427330,
+   "sha256": "159cbb27b08412bd2f5d0cf4dd390e551b76e4758ed8ade7006dd070a1c534a7"
+  },
+  {
+   "path": "data/raw/nasa_power/brisbane_2001.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=153.03&latitude=-27.47&start=20010101&end=20011231&format=CSV&time-standard=UTC",
+   "bytes": 431158,
+   "sha256": "7efd0fe9ef3881277cd828bfa41cb5b1d43198dd90b444f2c789ba3a67ac9251"
+  },
+  {
+   "path": "data/raw/nasa_power/brisbane_2002.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=153.03&latitude=-27.47&start=20020101&end=20021231&format=CSV&time-standard=UTC",
+   "bytes": 431026,
+   "sha256": "6b8a727668e18af9f89846c99d849409197a8b393fd923ab9b3bf16746dac66f"
+  },
+  {
+   "path": "data/raw/nasa_power/brisbane_2003.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=153.03&latitude=-27.47&start=20030101&end=20031231&format=CSV&time-standard=UTC",
+   "bytes": 430872,
+   "sha256": "358df844bc273957933a891fafa91a9ed66aedd6b8af74a09001fc6128bdb74b"
+  },
+  {
+   "path": "data/raw/nasa_power/brisbane_2004.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=153.03&latitude=-27.47&start=20040101&end=20041231&format=CSV&time-standard=UTC",
+   "bytes": 432024,
+   "sha256": "4e328402891a002c8c82b1c71890396257d2cfce7817ad244b068b027faf525f"
+  },
+  {
+   "path": "data/raw/nasa_power/brisbane_2005.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=153.03&latitude=-27.47&start=20050101&end=20051231&format=CSV&time-standard=UTC",
+   "bytes": 431200,
+   "sha256": "578ff33de8c50c6431a1a3c62c2f8e2ffde5d1aabbcb953d6feb9a20425a368e"
+  },
+  {
+   "path": "data/raw/nasa_power/brisbane_2006.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=153.03&latitude=-27.47&start=20060101&end=20061231&format=CSV&time-standard=UTC",
+   "bytes": 431379,
+   "sha256": "df2d8e95fcad13ee189b3265ab4438b57edfacd741af06b097abaeaf666ab158"
+  },
+  {
+   "path": "data/raw/nasa_power/brisbane_2007.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=153.03&latitude=-27.47&start=20070101&end=20071231&format=CSV&time-standard=UTC",
+   "bytes": 431334,
+   "sha256": "5dad2472d71b7e6d2905d1e562d014615187a2bad35ead029821d47afe83da21"
+  },
+  {
+   "path": "data/raw/nasa_power/brisbane_2008.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=153.03&latitude=-27.47&start=20080101&end=20081231&format=CSV&time-standard=UTC",
+   "bytes": 432405,
+   "sha256": "d365cd8bdcf438dcf109ec512f0c49824ca6d942e8866925c666b2de60f6b24d"
+  },
+  {
+   "path": "data/raw/nasa_power/brisbane_2009.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=153.03&latitude=-27.47&start=20090101&end=20091231&format=CSV&time-standard=UTC",
+   "bytes": 431193,
+   "sha256": "5dee40a8a0663b92b81fcf8044bada6039e445b011aae1c5c4c1ebb19ee3b929"
+  },
+  {
+   "path": "data/raw/nasa_power/brisbane_2010.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=153.03&latitude=-27.47&start=20100101&end=20101231&format=CSV&time-standard=UTC",
+   "bytes": 431157,
+   "sha256": "bce642b882e75fd09d959c169f9fe0078f53a38ea99e36a6301553f95fe77128"
+  },
+  {
+   "path": "data/raw/nasa_power/brisbane_2011.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=153.03&latitude=-27.47&start=20110101&end=20111231&format=CSV&time-standard=UTC",
+   "bytes": 431255,
+   "sha256": "12c0d7f553a82f98c81f3e55d84d12e97905d6c19c32071f53005454485d4321"
+  },
+  {
+   "path": "data/raw/nasa_power/brisbane_2012.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=153.03&latitude=-27.47&start=20120101&end=20121231&format=CSV&time-standard=UTC",
+   "bytes": 431800,
+   "sha256": "eb757f8f7700cc8c51a9d0667f43fe87b9ad88a370d13c6c183704ff3c3e2104"
+  },
+  {
+   "path": "data/raw/nasa_power/brisbane_2013.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=153.03&latitude=-27.47&start=20130101&end=20131231&format=CSV&time-standard=UTC",
+   "bytes": 430988,
+   "sha256": "8d9acb40fe18a334cc9b8d979653c7aad9b5dbefce708b7511865b95158dc4ea"
+  },
+  {
+   "path": "data/raw/nasa_power/brisbane_2014.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=153.03&latitude=-27.47&start=20140101&end=20141231&format=CSV&time-standard=UTC",
+   "bytes": 431147,
+   "sha256": "77ad4ef02de335e4ed8aadd3107df4aa97a7bf6c4bbf09465e9d3002cca93fd5"
+  },
+  {
+   "path": "data/raw/nasa_power/brisbane_2015.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=153.03&latitude=-27.47&start=20150101&end=20151231&format=CSV&time-standard=UTC",
+   "bytes": 431318,
+   "sha256": "3b503e2d1dab00cbbebcf688ec0d6468091c491ea012dc8fb26109df01cb7604"
+  },
+  {
+   "path": "data/raw/nasa_power/brisbane_2016.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=153.03&latitude=-27.47&start=20160101&end=20161231&format=CSV&time-standard=UTC",
+   "bytes": 431601,
+   "sha256": "f9e79a27d6ec7db60b9577164eab3af25ac65a46cfa52d9b13ef26baef0adfc5"
+  },
+  {
+   "path": "data/raw/nasa_power/brisbane_2017.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=153.03&latitude=-27.47&start=20170101&end=20171231&format=CSV&time-standard=UTC",
+   "bytes": 430528,
+   "sha256": "b4b299cbe21424a05557082756e8393475afad786fea5a1749717a076b3d02db"
+  },
+  {
+   "path": "data/raw/nasa_power/brisbane_2018.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=153.03&latitude=-27.47&start=20180101&end=20181231&format=CSV&time-standard=UTC",
+   "bytes": 430868,
+   "sha256": "c8dbdd7e357bbcbb74c9e2a160e2f0504e1e704404110379f1f451a3f9e8f06a"
+  },
+  {
+   "path": "data/raw/nasa_power/brisbane_2019.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=153.03&latitude=-27.47&start=20190101&end=20191231&format=CSV&time-standard=UTC",
+   "bytes": 430971,
+   "sha256": "88c74122d0afbb8997d5e94a5bd15a7368bfb359b21c6f897b46d76da15e23fd"
+  },
+  {
+   "path": "data/raw/nasa_power/brisbane_2020.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=153.03&latitude=-27.47&start=20200101&end=20201231&format=CSV&time-standard=UTC",
+   "bytes": 431888,
+   "sha256": "38df3537d09e2c5fb423278cfbb9ca80aff2bb70c4216c791b33b616b220ec59"
+  },
+  {
+   "path": "data/raw/nasa_power/brisbane_2021.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=153.03&latitude=-27.47&start=20210101&end=20211231&format=CSV&time-standard=UTC",
+   "bytes": 430868,
+   "sha256": "3f377b176d4115af8557e80002e2656a640c8de96f97aa09d938a6c2adbb17c0"
+  },
+  {
+   "path": "data/raw/nasa_power/brisbane_2022.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=153.03&latitude=-27.47&start=20220101&end=20221231&format=CSV&time-standard=UTC",
+   "bytes": 430817,
+   "sha256": "a95eb76540e01a3feedae1167543353df1f4f597864155f1714ef0e2546da07a"
+  },
+  {
+   "path": "data/raw/nasa_power/brisbane_2023.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=153.03&latitude=-27.47&start=20230101&end=20231231&format=CSV&time-standard=UTC",
+   "bytes": 430615,
+   "sha256": "45abe497288f6bb7139bebd9db05f76b7fcca9fb06dff8da2183ed14e9ed3258"
+  },
+  {
+   "path": "data/raw/nasa_power/brisbane_2024.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=153.03&latitude=-27.47&start=20240101&end=20241231&format=CSV&time-standard=UTC",
+   "bytes": 432530,
+   "sha256": "0b282af0c01cd6019ff281b93e6306a882b563762a5869a07be796e6b6411516"
+  },
+  {
+   "path": "data/raw/nasa_power/brisbane_2025.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=153.03&latitude=-27.47&start=20250101&end=20251231&format=CSV&time-standard=UTC",
+   "bytes": 431040,
+   "sha256": "87b8b1f90b5e6d97a682c07d89881e85125a1f9bdb4511c57c45dd48eec242c3"
+  },
+  {
+   "path": "data/raw/nasa_power/seville_2001.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-5.99&latitude=37.39&start=20010101&end=20011231&format=CSV&time-standard=UTC",
+   "bytes": 426942,
+   "sha256": "d3aaf27cf470ace7924b94624541b5a28508bf08c31cdf242913128d60be2ae8"
+  },
+  {
+   "path": "data/raw/nasa_power/seville_2002.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-5.99&latitude=37.39&start=20020101&end=20021231&format=CSV&time-standard=UTC",
+   "bytes": 427264,
+   "sha256": "75baa400e52952b1adaf4f90d0025cb7268273838d273aa88aaa909c2dfc6080"
+  },
+  {
+   "path": "data/raw/nasa_power/seville_2003.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-5.99&latitude=37.39&start=20030101&end=20031231&format=CSV&time-standard=UTC",
+   "bytes": 426720,
+   "sha256": "9b7c333ef82463b27a570b67a6d399b1bacb4f803cfa12b43533fe7457b05ea4"
+  },
+  {
+   "path": "data/raw/nasa_power/seville_2004.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-5.99&latitude=37.39&start=20040101&end=20041231&format=CSV&time-standard=UTC",
+   "bytes": 427327,
+   "sha256": "387a9476f9b4870b70815c2821d162690ac61a4df93d697541ce4986e3b90558"
+  },
+  {
+   "path": "data/raw/nasa_power/seville_2005.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-5.99&latitude=37.39&start=20050101&end=20051231&format=CSV&time-standard=UTC",
+   "bytes": 426023,
+   "sha256": "8a858c87cfad726fee8eeb0d194bbe2573a381df335476c1c279c18143c9bc88"
+  },
+  {
+   "path": "data/raw/nasa_power/seville_2006.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-5.99&latitude=37.39&start=20060101&end=20061231&format=CSV&time-standard=UTC",
+   "bytes": 426405,
+   "sha256": "5d293428878b3a72c1d1d3b23a6e6a4aaf6d3b9b563994fe43a6bf6156bda731"
+  },
+  {
+   "path": "data/raw/nasa_power/seville_2007.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-5.99&latitude=37.39&start=20070101&end=20071231&format=CSV&time-standard=UTC",
+   "bytes": 426288,
+   "sha256": "f8ffeee30561fa2e26a32d671bc5e22bd5e9484a05dc4da905e44cac965455b9"
+  },
+  {
+   "path": "data/raw/nasa_power/seville_2008.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-5.99&latitude=37.39&start=20080101&end=20081231&format=CSV&time-standard=UTC",
+   "bytes": 427675,
+   "sha256": "c09aa308d5c17ada0cc8724fb49977513601a10a1d152bc47348e5619ab4c343"
+  },
+  {
+   "path": "data/raw/nasa_power/seville_2009.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-5.99&latitude=37.39&start=20090101&end=20091231&format=CSV&time-standard=UTC",
+   "bytes": 426696,
+   "sha256": "f4da8807347ac360b0c515a378cad6a4e11d8e0b2005b6820eaa6e25138ec239"
+  },
+  {
+   "path": "data/raw/nasa_power/seville_2010.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-5.99&latitude=37.39&start=20100101&end=20101231&format=CSV&time-standard=UTC",
+   "bytes": 426559,
+   "sha256": "94a0f95451795a5dcfc721a0e937ada30a6b6788354754fff58996eee018008a"
+  },
+  {
+   "path": "data/raw/nasa_power/seville_2011.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-5.99&latitude=37.39&start=20110101&end=20111231&format=CSV&time-standard=UTC",
+   "bytes": 426371,
+   "sha256": "fa12240e2e896a105705a27c3e9daa70f5163e5c4bc57c103b524030607cc696"
+  },
+  {
+   "path": "data/raw/nasa_power/seville_2012.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-5.99&latitude=37.39&start=20120101&end=20121231&format=CSV&time-standard=UTC",
+   "bytes": 427179,
+   "sha256": "ff1ed52c71e04d6287f0ec7725e8c009ece3916d844b8839d647d3f8b5d0a409"
+  },
+  {
+   "path": "data/raw/nasa_power/seville_2013.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-5.99&latitude=37.39&start=20130101&end=20131231&format=CSV&time-standard=UTC",
+   "bytes": 426328,
+   "sha256": "3297175d7582fe2bb57f32f2f788cca26f6b44402856adbd33bdfc1dc296eee6"
+  },
+  {
+   "path": "data/raw/nasa_power/seville_2014.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-5.99&latitude=37.39&start=20140101&end=20141231&format=CSV&time-standard=UTC",
+   "bytes": 427014,
+   "sha256": "f99f8fb525e5249ac679c31444ecba8c7439bc30bafb22e1391114ae7cdf156f"
+  },
+  {
+   "path": "data/raw/nasa_power/seville_2015.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-5.99&latitude=37.39&start=20150101&end=20151231&format=CSV&time-standard=UTC",
+   "bytes": 426573,
+   "sha256": "c3cd6b5b2e5e1a56d8399937aa76b838ca1fad5f7ed62521b5edc516a5776b0e"
+  },
+  {
+   "path": "data/raw/nasa_power/seville_2016.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-5.99&latitude=37.39&start=20160101&end=20161231&format=CSV&time-standard=UTC",
+   "bytes": 427751,
+   "sha256": "56a84ff06b61eec6dbb9213482b133696820add026fd43f4244cb048f0a4100e"
+  },
+  {
+   "path": "data/raw/nasa_power/seville_2017.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-5.99&latitude=37.39&start=20170101&end=20171231&format=CSV&time-standard=UTC",
+   "bytes": 426129,
+   "sha256": "72b1dbf67d214dd9b7e56fdbd68607639c15c4f60bc99c2a6f3f465330d2dec3"
+  },
+  {
+   "path": "data/raw/nasa_power/seville_2018.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-5.99&latitude=37.39&start=20180101&end=20181231&format=CSV&time-standard=UTC",
+   "bytes": 426866,
+   "sha256": "64a32927fe4e0370bf9adcb1918094401f80393bd83af2ea7a58a7045411a575"
+  },
+  {
+   "path": "data/raw/nasa_power/seville_2019.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-5.99&latitude=37.39&start=20190101&end=20191231&format=CSV&time-standard=UTC",
+   "bytes": 426491,
+   "sha256": "d93eb6554a6568370ae0521e8631fa53f588cd07d5de2d1f1aa963a371889d53"
+  },
+  {
+   "path": "data/raw/nasa_power/seville_2020.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-5.99&latitude=37.39&start=20200101&end=20201231&format=CSV&time-standard=UTC",
+   "bytes": 428321,
+   "sha256": "c9384098690413819686bf81a647f2767133ac187926341563e46ae0b4a6ff90"
+  },
+  {
+   "path": "data/raw/nasa_power/seville_2021.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-5.99&latitude=37.39&start=20210101&end=20211231&format=CSV&time-standard=UTC",
+   "bytes": 426728,
+   "sha256": "103aaf7180432a63e52a3ff2cf64393d9b561ccee546f692230923228851ce7a"
+  },
+  {
+   "path": "data/raw/nasa_power/seville_2022.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-5.99&latitude=37.39&start=20220101&end=20221231&format=CSV&time-standard=UTC",
+   "bytes": 427048,
+   "sha256": "2e0294b6ade522a5ace179a137654829c5c543da64ac1c2ebf9035c34e0b9c46"
+  },
+  {
+   "path": "data/raw/nasa_power/seville_2023.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-5.99&latitude=37.39&start=20230101&end=20231231&format=CSV&time-standard=UTC",
+   "bytes": 426718,
+   "sha256": "61b284e30c43a30c5c555a3ad790c0dbe0b8aed73636c8a57fded70fd6e4a367"
+  },
+  {
+   "path": "data/raw/nasa_power/seville_2024.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-5.99&latitude=37.39&start=20240101&end=20241231&format=CSV&time-standard=UTC",
+   "bytes": 428102,
+   "sha256": "ddc7693a14d1213f3171d173d687ee5a83e634a8e4885a604f5219d08df88e47"
+  },
+  {
+   "path": "data/raw/nasa_power/seville_2025.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-5.99&latitude=37.39&start=20250101&end=20251231&format=CSV&time-standard=UTC",
+   "bytes": 427293,
+   "sha256": "2b6315809cf939eceb679c09b20d2d9c3eef182a9a89699ecb95d067af1ea4fd"
+  }
+ ],
+ "processed": [
+  {
+   "path": "data/site_wx.npz",
+   "bytes": 4254934,
+   "sha256": "444e4fe70c180523c1ce9bc15ff17f6fcec46ee40525d0e5371a9561b8cf5738"
+  },
+  {
+   "path": "data/new/nasa_adelaide.csv.gz",
+   "bytes": 3074900,
+   "sha256": "9d42693ea5ae777812e9a8e0049eb5c0653c26425dc95a6d4e78f77466329f74"
+  },
+  {
+   "path": "data/new/nasa_brisbane.csv.gz",
+   "bytes": 3123641,
+   "sha256": "f7cce34e11857e7ba94cb3de4fc82fe8dc6e6959b66873b1628892887e3a5df8"
+  },
+  {
+   "path": "data/new/nasa_seville.csv.gz",
+   "bytes": 3041045,
+   "sha256": "f860f35f983b39ec30b1ce29a1e07c9eee555c925e7f52de2ecd6179e5cd2a46"
+  }
+ ],
+ "audit": {
+  "hours_per_site": 219144,
+  "fill_values": 0,
+  "time_gaps": 0,
+  "duplicate_stamps": 0,
+  "stamp_convention": "HR is the hour start, value centred at +30 min: correlation of CLRSKY_SFC_SW_DWN with pvlib Ineichen clear sky over 2023-2024 peaks at +30 min (0.9982-0.9991; 0.983-0.988 at 0 and +60 min)"
+ }
+}

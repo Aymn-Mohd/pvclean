@@ -1,0 +1,9 @@
+name: seville
+lat: 37.39
+lon: -5.99
+tilt: 25.0
+azimuth: 180.0
+tz: Etc/GMT-1
+time_base: Europe/Madrid   # Spanish wall clock, as OMIE prices
+market: ES_raw
+weather_source: nasa_site

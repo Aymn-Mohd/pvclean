@@ -1,0 +1,7 @@
+study: oracle
+runner: oracle
+output: results_oracle.json
+params:
+  policies: [fixed, threshold, econ, proposed, proposed_noval]
+  regions: [SA1, QLD1]
+  contracts: [merchant, ppa]

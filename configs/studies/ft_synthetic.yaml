@@ -1,0 +1,5 @@
+study: ft_synthetic
+runner: ft_synthetic
+output: results_ft_synthetic.json
+params:
+  policies: [fixed, threshold, econ, proposed, ft]

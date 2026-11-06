@@ -1,0 +1,25 @@
+study: r2_robot
+label: EXTENSION
+runner: robot_sweep
+output: results_robot.json
+params:
+  policies: [fixed, threshold, econ, ft, proposed]
+  settings:
+    default: {}
+    night240: {night_min: 240.0}
+    night480: {night_min: 480.0}
+    service15: {service_min: 15.0}
+    service40: {service_min: 40.0}
+    speed0.25: {speed_mps: 0.25}
+    speed1.0: {speed_mps: 1.0}
+    battery6: {battery_rows: 6}
+    battery10: {battery_rows: 10}
+    avail0.9: {availability: 0.9}
+    avail0.8: {availability: 0.8}
+  factors:
+    night: [night240, default, night480]
+    service: [service40, default, service15]
+    speed: [speed0.25, default, speed1.0]
+    battery: [battery6, battery10, default]
+    availability: [avail0.8, avail0.9, default]
+  tight: [night240, service40, battery6]

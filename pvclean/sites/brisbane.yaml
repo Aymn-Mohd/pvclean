@@ -1,0 +1,9 @@
+name: brisbane
+lat: -27.47
+lon: 153.03
+tilt: 25.0
+azimuth: 0.0
+tz: Etc/GMT-10
+time_base: Etc/GMT-10
+market: QLD1_raw
+weather_source: nasa_site

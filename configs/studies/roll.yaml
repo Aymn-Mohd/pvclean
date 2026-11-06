@@ -1,0 +1,7 @@
+study: roll
+runner: roll
+output: results_roll.json
+params:
+  policies: [fixed, threshold, econ, proposed, proposed_noval]
+  regions: [SA1, QLD1]
+  contracts: [merchant, ppa]

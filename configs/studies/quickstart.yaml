@@ -1,0 +1,18 @@
+# A small generated-market run: 2 train seeds, 3 test seeds, small grids, 60 days. Needs no data.
+study: quickstart
+runner: quickstart
+output: quickstart.json
+protocol:
+  train_seeds: [1000, 1001]
+  test_seeds: {start: 0, stop: 3}
+  workers: 2
+  grids:
+    fixed: {T: [14, 28]}
+    threshold: {theta: [0.05, 0.1]}
+    econ: {b: [2, 8]}
+    proposed: {beta: [0, 0.5], kappa: [0.5, 2]}
+params:
+  site: dubai
+  contracts: [fixed, merchant]
+  policies: [fixed, threshold, econ, proposed]
+  over: {n_rows: 6, night_min: 100.0, d0: 120, d1: 180}

@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below and this release."
+title: pvclean
+version: 1.0.0
+date-released: "2026-11-06"
+license: MIT
+repository-code: "https://github.com/Aymn-Mohd/pvclean"
+authors:
+  - family-names: Rafiq
+    given-names: Ayman Mohammed Mohamed
+  - family-names: Nassereddine
+    given-names: Mohamad
+preferred-citation:
+  type: conference-paper
+  title: "Contract-Aware Cleaning Gains Track Dry Spells"
+  authors:
+    - family-names: Rafiq
+      given-names: Ayman Mohammed Mohamed
+    - family-names: Nassereddine
+      given-names: Mohamad
+  status: submitted
+  notes: "submitted to IEEE PES General Meeting 2027"

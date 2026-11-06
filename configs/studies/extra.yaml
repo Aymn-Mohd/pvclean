@@ -1,0 +1,8 @@
+study: extra
+runner: extra
+output: results_extra.json
+params:
+  policies: [fixed, threshold, econ, proposed]
+  contracts: [fixed, merchant]
+  rain_scales: [1.0, 2.0, 3.0]
+  crow: [24.0, 48.0]

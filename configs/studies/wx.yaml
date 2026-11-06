@@ -1,0 +1,10 @@
+study: wx
+runner: wx
+output: results_wx.json
+protocol:
+  test_seeds: {start: 0, stop: 48}
+params:
+  policies: [fixed, threshold, econ, proposed, proposed_noval]
+  contracts: [fixed, merchant, ppa]
+  train_years: [2002, 2010]
+  test_years: [2010, 2026]

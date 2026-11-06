@@ -1,0 +1,129 @@
+{
+ "_meta": {
+  "label": "ANALYSIS / SENSITIVITY",
+  "note": "The R3 verdict is unchanged. No gauge data: the comparison and the 25% rule could not be evaluated, and no site was rerun.",
+  "test_years": [
+   2024,
+   2025
+  ],
+  "gauge_files": 0,
+  "sites_triggered": null,
+  "sites_rerun": []
+ },
+ "sites": {
+  "adelaide": {
+   "market": "SA1_raw",
+   "gauge_station": "023090 Adelaide (Kent Town)",
+   "gauge_source": "BoM Climate Data Online, daily rainfall",
+   "gauge_status": "BLOCKED",
+   "gauge_http_status": 403,
+   "years": {
+    "2023": {
+     "nasa": {
+      "total_mm": 310.0,
+      "days_5mm": 18,
+      "days_1mm": 69,
+      "longest_run_without_5mm": 71
+     },
+     "gauge": null
+    },
+    "2024": {
+     "nasa": {
+      "total_mm": 310.35,
+      "days_5mm": 17,
+      "days_1mm": 71,
+      "longest_run_without_5mm": 67
+     },
+     "gauge": null
+    },
+    "2025": {
+     "nasa": {
+      "total_mm": 303.91,
+      "days_5mm": 16,
+      "days_1mm": 62,
+      "longest_run_without_5mm": 53
+     },
+     "gauge": null
+    }
+   },
+   "rule_25pct": "not evaluable",
+   "rerun": null
+  },
+  "brisbane": {
+   "market": "QLD1_raw",
+   "gauge_station": "040913 Brisbane",
+   "gauge_source": "BoM Climate Data Online, daily rainfall",
+   "gauge_status": "BLOCKED",
+   "gauge_http_status": 403,
+   "years": {
+    "2023": {
+     "nasa": {
+      "total_mm": 710.1400000000001,
+      "days_5mm": 37,
+      "days_1mm": 101,
+      "longest_run_without_5mm": 84
+     },
+     "gauge": null
+    },
+    "2024": {
+     "nasa": {
+      "total_mm": 1219.5900000000001,
+      "days_5mm": 70,
+      "days_1mm": 165,
+      "longest_run_without_5mm": 33
+     },
+     "gauge": null
+    },
+    "2025": {
+     "nasa": {
+      "total_mm": 1232.5700000000002,
+      "days_5mm": 54,
+      "days_1mm": 144,
+      "longest_run_without_5mm": 65
+     },
+     "gauge": null
+    }
+   },
+   "rule_25pct": "not evaluable",
+   "rerun": null
+  },
+  "seville": {
+   "market": "ES_raw",
+   "gauge_station": "5783 Sevilla Aeropuerto",
+   "gauge_source": "AEMET OpenData, daily climatological values",
+   "gauge_status": "NO DATA WITHOUT API KEY",
+   "gauge_http_status": 200,
+   "years": {
+    "2023": {
+     "nasa": {
+      "total_mm": 303.05999999999995,
+      "days_5mm": 17,
+      "days_1mm": 45,
+      "longest_run_without_5mm": 86
+     },
+     "gauge": null
+    },
+    "2024": {
+     "nasa": {
+      "total_mm": 546.72,
+      "days_5mm": 31,
+      "days_1mm": 53,
+      "longest_run_without_5mm": 193
+     },
+     "gauge": null
+    },
+    "2025": {
+     "nasa": {
+      "total_mm": 722.8199999999999,
+      "days_5mm": 43,
+      "days_1mm": 83,
+      "longest_run_without_5mm": 179
+     },
+     "gauge": null
+    }
+   },
+   "rule_25pct": "not evaluable",
+   "rerun": null
+  }
+ }
+}

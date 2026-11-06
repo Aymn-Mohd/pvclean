@@ -1,0 +1,22 @@
+study: belief_benchmark
+runner: belief_benchmark
+output: results_matched_belief.json
+params:
+  settings:
+  - [fixed, 4.0]
+  - [fixed, 12.0]
+  - [merchant, 4.0]
+  - [merchant, 12.0]
+  windows: [60, 120, 180, 240]
+  instance_a: {n_rows: 6, night_min: 100.0}
+  mpc_arms:
+    H07: {horizon: 7, time_limit: 60.0, gap: 0.0001}
+    H14: {horizon: 14, time_limit: 60.0, gap: 0.0001}
+    H30: {horizon: 30, time_limit: 60.0, gap: 0.0001}
+    H60: {horizon: 60, time_limit: 60.0, gap: 0.0001}
+    H14+T16: {horizon: 14, tail: 16, time_limit: 60.0, gap: 0.0001}
+    H30+T30: {horizon: 30, tail: 30, time_limit: 60.0, gap: 0.0001}
+  heuristics: [fixed, threshold, econ, proposed, ft]
+  instance_b: {n_rows: 6, night_min: 100.0, d0: 120, d1: 180}
+  part_b_test_seeds: [0, 20]
+  part_b_policies: [ft, proposed]

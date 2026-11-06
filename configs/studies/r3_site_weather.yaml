@@ -1,0 +1,1 @@
+{study: r3_site_weather, label: DESCRIPTIVE, runner: site_weather, output: r3_site_weather.json}

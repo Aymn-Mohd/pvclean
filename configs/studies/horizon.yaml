@@ -1,0 +1,67 @@
+study: horizon
+runner: horizon
+output: results_horizon.json
+protocol:
+  test_seeds: {start: 0, stop: 20}
+params:
+  arms:
+    H07:
+      mpc: {horizon: 7}
+      info: site
+    H14:
+      mpc: {horizon: 14}
+      info: site
+    H30:
+      mpc: {horizon: 30}
+      info: site
+    H14+T16:
+      mpc: {horizon: 14, tail: 16}
+      info: site
+    H30+T30:
+      mpc: {horizon: 30, tail: 30}
+      info: site
+    H60:
+      mpc: {horizon: 60}
+      info: site
+    L0 matched:
+      mpc: {horizon: 30, tail: 30}
+      info: site
+    L1 +row exposure:
+      mpc: {horizon: 30, tail: 30, oracle_expo: true}
+      info: site
+    L2 +next-24h prices:
+      mpc: {horizon: 30, tail: 30, price_mode: dayahead}
+      info: site
+    L3 +all prices:
+      mpc: {horizon: 30, tail: 30, price_mode: perfect}
+      info: site
+    L4 +future dust:
+      mpc: {horizon: 30, tail: 30, oracle_inc: true}
+      info: site
+    L5 +future weather:
+      mpc: {horizon: 30, tail: 30, oracle_pdc: true}
+      info: site
+    L6 +true row state:
+      mpc: {horizon: 30, tail: 30}
+      info: perfect
+    L7 all of L1-L6:
+      mpc: {horizon: 30, tail: 30, oracle_expo: true, price_mode: perfect, oracle_inc: true, oracle_pdc: true}
+      info: perfect
+  plan:
+  - - fixed
+    - 4.0
+    - [H07, H14, H30, H14+T16, H30+T30, L1 +row exposure, L3 +all prices, L4 +future dust, L5 +future weather, L6 +true row state, L7 all of L1-L6]
+  - - fixed
+    - 12.0
+    - [H07, H14, H30, H14+T16, H30+T30]
+  - - merchant
+    - 4.0
+    - [H07, H14, H30, H14+T16, H30+T30]
+  - - merchant
+    - 12.0
+    - [H07, H14, H30, H14+T16, H30+T30, H60, L1 +row exposure, L2 +next-24h prices, L3 +all prices, L4 +future dust, L5 +future weather, L6 +true row state,
+      L7 all of L1-L6]
+  instance: {n_rows: 6, night_min: 100.0, d0: 120, d1: 180}
+  time_limit: 60.0
+  gap: 0.001
+  load: {H60: 100, H30+T30: 30, L1 +row exposure: 30}

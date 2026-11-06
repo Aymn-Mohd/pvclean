@@ -1,0 +1,8 @@
+name: toy
+lat: 35.0
+lon: 33.0
+tilt: 30.0
+azimuth: 180.0
+tz: Asia/Nicosia
+market: generated
+weather_source: generated

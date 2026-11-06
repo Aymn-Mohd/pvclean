@@ -1,0 +1,20 @@
+\begin{table*}[!t]
+\centering
+\caption{Gain over the best tuned baseline (USD per year; mean over the three price years, with the 95\% interval from resampling the 50 weather and dust replicates inside each year) for the contract-aware planner and for the forecast-matched threshold (FT), by price forecast. F0 is the profile of the two other price years (not causal for the 2023 and 2024 folds), F2 the mean of the previous 28 days, F3 adds the operating day (a published day-ahead product in Spain only, a next-day-known proxy for the Australian regions) and F4 is the oracle. SA, QLD and ES are South Australia, Queensland and Spain.}
+\label{tab:fore}
+\scriptsize
+\setlength{\tabcolsep}{2.2pt}
+\begin{tabular}{lccccccc}
+\toprule
+ & \multicolumn{4}{c}{Contract-aware planner} & \multicolumn{3}{c}{FT threshold} \\ \cmidrule(lr){2-5}\cmidrule(lr){6-8}
+Market, contract & F0 & F2 & F3 & F4 (oracle) & F0 & F2 & F3 \\
+\midrule
+SA, merchant & $-$35 [$-$75,5] & +79 [40,117] & +450 [415,484] & +595 & +170 [129,212] & $-$45 [$-$81,$-$9] & +158 [126,189] \\
+SA, PPA & $-$8 [$-$37,21] & +80 [56,105] & +199 [177,221] & +268 & +99 [74,124] & +59 [37,82] & +111 [90,133] \\
+QLD, merchant & $-$670 [$-$720,$-$621] & +28 [0,55] & +194 [168,219] & +222 & $-$16 [$-$41,9] & $-$33 [$-$58,$-$7] & +5 [$-$20,30] \\
+QLD, PPA & $-$57 [$-$83,$-$32] & +61 [37,85] & +120 [96,142] & +152 & +30 [7,52] & $-$86 [$-$109,$-$64] & +46 [25,68] \\
+ES, merchant & $-$1938 [$-$2076,$-$1798] & +338 [308,367] & +502 [478,526] & +584 & $-$376 [$-$469,$-$290] & +172 [143,201] & +278 [250,307] \\
+ES, PPA & $-$82 [$-$113,$-$52] & +53 [34,73] & +81 [62,101] & +78 & +3 [$-$13,18] & $-$14 [$-$32,3] & +1 [$-$17,18] \\
+\bottomrule
+\end{tabular}
+\end{table*}

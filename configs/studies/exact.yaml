@@ -1,0 +1,11 @@
+study: exact
+runner: exact
+output: results_exact.json
+protocol:
+  test_seeds: {start: 0, stop: 20}
+params:
+  contracts: [fixed, merchant]
+  crow: [4.0, 12.0]
+  instance: {n_rows: 6, night_min: 100.0, d0: 120, d1: 180}
+  policies: [fixed, threshold, econ, proposed]
+  time_limit: 120

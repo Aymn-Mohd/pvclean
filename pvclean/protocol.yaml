@@ -1,0 +1,13 @@
+# Default tuning protocol: seeds and parameter grids. Studies override these under `protocol:`.
+train_seeds: [1000, 1001, 1002, 1003, 1004]
+test_seeds: {start: 0, stop: 50}
+contracts: [fixed, merchant, ppa, capped]
+baselines: [fixed, threshold, econ]
+grids:
+  fixed: {T: [7, 10, 14, 20, 28, 40, 56, 80, 120]}
+  threshold: {theta: [0.02, 0.03, 0.04, 0.05, 0.06, 0.08, 0.10, 0.13, 0.16, 0.20]}
+  econ: {b: [1, 2, 4, 8, 16]}
+  proposed: {beta: [0, 0.5, 1.0], kappa: [0, 0.5, 1, 2]}
+  ft: {Hb: [7, 14, 30], b: [1, 2, 4, 8], antic: [0, 1]}
+  proposed_noval: {beta: [0, 0.5, 1.0], kappa: [0, 0.5, 1, 2]}
+  proposed_nobatch: {b: [1, 2, 4, 8, 16]}

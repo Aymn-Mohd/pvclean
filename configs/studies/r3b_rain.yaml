@@ -1,0 +1,6 @@
+study: r3b_rain
+label: ANALYSIS / SENSITIVITY
+runner: gauge_rain
+output: results_r3b_rain.json
+params:
+  test_years: [2024, 2025]
