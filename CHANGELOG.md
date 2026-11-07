@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.2.0 (2026-11-07)
+
+- Sites: Murcia, Badajoz, A Coruña, Whyalla, Mount Gambier and Roma, with the same plant and tilt rules as the matched sites.
+- Studies: `r5_rain`, `r5_merchant`, `r5_ppa` and `r5_kappa`, in `pvclean/studies/r5.py`.
+- Results: `results/r5_rain.json`, the `results/results_r5_*.json` files and `results/r5_sanity.json`. `docs/R5_SUMMARY.md` applies the pre-registered rule for merchant contracts at unseen sites. Its verdict is NOT SUPPORTED: 5 of 10 predicted case-years.
+- Scripts: `src/make_r5_summary.py` and `src/r5_sanity.py`. `src/make_fig_r4.py` now also plots the R5 points and needs the R5 results.
+- The new downloads are recorded in `data/provenance/r5_nasa_power.json`.
+- `CITATION.cff` and the README: new paper title and author list. The 1.0.0 entry below now uses the new title.
+- Stored results used by the paper macros are unchanged. `docs/records/REDACTIONS.md` lists one new replacement.
+
 ## 1.1.0 (2026-11-07)
 
 - Sites: Almería, Córdoba, Bilbao, Port Augusta and Longreach, with the same plant and tilt rules as the matched sites.
@@ -23,6 +33,6 @@
 
 ## 1.0.0 (2026-11-06)
 
-- First public release, for the paper "Contract-Aware Cleaning Gains Track Dry Spells", submitted to IEEE PES General Meeting 2027.
+- First public release, for the paper now titled "Price-Aware Thresholds Suffice for PV Cleaning", submitted to IEEE PES General Meeting 2027.
 - The package, study configs, tests, documentation, stored results and generated paper macros and tables.
 - No market or weather data is included.

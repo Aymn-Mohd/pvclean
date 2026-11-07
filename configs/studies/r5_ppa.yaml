@@ -1,0 +1,7 @@
+study: r5_ppa
+label: DESCRIPTIVE
+runner: r5_contract
+output: results_r5_ppa.json
+params:
+  contract: ppa
+  record_label: DESCRIPTIVE

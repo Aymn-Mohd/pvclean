@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the paper below and this release."
 title: pvclean
-version: 1.1.0
+version: 1.2.0
 date-released: "2026-11-07"
 license: MIT
 repository-code: "https://github.com/Aymn-Mohd/pvclean"
@@ -12,14 +12,18 @@ contact:
 authors:
   - family-names: Rafiq
     given-names: Ayman Mohammed Mohamed
+  - family-names: Thiagarajan
+    given-names: Kripalakshmi
   - family-names: Nassereddine
     given-names: Mohamad
 preferred-citation:
   type: conference-paper
-  title: "Contract-Aware Cleaning Gains Track Dry Spells"
+  title: "Price-Aware Thresholds Suffice for PV Cleaning"
   authors:
     - family-names: Rafiq
       given-names: Ayman Mohammed Mohamed
+    - family-names: Thiagarajan
+      given-names: Kripalakshmi
     - family-names: Nassereddine
       given-names: Mohamad
   status: submitted

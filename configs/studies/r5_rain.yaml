@@ -1,0 +1,7 @@
+study: r5_rain
+label: INPUT
+runner: r4_rain
+output: r5_rain.json
+params:
+  sites: [murcia, badajoz, a_coruna, whyalla, mount_gambier, roma_qld]
+  years: [2024, 2025]

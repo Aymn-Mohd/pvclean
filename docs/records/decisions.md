@@ -96,3 +96,53 @@ Checks after the test, labelled POST HOC: wider kappa grid, shifted dust season,
 - **R4 verdict: PARTIAL.** 13 of 18 predicted case-years have the predicted sign (72%). Predicted above 0: 14. Predicted at or below 0: 4. No prediction: 2.
 - **Spearman rho over 32 case-years (DESCRIPTIVE):** dry spell +0.45 [-0.01, +0.69]; soiling loss without cleaning +0.53 [+0.19, +0.71]. Cluster bootstrap by site, 8 sites.
 Tables, checks and sanity results: docs/R4_SUMMARY.md. Deviations: docs/records/EXPERIMENT_LOG.md, "Phase R4 run log".
+
+---
+## Phase R5 (2026-11-07), PRE-REGISTERED before any R5 simulation
+Question: for MERCHANT contracts only, does the R4 rule predict the sign of planner - FT at unseen sites (>= 120 days: > 0; <= 70 days: <= 0; otherwise no prediction)?
+Runs: 6 sites (Murcia, Badajoz, A Coruna, Whyalla, Mount Gambier, Roma) x merchant x {2024, 2025} = 12 case-years, R3/R4 settings: F2 forecast, soiling 0.30%/day, the same dust model and calendar, tune on 2023 then test 2024, tune on 2023 to 2024 then test 2025, 50 replicates, the same grids with kappa in {0, 0.5, 1, 2}.
+
+Predicted sign of every merchant case-year, from results/r5_rain.json (commit 2721808). The same signs apply to the PPA rows, which are DESCRIPTIVE.
+
+| site | prices | year | longest dry spell (days) | rain (mm) | days >= 5 mm | days >= 1 mm | prediction |
+|---|---|---|---|---|---|---|---|
+| Murcia | ES_raw | 2024 | 120 | 207 | 11 | 41 | mean planner - FT > 0 |
+| Murcia | ES_raw | 2025 | 128 | 422 | 24 | 55 | mean planner - FT > 0 |
+| Badajoz | ES_raw | 2024 | 98 | 563 | 40 | 76 | no prediction |
+| Badajoz | ES_raw | 2025 | 146 | 770 | 51 | 110 | mean planner - FT > 0 |
+| A Coruna | ES_raw | 2024 | 40 | 1276 | 82 | 155 | mean planner - FT <= 0 |
+| A Coruna | ES_raw | 2025 | 64 | 1151 | 80 | 153 | mean planner - FT <= 0 |
+| Whyalla | SA1_raw | 2024 | 135 | 183 | 12 | 42 | mean planner - FT > 0 |
+| Whyalla | SA1_raw | 2025 | 158 | 145 | 4 | 41 | mean planner - FT > 0 |
+| Mount Gambier | SA1_raw | 2024 | 90 | 508 | 28 | 103 | no prediction |
+| Mount Gambier | SA1_raw | 2025 | 69 | 602 | 36 | 118 | mean planner - FT <= 0 |
+| Roma | QLD1_raw | 2024 | 62 | 529 | 28 | 69 | mean planner - FT <= 0 |
+| Roma | QLD1_raw | 2025 | 70 | 290 | 20 | 48 | mean planner - FT <= 0 |
+
+Merchant case-years predicted above 0: 5. Predicted at or below 0: 5. No prediction: 2.
+Decision rule: the same as R4, over predicted case-years only:
+- SUPPORTED if at least 80% have the predicted sign and each predicted side has at least 4 case-years;
+- NOT SUPPORTED if 60% or fewer have the predicted sign;
+- PARTIAL otherwise;
+- DESCRIPTIVE if either side has fewer than 4 case-years.
+
+Secondary, DESCRIPTIVE: the same 6 sites under the PPA (12 case-years), and the R4 rule applied to all 24.
+POST HOC: the wider kappa grid {0, 0.5, 1, 2, 4, 8, 16, 32} on all 24.
+
+### R5 implementation notes, fixed before any simulation
+1. With 10 predicted case-years, SUPPORTED needs at least 8 correct, PARTIAL is exactly 7, and NOT SUPPORTED is 6 or fewer. Both sides have 5, so DESCRIPTIVE cannot apply unless a site is lost. As in R4, DESCRIPTIVE is tested first.
+2. Threshold cases: Murcia 2024 is exactly 120 days and Roma 2025 exactly 70. The rule is >= 120 and <= 70, so both are predicted. Mount Gambier 2025 (69) is one day inside the band edge. The thresholds are not moved.
+3. Whyalla is not independent of R4. Its daily rain correlates 0.95 (2024) and 0.96 (2025) with Port Augusta, an R4 site, and the 2025 spell is 158 days at both. Port Augusta's merchant results were seen before this entry. The verdict uses all sites, as the brief says. The summary also reports the count without Whyalla, labelled DESCRIPTIVE. Other nearest-site correlations of daily rain: Badajoz and Seville 0.63, 0.72; Mount Gambier and Adelaide 0.40, 0.58; Murcia and Almeria 0.42, 0.38; A Coruna and Bilbao 0.35, 0.23; Roma and Brisbane 0.30, 0.12.
+4. Why this is a fresh test: the merchant restriction came from R4's POST HOC table, so R4 cannot confirm it. R5 is the first test of it on sites chosen after that table. The thresholds still come from R3.
+5. Known from R4 and kept as it is: on the kappa grid {0, 0.5, 1, 2}, Bilbao's losses came largely from the grid limit (R4 POST HOC). The main test uses that grid, as the brief says. An at-or-below-0 side that passes here may have the same cause; r5_kappa shows this.
+6. Years downloaded: 2001 to 2025 for each new site, as in R4. 150 files, one request each, all HTTP 200. site_wx.npz was rebuilt; the 8 earlier site tables are bit-identical.
+7. Schema: results_r5_merchant.json and results_r5_ppa.json use keys soil0.30|site|contract|fold under `r5` and `r5_meta`, as R4. Soiling loss and every other detail follow R4 implementation notes 5, 7 and 9.
+8. Regression tests for R5 simulate, so they are held out of git and out of every test run until this entry is pushed.
+9. NASA POWER rain is not checked against gauges at any site, as in R4 note 13.
+---
+
+### R5 results (2026-11-07)
+- **R5 verdict: NOT SUPPORTED.** 5 of 10 = 50.0% with the predicted sign; predicted above 0: 5; predicted at or below 0: 5; no prediction: 2.
+- **PPA (DESCRIPTIVE):** 6 of 10 = 60.0% with the predicted sign; predicted above 0: 5; predicted at or below 0: 5; no prediction: 2. The rule would say NOT SUPPORTED; this is not a verdict.
+- **All 24 (DESCRIPTIVE):** 11 of 20 = 55.0% with the predicted sign; predicted above 0: 10; predicted at or below 0: 10; no prediction: 4. The rule would say NOT SUPPORTED; this is not a verdict.
+Tables and checks: docs/R5_SUMMARY.md. Deviations: docs/records/EXPERIMENT_LOG.md, "Phase R5 run log".

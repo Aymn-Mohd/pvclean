@@ -13,8 +13,9 @@ USER_AGENT = "pvclean-research-client"
 NASA_API = "https://power.larc.nasa.gov/api/temporal/hourly/point"
 NASA_PARAMS = "ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR"
 NASA_SITES = {"adelaide": (-34.93, 138.60), "brisbane": (-27.47, 153.03), "seville": (37.39, -5.99),
-              "almeria": (36.84, -2.46), "cordoba": (37.88, -4.78), "bilbao": (43.26, -2.93), "port_augusta": (-32.49, 137.77), "longreach": (-23.44, 144.25)}
-NASA_RECORDS = ("r3_nasa_power.json", "r4_nasa_power.json")
+              "almeria": (36.84, -2.46), "cordoba": (37.88, -4.78), "bilbao": (43.26, -2.93), "port_augusta": (-32.49, 137.77), "longreach": (-23.44, 144.25),
+              "murcia": (37.99, -1.13), "badajoz": (38.88, -6.97), "a_coruna": (43.36, -8.41), "whyalla": (-33.03, 137.58), "mount_gambier": (-37.83, 140.78), "roma_qld": (-26.57, 148.79)}
+NASA_RECORDS = ("r3_nasa_power.json", "r4_nasa_power.json", "r5_nasa_power.json")
 NASA_YEARS = range(2001, 2026)
 
 

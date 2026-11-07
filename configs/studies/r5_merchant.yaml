@@ -1,0 +1,7 @@
+study: r5_merchant
+label: MAIN-R5
+runner: r5_contract
+output: results_r5_merchant.json
+params:
+  contract: merchant
+  record_label: MAIN-R5

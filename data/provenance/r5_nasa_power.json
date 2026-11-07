@@ -1,0 +1,1256 @@
+{
+ "retrieved": "2026-11-07",
+ "source": "NASA POWER hourly point API, community RE, time-standard UTC",
+ "note": "Raw downloads are not committed. Rebuild with `python -m pvclean download nasa-power`, then pvclean.weather.build.sites(). Years 2001 to 2025: the R3 climatology needs the years before the test year.",
+ "client": "pvclean-research-client",
+ "sites": {
+  "murcia": {
+   "lat": 37.99,
+   "lon": -1.13
+  },
+  "badajoz": {
+   "lat": 38.88,
+   "lon": -6.97
+  },
+  "a_coruna": {
+   "lat": 43.36,
+   "lon": -8.41
+  },
+  "whyalla": {
+   "lat": -33.03,
+   "lon": 137.58
+  },
+  "mount_gambier": {
+   "lat": -37.83,
+   "lon": 140.78
+  },
+  "roma_qld": {
+   "lat": -26.57,
+   "lon": 148.79
+  }
+ },
+ "parameters": [
+  "ALLSKY_SFC_SW_DWN",
+  "ALLSKY_SFC_SW_DNI",
+  "ALLSKY_SFC_SW_DIFF",
+  "CLRSKY_SFC_SW_DWN",
+  "T2M",
+  "WS10M",
+  "PRECTOTCORR"
+ ],
+ "files": [
+  {
+   "path": "data/raw/nasa_power/murcia_2001.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-1.13&latitude=37.99&start=20010101&end=20011231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426647,
+   "sha256": "bc9db524c5d7d05a2923ba98fe27d6c8c6aa2b801c6f53b6d840739a5e6f730b",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/murcia_2002.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-1.13&latitude=37.99&start=20020101&end=20021231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426319,
+   "sha256": "8dc4d090f9f6e8caa9a8e383f72ad4f152f058745230f83eee67f412b5acd42c",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/murcia_2003.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-1.13&latitude=37.99&start=20030101&end=20031231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426499,
+   "sha256": "5d80c08a9aaa3e99f5cc2f5e367f9a1f00250b6bb940921a6de9be0813742151",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/murcia_2004.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-1.13&latitude=37.99&start=20040101&end=20041231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427278,
+   "sha256": "5c0f1a10f4f005f54d24f967d425c694d1f203acff6793dd4af97e0255950239",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/murcia_2005.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-1.13&latitude=37.99&start=20050101&end=20051231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 425869,
+   "sha256": "76cc98caf2c6ea6b18df192f84df7be4cb6c8a39b7b51420d94a9db432b4f9e5",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/murcia_2006.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-1.13&latitude=37.99&start=20060101&end=20061231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 425913,
+   "sha256": "56a87f9a16c937d1376d77b124a5125b9433dadf636f36e38fe81d25b162d770",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/murcia_2007.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-1.13&latitude=37.99&start=20070101&end=20071231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 425805,
+   "sha256": "0e5fb3ab39d55d5308c59924b43aa70b38aa9fcf30f2a26847e47592fd311ba7",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/murcia_2008.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-1.13&latitude=37.99&start=20080101&end=20081231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426902,
+   "sha256": "e402b8f19d888d7910a16a2eb4a5cc80d90c8b3e7ebd778a33704c6321edad28",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/murcia_2009.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-1.13&latitude=37.99&start=20090101&end=20091231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426059,
+   "sha256": "70d76e51e53515307be2f3bd1129a1f50c820e3a6cea59c9ed7718cad13a5528",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/murcia_2010.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-1.13&latitude=37.99&start=20100101&end=20101231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 425800,
+   "sha256": "125f220c9abd25006bfac4c65ff868e9463c60445d96e2adb92816e9e605def4",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/murcia_2011.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-1.13&latitude=37.99&start=20110101&end=20111231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 425948,
+   "sha256": "27e4d9a2188edf26016d181d92baa9cb410104eaada65e509d1f0222e0d0793d",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/murcia_2012.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-1.13&latitude=37.99&start=20120101&end=20121231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426928,
+   "sha256": "077fc9b9118b0446a4448a43e82d15e18844a544f5942b042d4f38a747f6324e",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/murcia_2013.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-1.13&latitude=37.99&start=20130101&end=20131231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426128,
+   "sha256": "5c80483a625576db8f77aa9ba9f1f4bb6ca29321dddee451a069b276d3ccca1d",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/murcia_2014.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-1.13&latitude=37.99&start=20140101&end=20141231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426165,
+   "sha256": "5e07d6c6d79fafb14cd4537d5c06bd571c4ad58d53c21d385acc390707c73bfd",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/murcia_2015.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-1.13&latitude=37.99&start=20150101&end=20151231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426770,
+   "sha256": "644dffc1ee449f228c728dce123caf5a9d1c021f3c0b5db475eb2e6128ac90cf",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/murcia_2016.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-1.13&latitude=37.99&start=20160101&end=20161231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427442,
+   "sha256": "63b57ef6ba30ecae701ec14b2dbbbba9ff2b11e8694c3d519bc69d15d056dfc6",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/murcia_2017.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-1.13&latitude=37.99&start=20170101&end=20171231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 425766,
+   "sha256": "5bddd77d9923000f8bf84079bdc1b797dd6142cd22d64163bcb850686eb4c76c",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/murcia_2018.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-1.13&latitude=37.99&start=20180101&end=20181231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427060,
+   "sha256": "7ff7393eab62e7fda771508c0c4aef5f45e9f0e0093ab46900a3d89ade92774d",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/murcia_2019.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-1.13&latitude=37.99&start=20190101&end=20191231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426080,
+   "sha256": "03d3008988ad2a1efcef1d525bb583e148fb07407d1d71a3d5d37f41388cdde6",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/murcia_2020.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-1.13&latitude=37.99&start=20200101&end=20201231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427600,
+   "sha256": "8e7eb50db11af58a8b1ee7198bbc9ff8adbee414ca1238b315f1dcdefdd4be50",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/murcia_2021.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-1.13&latitude=37.99&start=20210101&end=20211231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426277,
+   "sha256": "ee9ed26d04dfe1b46b1a4d8e0739d0f2b8ffc74cfe212c05a2f09bf01b2385c7",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/murcia_2022.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-1.13&latitude=37.99&start=20220101&end=20221231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426562,
+   "sha256": "49ac7395f309d2f28f119613e85f0d3fc1d32ee3deebd3b2a700b3dc5f708d5c",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/murcia_2023.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-1.13&latitude=37.99&start=20230101&end=20231231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426561,
+   "sha256": "a212e40fce36cea7d20edf625faf1e634f54059c80860378ec03db68a340a2c1",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/murcia_2024.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-1.13&latitude=37.99&start=20240101&end=20241231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427953,
+   "sha256": "2045de2611cf7f934583ff6ee874c9d900fb5a3b0ae12693bbe38d36aa0a6dd7",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/murcia_2025.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-1.13&latitude=37.99&start=20250101&end=20251231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426933,
+   "sha256": "ed5c8463b6e11201ae779ee66a429f45506e2e4ada219f14b7383aa81b0da7b0",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/badajoz_2001.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-6.97&latitude=38.88&start=20010101&end=20011231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426368,
+   "sha256": "3c77c0d050632afa783a7f5c4c72cf366a4043a1208f5a10e61d8e0714fe1347",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/badajoz_2002.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-6.97&latitude=38.88&start=20020101&end=20021231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426990,
+   "sha256": "61c48bc0ef4cac61004f12954e6efc2872328c88bbe4bc6b73fed4b372718d39",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/badajoz_2003.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-6.97&latitude=38.88&start=20030101&end=20031231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426847,
+   "sha256": "7075bbe27b38103c4908f22012ae50c2176caa5b61f67f42eb3dd75974190f6b",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/badajoz_2004.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-6.97&latitude=38.88&start=20040101&end=20041231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426785,
+   "sha256": "1960f02a8d785d7ba28c641b4ea8443964d970bbca5abbfcfe38f9650467608a",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/badajoz_2005.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-6.97&latitude=38.88&start=20050101&end=20051231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 425598,
+   "sha256": "0c819cae62a3c2f419e6b43e7f46e9168fce98c1ea431dde376b3ddf294a9098",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/badajoz_2006.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-6.97&latitude=38.88&start=20060101&end=20061231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426313,
+   "sha256": "2389de52abc13841762666781d9c637471c76f03e5e2307cea7ed081c89e32b2",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/badajoz_2007.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-6.97&latitude=38.88&start=20070101&end=20071231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 425665,
+   "sha256": "3d290957863fd8d6c532074c68111738e3a6c4a3ed3c3a8cf6d61ec139ed214b",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/badajoz_2008.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-6.97&latitude=38.88&start=20080101&end=20081231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427287,
+   "sha256": "818e284b23e1e619197ca34ad4c5db311ffc3fa123f62b079f738a3f9c6ad794",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/badajoz_2009.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-6.97&latitude=38.88&start=20090101&end=20091231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426291,
+   "sha256": "5093f26ad60ba1678354f3bfda9e88b50bdf24a609d30d8128622236667ec5c0",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/badajoz_2010.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-6.97&latitude=38.88&start=20100101&end=20101231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 425898,
+   "sha256": "1904d3b359b419d1a282689376bab98ef20eb9dd27c64b1011992b70c27d76fc",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/badajoz_2011.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-6.97&latitude=38.88&start=20110101&end=20111231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426014,
+   "sha256": "3455f4e561311289e7f837a2607b76d873fb0b113e783f2edfa84afd5659e124",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/badajoz_2012.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-6.97&latitude=38.88&start=20120101&end=20121231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426771,
+   "sha256": "a1cc22f73f13b8ee8eba7bc867eb08d16796e62b9700965a6966fa2b4a3a9481",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/badajoz_2013.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-6.97&latitude=38.88&start=20130101&end=20131231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426009,
+   "sha256": "80ad65ecfab288585d3d264a9ae2f866f61f9ee1f5e793b68b667eb4547fdf51",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/badajoz_2014.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-6.97&latitude=38.88&start=20140101&end=20141231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426793,
+   "sha256": "44a6824b134381e34c0887574cbcacfe552af3a855c7994535b699ce15a469aa",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/badajoz_2015.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-6.97&latitude=38.88&start=20150101&end=20151231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 425932,
+   "sha256": "5a0682bc01d6b846bc272e06dffcbcde554d8eeecbed355484b93f591aba09e4",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/badajoz_2016.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-6.97&latitude=38.88&start=20160101&end=20161231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427237,
+   "sha256": "53b9c9ac3e1a9d90836b5287168a6eb250e0748038aafa5ebf7259ab5ce4d4a1",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/badajoz_2017.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-6.97&latitude=38.88&start=20170101&end=20171231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426001,
+   "sha256": "3f3a4f14f08369e9f6a0130dc08bbdf96cc05f00bbf827f04f9f20aa5f41e998",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/badajoz_2018.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-6.97&latitude=38.88&start=20180101&end=20181231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426394,
+   "sha256": "e354fe45be8ddd8ce5502d544049bb5e9c956a69ee42c726f0e65f323261ee18",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/badajoz_2019.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-6.97&latitude=38.88&start=20190101&end=20191231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426438,
+   "sha256": "fabc6c9387392b4fecf0e2cb90d49a4c5796698ff2cb202b4f44c77673647ba7",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/badajoz_2020.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-6.97&latitude=38.88&start=20200101&end=20201231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427830,
+   "sha256": "aeb1f6e95eb0744212e7c8ca2b533a8421c31d4215fd9d6ab863dcc7ce5a1902",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/badajoz_2021.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-6.97&latitude=38.88&start=20210101&end=20211231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426588,
+   "sha256": "dad04498862aada4043efa774ade49fe9bbbb1ebdcd03e0cfff388019ec21c31",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/badajoz_2022.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-6.97&latitude=38.88&start=20220101&end=20221231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426621,
+   "sha256": "02f737818f368cd458114bd0bc5f28599e739f38a730ba6a377a134cbd1d5bd7",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/badajoz_2023.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-6.97&latitude=38.88&start=20230101&end=20231231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426594,
+   "sha256": "89a1065a2d92b57e0fc52476900244f3c5f8dfa38d85ebc2d1c930ee497fa69c",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/badajoz_2024.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-6.97&latitude=38.88&start=20240101&end=20241231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427824,
+   "sha256": "81d5841afd65f813280f2c0b4573e8af5a75b64339d514e5176311ecfe9c7886",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/badajoz_2025.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-6.97&latitude=38.88&start=20250101&end=20251231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427074,
+   "sha256": "5a031b2ef63057b14eda6fce92b6f826aa64b93185e5a17556fedf4e6d44c14d",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/a_coruna_2001.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-8.41&latitude=43.36&start=20010101&end=20011231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426870,
+   "sha256": "ddfd626d70332b81c4e3631dacac18d41393e8c2290ae0d88e02e3931167b7eb",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/a_coruna_2002.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-8.41&latitude=43.36&start=20020101&end=20021231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427342,
+   "sha256": "74ded4375fb573b053c1f6c6f987628b53e1b184b375899be6e9061130c16e9e",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/a_coruna_2003.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-8.41&latitude=43.36&start=20030101&end=20031231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427010,
+   "sha256": "3b031ca35af0ce3e5229abae872751ccf135d91c092458994150d7cbcc4ade44",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/a_coruna_2004.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-8.41&latitude=43.36&start=20040101&end=20041231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427663,
+   "sha256": "5dc3c86bbfa8cfdb58e3d23fccb2017c600b1eadafe9dab89b1051517c2a9ca3",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/a_coruna_2005.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-8.41&latitude=43.36&start=20050101&end=20051231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426837,
+   "sha256": "5452b08a0503940914dbc52631599b03a30b70a9a548752ea8556fb49e41fec7",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/a_coruna_2006.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-8.41&latitude=43.36&start=20060101&end=20061231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426400,
+   "sha256": "5919d515935e35afa0a8362352ec2c824037f0f5925d3a644a72214d46ed343a",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/a_coruna_2007.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-8.41&latitude=43.36&start=20070101&end=20071231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426754,
+   "sha256": "b3ca691a1b82fd1269a02f05125fdd42fbaf2e8f6df5a6fe8b1fe678f518b914",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/a_coruna_2008.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-8.41&latitude=43.36&start=20080101&end=20081231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 428144,
+   "sha256": "249ebabbdd8b991b71256aa3e0977f7d1569d675a4ffc684ad48361f8ad3b95a",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/a_coruna_2009.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-8.41&latitude=43.36&start=20090101&end=20091231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426780,
+   "sha256": "b018e2978780cee48ffdaa77e2290fb36f7eb2bf48cc594c3c164eebdb50df0c",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/a_coruna_2010.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-8.41&latitude=43.36&start=20100101&end=20101231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426230,
+   "sha256": "304d65815f3b2f09f4b05ae55b9a53c5346d0bbe0e824ea9acde88166a5dffa2",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/a_coruna_2011.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-8.41&latitude=43.36&start=20110101&end=20111231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426786,
+   "sha256": "1eb3072cd266ccca138793d0ee1239142ff1b44eb44fe19ba9f939d48b16fffa",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/a_coruna_2012.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-8.41&latitude=43.36&start=20120101&end=20121231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427785,
+   "sha256": "7216f178d4edf315e9a0a38226750c8b7f6d53ffaa3a3ad093eb729b076f6fde",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/a_coruna_2013.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-8.41&latitude=43.36&start=20130101&end=20131231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426142,
+   "sha256": "62af438d75bf33e24debbef0fea10671120de727264f4e7cba896715299673df",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/a_coruna_2014.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-8.41&latitude=43.36&start=20140101&end=20141231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427311,
+   "sha256": "f350a9f1f1deb911edcf2d0dba335f23c0fbfab7620bd7ac4f2be4a669c8c1d9",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/a_coruna_2015.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-8.41&latitude=43.36&start=20150101&end=20151231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426296,
+   "sha256": "a8cf780b69c28a89b5f2301979ca20c587c8e1a6f6540509013c01abde11e996",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/a_coruna_2016.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-8.41&latitude=43.36&start=20160101&end=20161231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427311,
+   "sha256": "6c3df314c75c5c12368e7884d5d60b55baa6aeb829ac689e6e1305bd3ffbacfe",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/a_coruna_2017.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-8.41&latitude=43.36&start=20170101&end=20171231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426819,
+   "sha256": "749828128ea2c9cc458bc67312b81815812a0792ae384e23c7e4ab7e6f94c504",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/a_coruna_2018.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-8.41&latitude=43.36&start=20180101&end=20181231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426908,
+   "sha256": "d53231815678be07e6bbaa618b1e54532357d1a70d7f8b07ed6834eb2cab80e3",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/a_coruna_2019.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-8.41&latitude=43.36&start=20190101&end=20191231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426790,
+   "sha256": "f2ea6544cd86230eefb94ec0f8f262a1718a7ecec113cc09e3ec3f70081aa627",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/a_coruna_2020.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-8.41&latitude=43.36&start=20200101&end=20201231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 428784,
+   "sha256": "233d5282d3379ca6550bcb6599730297b53d67830505a24abd25779a5be21290",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/a_coruna_2021.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-8.41&latitude=43.36&start=20210101&end=20211231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427278,
+   "sha256": "a9294eace5e6ff36f37955415d9b1a1a54aa5de69687fd0eb5cead23af3f8446",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/a_coruna_2022.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-8.41&latitude=43.36&start=20220101&end=20221231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427497,
+   "sha256": "e910025d82e1d434b37eac652b3a6e44308eef5aaef4a2e427a366c3c2cbf803",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/a_coruna_2023.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-8.41&latitude=43.36&start=20230101&end=20231231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427981,
+   "sha256": "58d12e11273860e8c9cdf4d73a6250016cb745cbc32ed2a6c6e34cd639c9c787",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/a_coruna_2024.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-8.41&latitude=43.36&start=20240101&end=20241231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 428736,
+   "sha256": "a3f83f3a3eeacc9b0cc312e87285fd5e5f5593c5618f6ecac18dc04140b87d4d",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/a_coruna_2025.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=-8.41&latitude=43.36&start=20250101&end=20251231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427205,
+   "sha256": "432324c2b1b88899804fbe8d8d17853480d6ecfb7809c936850f667424e71abc",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/whyalla_2001.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=137.58&latitude=-33.03&start=20010101&end=20011231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 429318,
+   "sha256": "96653e6fa184a30b397a58b23d11c30c2ac1834aefe843097350fd0527cd63be",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/whyalla_2002.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=137.58&latitude=-33.03&start=20020101&end=20021231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 428341,
+   "sha256": "dbff226829396d96a0c3af486b4f98dd09560ae245da1d2baadc2602e8e10835",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/whyalla_2003.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=137.58&latitude=-33.03&start=20030101&end=20031231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 428083,
+   "sha256": "3b7d12f462b6b08dbf162b12938d5dbad42eab3e7afc05e353dc900f69a83e97",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/whyalla_2004.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=137.58&latitude=-33.03&start=20040101&end=20041231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 429096,
+   "sha256": "9ed0067a8898f6b67a6761824f1ddd3712a8608d961991ad2b577eb88b911f68",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/whyalla_2005.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=137.58&latitude=-33.03&start=20050101&end=20051231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 428053,
+   "sha256": "78c88473b24ddc6f62d19808bd807f5fc3495f9734c2f16fdd8600d88cf32985",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/whyalla_2006.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=137.58&latitude=-33.03&start=20060101&end=20061231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427616,
+   "sha256": "ac795443eef867383ae31350c8ac91fdd51edd9cae6455bd8795fc44f7a2dcd6",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/whyalla_2007.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=137.58&latitude=-33.03&start=20070101&end=20071231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 428229,
+   "sha256": "eef2c0f02b50fbe3c99c5f5428f82a82b7274b035bef158b73f300c8c402771c",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/whyalla_2008.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=137.58&latitude=-33.03&start=20080101&end=20081231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 429299,
+   "sha256": "ab64138756d5f8c0518ed05817b828c9f9206a06c84f5d556b8967daa437d4b1",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/whyalla_2009.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=137.58&latitude=-33.03&start=20090101&end=20091231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 428862,
+   "sha256": "28a3e4affad71379f5f78a77e292a662469bf9cfc7088eb9b022db62f56935c8",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/whyalla_2010.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=137.58&latitude=-33.03&start=20100101&end=20101231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 428574,
+   "sha256": "934d395b6fe298fa4fd6109b67edc12b831ae22b78c156546b5b99a541d28dcd",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/whyalla_2011.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=137.58&latitude=-33.03&start=20110101&end=20111231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 428410,
+   "sha256": "c0cb9b67ad72324624872aa59c5717ccd6b9b48f217fe0ba1a6cc2372f4c5e77",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/whyalla_2012.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=137.58&latitude=-33.03&start=20120101&end=20121231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 429360,
+   "sha256": "55c977656cc37679c51684281644756ff9b757909e4534b9b325eaf1a5cca815",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/whyalla_2013.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=137.58&latitude=-33.03&start=20130101&end=20131231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 428747,
+   "sha256": "e75a159fb99813838d057ee78a00338eb2565b6a29ca93721a47acd35d2f2c0e",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/whyalla_2014.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=137.58&latitude=-33.03&start=20140101&end=20141231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 428004,
+   "sha256": "ffd9a0dbad879fa43e7876e9fd21e74d97108765daef303bc998d11f24165456",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/whyalla_2015.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=137.58&latitude=-33.03&start=20150101&end=20151231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427933,
+   "sha256": "9afd42e15b4a3f3c64c6889854a4169016398d893470b157758db56cbb85210f",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/whyalla_2016.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=137.58&latitude=-33.03&start=20160101&end=20161231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 429336,
+   "sha256": "93a3c1f9991f9cb709daabaec4d451f964a60600c0e1c3273c9f98cdccc5e140",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/whyalla_2017.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=137.58&latitude=-33.03&start=20170101&end=20171231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426878,
+   "sha256": "90fce6df8f030186661cd844b31031c7a19ad722224141af38057f92b6104c96",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/whyalla_2018.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=137.58&latitude=-33.03&start=20180101&end=20181231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 426949,
+   "sha256": "41eaebf1efb0f081ec41eda3c3570cbfc7a3874ec956fe8454ac409e115cab1b",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/whyalla_2019.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=137.58&latitude=-33.03&start=20190101&end=20191231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427251,
+   "sha256": "78bb0fc5bbe997d7552bccdeea30a38617a1f680d792832967c057193039dce1",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/whyalla_2020.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=137.58&latitude=-33.03&start=20200101&end=20201231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 428808,
+   "sha256": "47ca9e0d9075b3f1a17aed5b4a2272905dc8575710ff20da9e93a979104c618a",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/whyalla_2021.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=137.58&latitude=-33.03&start=20210101&end=20211231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 428201,
+   "sha256": "a8ce09a6b5746061fc23de1354cb6c3bb8a54b9bfa26c1344e6b89f38a5570a0",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/whyalla_2022.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=137.58&latitude=-33.03&start=20220101&end=20221231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 428248,
+   "sha256": "064968d00883ac1e5d6a575b4c5ba5ab3c6e75819ec204210034b01220a945d7",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/whyalla_2023.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=137.58&latitude=-33.03&start=20230101&end=20231231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427660,
+   "sha256": "3e2b0767d1be73f36df0163b0919bba7b77f84cf4908de55de043163c1e204de",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/whyalla_2024.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=137.58&latitude=-33.03&start=20240101&end=20241231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 428616,
+   "sha256": "dfec2d10dd1e2669283be3329e2d9da80bcce39422f7a328ea87316426efe7ce",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/whyalla_2025.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=137.58&latitude=-33.03&start=20250101&end=20251231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427815,
+   "sha256": "c925423f74be80045dd4e5a4cee87a690d1e101cd4bd27dddbf240691230f71a",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/mount_gambier_2001.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=140.78&latitude=-37.83&start=20010101&end=20011231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 430697,
+   "sha256": "cc901bf4c2f0dc49e8f3e5385865e4b97e439533717b6918639d83ce7c647bea",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/mount_gambier_2002.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=140.78&latitude=-37.83&start=20020101&end=20021231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 430472,
+   "sha256": "59a5c6026faeced4d1fff05c27d0aeb17f54d969f41e375bb6e156da38d111f8",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/mount_gambier_2003.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=140.78&latitude=-37.83&start=20030101&end=20031231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 429643,
+   "sha256": "5b455beb0e0c696273a50a3b3987c04c259d78308e33462752a7dfeb47fc4ad8",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/mount_gambier_2004.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=140.78&latitude=-37.83&start=20040101&end=20041231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 431262,
+   "sha256": "87cfb3e47702f2de381c9c6ea462d57a273f2b31a8dff48f2a36fa61dc828d36",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/mount_gambier_2005.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=140.78&latitude=-37.83&start=20050101&end=20051231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 429953,
+   "sha256": "dd7ae1d3bce43f3b78f34966f451467c79dfd106288ebf9a96f1934dce8cf435",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/mount_gambier_2006.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=140.78&latitude=-37.83&start=20060101&end=20061231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 429540,
+   "sha256": "4373619429a87a050de14dfc1f6b3fffccfe6ed9530c5cb1220e5a51dd74cedc",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/mount_gambier_2007.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=140.78&latitude=-37.83&start=20070101&end=20071231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 430280,
+   "sha256": "46dbb6f65e30c5c12d8baf4db3eb5c76339ebb80dcc9e5d46a8bcc731b50b4e1",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/mount_gambier_2008.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=140.78&latitude=-37.83&start=20080101&end=20081231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 431169,
+   "sha256": "611db0a84e1e45d2ab16e548dba40f3a69c4ccd4dd4bb04379f9ad856e0b19d1",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/mount_gambier_2009.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=140.78&latitude=-37.83&start=20090101&end=20091231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 430336,
+   "sha256": "f6cf813b51fb7a35fe9bb990f1139028b680abe8f8d0f204fde4c02aedbcab15",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/mount_gambier_2010.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=140.78&latitude=-37.83&start=20100101&end=20101231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 430026,
+   "sha256": "d731b0da9c7ab053aa6551572bf7db5857675e92113f6aa57f806b7ee23bd0aa",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/mount_gambier_2011.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=140.78&latitude=-37.83&start=20110101&end=20111231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 429883,
+   "sha256": "f7b23818dac9e4d32b7e02451f8bed7f56f4f114ffeae5ccd75440fd2b05398f",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/mount_gambier_2012.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=140.78&latitude=-37.83&start=20120101&end=20121231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 431511,
+   "sha256": "23549400c62814e4e7a8426910ed909fcd8d02cf0715936debfe1017aed07fc6",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/mount_gambier_2013.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=140.78&latitude=-37.83&start=20130101&end=20131231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 430383,
+   "sha256": "1ff1c4779c444511cfe77c4fd8fd95ad2643076ad2368f40a0c838c5b370cdb6",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/mount_gambier_2014.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=140.78&latitude=-37.83&start=20140101&end=20141231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 429901,
+   "sha256": "4196370e7c4956fd6362db4a5f4f61862173b87bc3236dc7850004b1a9e657de",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/mount_gambier_2015.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=140.78&latitude=-37.83&start=20150101&end=20151231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 429756,
+   "sha256": "19d19512fbb42758f5ad1673730c746c31181ff29ed96d717c6c63095c5d2245",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/mount_gambier_2016.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=140.78&latitude=-37.83&start=20160101&end=20161231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 431020,
+   "sha256": "e4f112d6f6e7e8e8040d597d17b6f160d1b0abe677b4b864e36e67efd7e74ec3",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/mount_gambier_2017.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=140.78&latitude=-37.83&start=20170101&end=20171231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 429765,
+   "sha256": "2199ceade66c7ac245a779f98d4f7e43bec041578d7b5d75a93c35db5ba563fd",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/mount_gambier_2018.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=140.78&latitude=-37.83&start=20180101&end=20181231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 429789,
+   "sha256": "ecf43ca724375df3f58394901a7da009e5fde24daf14f5df786296aeaafea304",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/mount_gambier_2019.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=140.78&latitude=-37.83&start=20190101&end=20191231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 430077,
+   "sha256": "277453643b1763048e0faa236866baa898759ffbd6298daa28a162e95fbe353a",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/mount_gambier_2020.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=140.78&latitude=-37.83&start=20200101&end=20201231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 431069,
+   "sha256": "4d44e2a9a25f45d2f6597eec330836dd026ea9c91bbebd7411c14860798370cc",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/mount_gambier_2021.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=140.78&latitude=-37.83&start=20210101&end=20211231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 430680,
+   "sha256": "a49272e6d1332297b66545f155bc9594e71c718aa9af913f4cf38833ef694115",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/mount_gambier_2022.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=140.78&latitude=-37.83&start=20220101&end=20221231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 430346,
+   "sha256": "3d2bdbf7f1ebfcfbec1329d764de5c5a4af3f79f52ba7bc63042621fc7e5e862",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/mount_gambier_2023.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=140.78&latitude=-37.83&start=20230101&end=20231231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 430712,
+   "sha256": "f6ea29876f6e2d4dff89e659194f2bcbbfad96928a46b1ffb383e182e9f27bfb",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/mount_gambier_2024.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=140.78&latitude=-37.83&start=20240101&end=20241231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 430946,
+   "sha256": "1057da4792294a299752c8e6b0b07db958720feda261487e045cf7b5d70c5c59",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/mount_gambier_2025.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=140.78&latitude=-37.83&start=20250101&end=20251231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 430281,
+   "sha256": "8f3d263cef6a68e5cc4ba2f91c585cc000f78702b583662c8fe1014a5da2a605",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/roma_qld_2001.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=148.79&latitude=-26.57&start=20010101&end=20011231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 428034,
+   "sha256": "5f6bbce5aff261ecf2a8627e28b267082083eaf17266c53cbe5501da40d6aab9",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/roma_qld_2002.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=148.79&latitude=-26.57&start=20020101&end=20021231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 428444,
+   "sha256": "576215565cf56f228773e10fc7710c25ef6d3b518a5225ef91a3c0603cc67a01",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/roma_qld_2003.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=148.79&latitude=-26.57&start=20030101&end=20031231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 428474,
+   "sha256": "3ec15da02dbaa5d571dae38c1713c1852c32b36d2d794b1763c0736fd628239f",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/roma_qld_2004.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=148.79&latitude=-26.57&start=20040101&end=20041231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 428961,
+   "sha256": "34b8d94a458bd3b803ea028b97bb4f37b3a51df0ce3d9fae5881b0618dcf2907",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/roma_qld_2005.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=148.79&latitude=-26.57&start=20050101&end=20051231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427885,
+   "sha256": "7a92b9879423dfb2cdb172684770e5e3325d7bd6d20de0badec074552af325e0",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/roma_qld_2006.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=148.79&latitude=-26.57&start=20060101&end=20061231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 428047,
+   "sha256": "9abc744abd961418fc536db6d174372775a92a1db195e3dc47c616d589fb22aa",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/roma_qld_2007.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=148.79&latitude=-26.57&start=20070101&end=20071231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 428006,
+   "sha256": "5ede27fc4a8d4c9f6f6175bf619d1f37b5e1ac28a6cd4fa4bd594f328d85c624",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/roma_qld_2008.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=148.79&latitude=-26.57&start=20080101&end=20081231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 429301,
+   "sha256": "b49a12f757ad7d68565b31c2f4288e31af2fd21fbfb850b85993fee233dd9ace",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/roma_qld_2009.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=148.79&latitude=-26.57&start=20090101&end=20091231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 428173,
+   "sha256": "0f4aba30c21dae7b690e1c921f51540e5cb3aa900cf067574b3b51861da38c6b",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/roma_qld_2010.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=148.79&latitude=-26.57&start=20100101&end=20101231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 428269,
+   "sha256": "183bb288d88bfa720df3b3aaef483895183437c1b2fe99dcb5edfa55911cccc5",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/roma_qld_2011.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=148.79&latitude=-26.57&start=20110101&end=20111231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427905,
+   "sha256": "7f40047ef9b6c28c7f3fc2243d202a412c4cfffd29995df20cd837ec439aca2e",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/roma_qld_2012.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=148.79&latitude=-26.57&start=20120101&end=20121231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 429040,
+   "sha256": "cb63834fb183671eb16700d0411615e40c211961dd07afa956127c1213e8a368",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/roma_qld_2013.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=148.79&latitude=-26.57&start=20130101&end=20131231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 428077,
+   "sha256": "cfa43570d8e86c50ec03bab2bc9f39b73d338501462152797da8f26fa92bea2a",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/roma_qld_2014.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=148.79&latitude=-26.57&start=20140101&end=20141231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427947,
+   "sha256": "e7d520ba61ade5f6c319d861118b69dc925e92717825229d2a4d93f5aa375a17",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/roma_qld_2015.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=148.79&latitude=-26.57&start=20150101&end=20151231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427969,
+   "sha256": "1c0e52341a4a3ad7dbc6b1d33dc75d891424183bdce3154034122c9cb3243df7",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/roma_qld_2016.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=148.79&latitude=-26.57&start=20160101&end=20161231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 428972,
+   "sha256": "3bfc41b974b8b1dab360f729ad6f56e8bf857ca5ae6ebeefc9339f6da5b02f36",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/roma_qld_2017.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=148.79&latitude=-26.57&start=20170101&end=20171231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 428104,
+   "sha256": "6f47b64c910ae496baef16b282c7de43c4ca1ce604eb7facd68d8879824bbfd1",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/roma_qld_2018.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=148.79&latitude=-26.57&start=20180101&end=20181231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427709,
+   "sha256": "7adaf3764703732fdee37241c91ad45823a1cfc4ff63eeee18883a11db4c68be",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/roma_qld_2019.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=148.79&latitude=-26.57&start=20190101&end=20191231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427564,
+   "sha256": "89b7fac7cc2ff627cd104dbbe849a65771f984a0695598a2958cb6d3a9649de2",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/roma_qld_2020.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=148.79&latitude=-26.57&start=20200101&end=20201231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 429229,
+   "sha256": "25a08b7ea41d19de81db4e11c11cd5ad030482fe41bc055ee0ee91a5f1737564",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/roma_qld_2021.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=148.79&latitude=-26.57&start=20210101&end=20211231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427988,
+   "sha256": "b41cef5e393ba0358e598da795a0ce7e342ccea6e55ba71353d723940a60a860",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/roma_qld_2022.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=148.79&latitude=-26.57&start=20220101&end=20221231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427682,
+   "sha256": "df90125598d7e1782e8b360cfb8f13c04022d12e65046b12ed62da5eb6046b26",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/roma_qld_2023.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=148.79&latitude=-26.57&start=20230101&end=20231231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427378,
+   "sha256": "9fbf998b7d265c7892c08c6d86548330da03f8b0eb1a341a1e5367bbe2e62580",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/roma_qld_2024.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=148.79&latitude=-26.57&start=20240101&end=20241231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 429202,
+   "sha256": "3c2550dcd42b8eac18d434da5622c580c98d7fb8fb1e0950a9a5df193c6ef127",
+   "accessed": "2026-11-07"
+  },
+  {
+   "path": "data/raw/nasa_power/roma_qld_2025.csv",
+   "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_SW_DIFF,CLRSKY_SFC_SW_DWN,T2M,WS10M,PRECTOTCORR&community=RE&longitude=148.79&latitude=-26.57&start=20250101&end=20251231&format=CSV&time-standard=UTC",
+   "http_status": 200,
+   "bytes": 427602,
+   "sha256": "d7ab74f93610c6e78a1a6be899db54de240bd26d49b8a4d5aa175305f15b8ded",
+   "accessed": "2026-11-07"
+  }
+ ],
+ "processed": [
+  {
+   "path": "data/site_wx.npz",
+   "bytes": 19805453,
+   "sha256": "62c458c9b2e6c7a8807ec60b74fc96a82c286351fdec0d86fc2208ff2319b410",
+   "note": "All R3 and R4 tables bit-identical to the earlier file"
+  }
+ ],
+ "audit": {
+  "fill_values": 0,
+  "time_gaps": 0,
+  "hours_per_site": 219144
+ }
+}

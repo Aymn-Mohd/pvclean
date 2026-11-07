@@ -38,7 +38,7 @@ def test_unknown_source():
 
 def test_nasa_targets_carry_recorded_hashes():
     t = download.nasa_targets()
-    assert len(t) == 200 and all(x["sha256"] for x in t)
+    assert len(t) == 350 and all(x["sha256"] for x in t)
 
 
 def test_sites_filter_drops_only_the_failed_site(tmp_path, monkeypatch):

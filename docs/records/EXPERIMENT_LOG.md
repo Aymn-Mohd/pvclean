@@ -286,3 +286,16 @@ Deviations and fixes:
 8. Figure additions not in the brief: marker shape shows the contract, merchant and PPA are moved 1.2 days apart so that they do not overprint, and the band is labelled "no prediction".
 9. Added after seeing results, labelled POST HOC: the by-contract table, the "how firm the label is" line, the new-sites-only count, and the rule column, which is not a verdict.
 10. src/make_r4_summary.py: fixed a keyword clash in dubai() on its first real run. No result changed.
+
+
+---
+## Phase R5 run log (2026-11-07)
+Pre-registration: docs/records/decisions.md, "Phase R5", committed alone as 37f1aa2 before any R5 simulation. Inputs commit 2721808.
+Runs, in order, 24 workers, nice 10: r5_merchant, r5_ppa, r5_kappa. All rc 0; user CPU 3027 s (0.84 h). Sanity script: 335 s more.
+Deviations and fixes:
+1. The pre-registration added one DESCRIPTIVE line the brief did not ask for: the count without Whyalla, because its rain tracks Port Augusta (note 3). The verdict uses all sites.
+2. site_wx.npz was rebuilt with six more tables. The eight earlier site tables are bit-identical. The previous file is kept at HOME_DIR/backups/pvclean/site_wx_r4.npz. tests/unit/test_download.py now expects 350 NASA targets.
+3. tests/regression/test_r5_jobs.py simulates, so it stayed out of git and out of the suite run until the pre-registration was pushed. That one suite run therefore had 354 tests, without it.
+4. src/r5_sanity.py is POST HOC and was not in the brief: same-seed and input checks, every point of the R3 planner grid at Whyalla and Port Augusta 2024 merchant, and retuning on three other train-seed sets. It found no fault. It did not isolate why the two sites differ.
+5. src/make_fig_r4.py: legend now reads R3 sites, R4 sites, R5 sites; the contract keys are grey-filled, so that half-filled means R5. The script now needs the R5 results, so the v1.1.0 public copy differs from this one.
+6. src/make_r4_summary.py is unchanged and is imported by the R5 scripts.

@@ -15,6 +15,12 @@ REGISTRY: dict[str, str] = {
     "bilbao": os.path.join(HERE, "bilbao.yaml"),
     "port_augusta": os.path.join(HERE, "port_augusta.yaml"),
     "longreach": os.path.join(HERE, "longreach.yaml"),
+    "murcia": os.path.join(HERE, "murcia.yaml"),
+    "badajoz": os.path.join(HERE, "badajoz.yaml"),
+    "a_coruna": os.path.join(HERE, "a_coruna.yaml"),
+    "whyalla": os.path.join(HERE, "whyalla.yaml"),
+    "mount_gambier": os.path.join(HERE, "mount_gambier.yaml"),
+    "roma_qld": os.path.join(HERE, "roma_qld.yaml"),
 }
 
 

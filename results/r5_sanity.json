@@ -1,0 +1,542 @@
+{
+ "year": 2024,
+ "contract": "merchant",
+ "same_seed_max_abs_diff_usd": 0.0,
+ "rain_vs_raw_file_max_abs_mm": 8.881784197001252e-16,
+ "retune": {
+  "whyalla|train1005": {
+   "planner_ft": {
+    "mean": -127.5031240651109,
+    "lo": -163.58555750651846,
+    "hi": -91.42069062370334,
+    "ci": 36.08243344140757,
+    "wins": 8,
+    "n": 50
+   },
+   "params": {
+    "beta": 0.5,
+    "kappa": 2
+   },
+   "ft": {
+    "Hb": 14,
+    "antic": 0,
+    "b": 8
+   }
+  },
+  "port_augusta|train1005": {
+   "planner_ft": {
+    "mean": 184.0270661437954,
+    "lo": 156.20352357106046,
+    "hi": 211.85060871653033,
+    "ci": 27.823542572734926,
+    "wins": 47,
+    "n": 50
+   },
+   "params": {
+    "beta": 0,
+    "kappa": 2
+   },
+   "ft": {
+    "Hb": 30,
+    "antic": 0,
+    "b": 1
+   }
+  },
+  "whyalla|train1010": {
+   "planner_ft": {
+    "mean": -127.5031240651109,
+    "lo": -163.58555750651846,
+    "hi": -91.42069062370334,
+    "ci": 36.08243344140757,
+    "wins": 8,
+    "n": 50
+   },
+   "params": {
+    "beta": 0.5,
+    "kappa": 2
+   },
+   "ft": {
+    "Hb": 14,
+    "antic": 0,
+    "b": 8
+   }
+  },
+  "port_augusta|train1010": {
+   "planner_ft": {
+    "mean": 127.96104077612952,
+    "lo": 94.11188903341429,
+    "hi": 161.81019251884476,
+    "ci": 33.849151742715236,
+    "wins": 44,
+    "n": 50
+   },
+   "params": {
+    "beta": 0,
+    "kappa": 2
+   },
+   "ft": {
+    "Hb": 14,
+    "antic": 1,
+    "b": 4
+   }
+  },
+  "whyalla|train1015": {
+   "planner_ft": {
+    "mean": -127.97104388114298,
+    "lo": -164.0262128404458,
+    "hi": -91.91587492184014,
+    "ci": 36.05516895930283,
+    "wins": 8,
+    "n": 50
+   },
+   "params": {
+    "beta": 0,
+    "kappa": 2
+   },
+   "ft": {
+    "Hb": 14,
+    "antic": 0,
+    "b": 8
+   }
+  },
+  "port_augusta|train1015": {
+   "planner_ft": {
+    "mean": 184.0270661437954,
+    "lo": 156.20352357106046,
+    "hi": 211.85060871653033,
+    "ci": 27.823542572734926,
+    "wins": 47,
+    "n": 50
+   },
+   "params": {
+    "beta": 0,
+    "kappa": 2
+   },
+   "ft": {
+    "Hb": 30,
+    "antic": 0,
+    "b": 1
+   }
+  }
+ },
+ "grid": {
+  "whyalla": {
+   "chosen": {
+    "beta": 0,
+    "kappa": 1
+   },
+   "ft": {
+    "Hb": 14,
+    "antic": 0,
+    "b": 8
+   },
+   "grid": [
+    {
+     "params": {
+      "beta": 0,
+      "kappa": 0
+     },
+     "train_mean": 45923.263189250734,
+     "planner_ft": {
+      "mean": -357.96259697443486,
+      "lo": -398.4582555147716,
+      "hi": -317.4669384340981,
+      "ci": 40.49565854033674,
+      "wins": 1,
+      "n": 50
+     },
+     "rows": 403.28
+    },
+    {
+     "params": {
+      "beta": 0,
+      "kappa": 0.5
+     },
+     "train_mean": 45963.42029206887,
+     "planner_ft": {
+      "mean": -284.65360498440305,
+      "lo": -320.79886142316127,
+      "hi": -248.50834854564485,
+      "ci": 36.1452564387582,
+      "wins": 1,
+      "n": 50
+     },
+     "rows": 383.1
+    },
+    {
+     "params": {
+      "beta": 0,
+      "kappa": 1
+     },
+     "train_mean": 46064.27249784133,
+     "planner_ft": {
+      "mean": -230.1079612801189,
+      "lo": -269.1799780988602,
+      "hi": -191.0359444613776,
+      "ci": 39.07201681874131,
+      "wins": 3,
+      "n": 50
+     },
+     "rows": 368.26
+    },
+    {
+     "params": {
+      "beta": 0,
+      "kappa": 2
+     },
+     "train_mean": 46038.12082525727,
+     "planner_ft": {
+      "mean": -127.97104388114298,
+      "lo": -164.0262128404458,
+      "hi": -91.91587492184014,
+      "ci": 36.05516895930283,
+      "wins": 8,
+      "n": 50
+     },
+     "rows": 336.62
+    },
+    {
+     "params": {
+      "beta": 0.5,
+      "kappa": 0
+     },
+     "train_mean": 45925.56979274386,
+     "planner_ft": {
+      "mean": -361.8916199900856,
+      "lo": -404.3535892687918,
+      "hi": -319.4296507113794,
+      "ci": 42.46196927870617,
+      "wins": 1,
+      "n": 50
+     },
+     "rows": 406.02
+    },
+    {
+     "params": {
+      "beta": 0.5,
+      "kappa": 0.5
+     },
+     "train_mean": 45968.466435996605,
+     "planner_ft": {
+      "mean": -281.3284500649643,
+      "lo": -316.4045253655145,
+      "hi": -246.25237476441407,
+      "ci": 35.0760753005502,
+      "wins": 1,
+      "n": 50
+     },
+     "rows": 384.56
+    },
+    {
+     "params": {
+      "beta": 0.5,
+      "kappa": 1
+     },
+     "train_mean": 46045.64079280628,
+     "planner_ft": {
+      "mean": -228.70451025644653,
+      "lo": -266.797919823439,
+      "hi": -190.6111006894541,
+      "ci": 38.09340956699243,
+      "wins": 3,
+      "n": 50
+     },
+     "rows": 368.36
+    },
+    {
+     "params": {
+      "beta": 0.5,
+      "kappa": 2
+     },
+     "train_mean": 46038.12082525727,
+     "planner_ft": {
+      "mean": -127.5031240651109,
+      "lo": -163.58555750651846,
+      "hi": -91.42069062370334,
+      "ci": 36.08243344140757,
+      "wins": 8,
+      "n": 50
+     },
+     "rows": 336.58
+    },
+    {
+     "params": {
+      "beta": 1.0,
+      "kappa": 0
+     },
+     "train_mean": 45768.34223980838,
+     "planner_ft": {
+      "mean": -429.3911025742638,
+      "lo": -494.4148313632416,
+      "hi": -364.367373785286,
+      "ci": 65.02372878897779,
+      "wins": 1,
+      "n": 50
+     },
+     "rows": 429.54
+    },
+    {
+     "params": {
+      "beta": 1.0,
+      "kappa": 0.5
+     },
+     "train_mean": 45899.355701835055,
+     "planner_ft": {
+      "mean": -283.6060524393241,
+      "lo": -317.7879170129952,
+      "hi": -249.42418786565304,
+      "ci": 34.181864573671064,
+      "wins": 1,
+      "n": 50
+     },
+     "rows": 386.14
+    },
+    {
+     "params": {
+      "beta": 1.0,
+      "kappa": 1
+     },
+     "train_mean": 46024.65805026028,
+     "planner_ft": {
+      "mean": -229.58884682761592,
+      "lo": -267.6929882979565,
+      "hi": -191.48470535727535,
+      "ci": 38.104141470340586,
+      "wins": 3,
+      "n": 50
+     },
+     "rows": 368.36
+    },
+    {
+     "params": {
+      "beta": 1.0,
+      "kappa": 2
+     },
+     "train_mean": 46027.21744810495,
+     "planner_ft": {
+      "mean": -127.9825646885825,
+      "lo": -164.01951485788646,
+      "hi": -91.94561451927854,
+      "ci": 36.036950169303964,
+      "wins": 8,
+      "n": 50
+     },
+     "rows": 336.58
+    }
+   ]
+  },
+  "port_augusta": {
+   "chosen": {
+    "beta": 0.5,
+    "kappa": 2
+   },
+   "ft": {
+    "Hb": 14,
+    "antic": 1,
+    "b": 4
+   },
+   "grid": [
+    {
+     "params": {
+      "beta": 0,
+      "kappa": 0
+     },
+     "train_mean": 49572.70467117605,
+     "planner_ft": {
+      "mean": -11.207006992886454,
+      "lo": -51.56005823980312,
+      "hi": 29.14604425403021,
+      "ci": 40.353051246916664,
+      "wins": 29,
+      "n": 50
+     },
+     "rows": 430.6
+    },
+    {
+     "params": {
+      "beta": 0,
+      "kappa": 0.5
+     },
+     "train_mean": 49601.03526395299,
+     "planner_ft": {
+      "mean": 30.73486444107999,
+      "lo": -3.276359052423576,
+      "hi": 64.74608793458356,
+      "ci": 34.011223493503564,
+      "wins": 30,
+      "n": 50
+     },
+     "rows": 417.28
+    },
+    {
+     "params": {
+      "beta": 0,
+      "kappa": 1
+     },
+     "train_mean": 49634.4627748194,
+     "planner_ft": {
+      "mean": 62.9145855673356,
+      "lo": 30.54349842528655,
+      "hi": 95.28567270938464,
+      "ci": 32.37108714204905,
+      "wins": 34,
+      "n": 50
+     },
+     "rows": 408.34
+    },
+    {
+     "params": {
+      "beta": 0,
+      "kappa": 2
+     },
+     "train_mean": 49661.57929372754,
+     "planner_ft": {
+      "mean": 127.96104077612952,
+      "lo": 94.11188903341429,
+      "hi": 161.81019251884476,
+      "ci": 33.849151742715236,
+      "wins": 44,
+      "n": 50
+     },
+     "rows": 385.08
+    },
+    {
+     "params": {
+      "beta": 0.5,
+      "kappa": 0
+     },
+     "train_mean": 49578.625430220076,
+     "planner_ft": {
+      "mean": -10.320951982140105,
+      "lo": -48.78079408970936,
+      "hi": 28.138890125429153,
+      "ci": 38.45984210756926,
+      "wins": 28,
+      "n": 50
+     },
+     "rows": 431.74
+    },
+    {
+     "params": {
+      "beta": 0.5,
+      "kappa": 0.5
+     },
+     "train_mean": 49592.84452425412,
+     "planner_ft": {
+      "mean": 26.00943356633172,
+      "lo": -8.494054938133612,
+      "hi": 60.512922070797046,
+      "ci": 34.50348850446533,
+      "wins": 29,
+      "n": 50
+     },
+     "rows": 420.96
+    },
+    {
+     "params": {
+      "beta": 0.5,
+      "kappa": 1
+     },
+     "train_mean": 49630.498862209824,
+     "planner_ft": {
+      "mean": 62.173762641968786,
+      "lo": 29.709547116520817,
+      "hi": 94.63797816741675,
+      "ci": 32.46421552544797,
+      "wins": 34,
+      "n": 50
+     },
+     "rows": 408.54
+    },
+    {
+     "params": {
+      "beta": 0.5,
+      "kappa": 2
+     },
+     "train_mean": 49661.75324702852,
+     "planner_ft": {
+      "mean": 128.07690408848256,
+      "lo": 94.29992275243654,
+      "hi": 161.85388542452858,
+      "ci": 33.77698133604601,
+      "wins": 44,
+      "n": 50
+     },
+     "rows": 385.06
+    },
+    {
+     "params": {
+      "beta": 1.0,
+      "kappa": 0
+     },
+     "train_mean": 49423.41213118416,
+     "planner_ft": {
+      "mean": -112.49668319704331,
+      "lo": -175.2520624948421,
+      "hi": -49.7413038992445,
+      "ci": 62.75537929779881,
+      "wins": 21,
+      "n": 50
+     },
+     "rows": 466.06
+    },
+    {
+     "params": {
+      "beta": 1.0,
+      "kappa": 0.5
+     },
+     "train_mean": 49568.833251983175,
+     "planner_ft": {
+      "mean": 21.118237323620125,
+      "lo": -14.147416481073318,
+      "hi": 56.383891128313564,
+      "ci": 35.26565380469344,
+      "wins": 29,
+      "n": 50
+     },
+     "rows": 422.34
+    },
+    {
+     "params": {
+      "beta": 1.0,
+      "kappa": 1
+     },
+     "train_mean": 49613.073569249784,
+     "planner_ft": {
+      "mean": 61.70621191278755,
+      "lo": 29.22260902277022,
+      "hi": 94.18981480280488,
+      "ci": 32.48360289001733,
+      "wins": 34,
+      "n": 50
+     },
+     "rows": 408.54
+    },
+    {
+     "params": {
+      "beta": 1.0,
+      "kappa": 2
+     },
+     "train_mean": 49650.412749116906,
+     "planner_ft": {
+      "mean": 128.00257636738561,
+      "lo": 94.2408205650182,
+      "hi": 161.76433216975303,
+      "ci": 33.761755802367425,
+      "wins": 44,
+      "n": 50
+     },
+     "rows": 385.06
+    }
+   ]
+  }
+ },
+ "lines": [
+  "Same seed: fresh runs of planner and FT at both sites, seeds 0 to 2, differ from the stored net by at most 0.00e+00 USD.",
+  "Inputs: Whyalla's rain rebuilt from the raw files differs from the model's by at most 8.88e-16 mm. Dust and row noise of seed 0 are equal at both sites: True. Rain and production are separate tables: daily rain correlation 0.95, days >= 5 mm 12 and 10, of which 8 are shared, DC yield 2043 and 2105 kWh/kWp.",
+  "whyalla, every point of the R3 planner grid on 2024: planner minus FT runs from -429 to -128, positive at 0 of 12 points. Chosen: beta 0, kappa 1, with -230. Training means span 296 USD, and the top two differ by 18.6 USD.",
+  "port_augusta, every point of the R3 planner grid on 2024: planner minus FT runs from -112 to +128, positive at 9 of 12 points. Chosen: beta 0.5, kappa 2, with +128. Training means span 238 USD, and the top two differ by 0.2 USD.",
+  "whyalla, tuning repeated on three other train-seed sets: -128 (kappa 2), -128 (kappa 2), -128 (kappa 2).",
+  "port_augusta, tuning repeated on three other train-seed sets: +184 (kappa 2), +128 (kappa 2), +184 (kappa 2)."
+ ]
+}

@@ -1,0 +1,122 @@
+{
+ "_meta": {
+  "label": "INPUT",
+  "note": "Local-day NASA POWER rain on the price clock, 365 days, 29 Feb dropped. Longest run: longest stretch without a day >= 5 mm, including the stretches before the first and after the last such day."
+ },
+ "sites": {
+  "murcia": {
+   "market": "ES_raw",
+   "lat": 37.99,
+   "lon": -1.13,
+   "years": {
+    "2024": {
+     "total_mm": 206.64999999999998,
+     "days_5mm": 11,
+     "days_1mm": 41,
+     "longest_run_without_5mm": 120
+    },
+    "2025": {
+     "total_mm": 422.31000000000006,
+     "days_5mm": 24,
+     "days_1mm": 55,
+     "longest_run_without_5mm": 128
+    }
+   }
+  },
+  "badajoz": {
+   "market": "ES_raw",
+   "lat": 38.88,
+   "lon": -6.97,
+   "years": {
+    "2024": {
+     "total_mm": 563.05,
+     "days_5mm": 40,
+     "days_1mm": 76,
+     "longest_run_without_5mm": 98
+    },
+    "2025": {
+     "total_mm": 770.02,
+     "days_5mm": 51,
+     "days_1mm": 110,
+     "longest_run_without_5mm": 146
+    }
+   }
+  },
+  "a_coruna": {
+   "market": "ES_raw",
+   "lat": 43.36,
+   "lon": -8.41,
+   "years": {
+    "2024": {
+     "total_mm": 1276.24,
+     "days_5mm": 82,
+     "days_1mm": 155,
+     "longest_run_without_5mm": 40
+    },
+    "2025": {
+     "total_mm": 1150.8200000000002,
+     "days_5mm": 80,
+     "days_1mm": 153,
+     "longest_run_without_5mm": 64
+    }
+   }
+  },
+  "whyalla": {
+   "market": "SA1_raw",
+   "lat": -33.03,
+   "lon": 137.58,
+   "years": {
+    "2024": {
+     "total_mm": 182.64999999999998,
+     "days_5mm": 12,
+     "days_1mm": 42,
+     "longest_run_without_5mm": 135
+    },
+    "2025": {
+     "total_mm": 144.75,
+     "days_5mm": 4,
+     "days_1mm": 41,
+     "longest_run_without_5mm": 158
+    }
+   }
+  },
+  "mount_gambier": {
+   "market": "SA1_raw",
+   "lat": -37.83,
+   "lon": 140.78,
+   "years": {
+    "2024": {
+     "total_mm": 507.70000000000005,
+     "days_5mm": 28,
+     "days_1mm": 103,
+     "longest_run_without_5mm": 90
+    },
+    "2025": {
+     "total_mm": 602.49,
+     "days_5mm": 36,
+     "days_1mm": 118,
+     "longest_run_without_5mm": 69
+    }
+   }
+  },
+  "roma_qld": {
+   "market": "QLD1_raw",
+   "lat": -26.57,
+   "lon": 148.79,
+   "years": {
+    "2024": {
+     "total_mm": 528.97,
+     "days_5mm": 28,
+     "days_1mm": 69,
+     "longest_run_without_5mm": 62
+    },
+    "2025": {
+     "total_mm": 289.63,
+     "days_5mm": 20,
+     "days_1mm": 48,
+     "longest_run_without_5mm": 70
+    }
+   }
+  }
+ }
+}

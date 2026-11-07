@@ -30,7 +30,7 @@ def read_power(site: str, years: Iterable[int] = range(2001, 2026)) -> pd.DataFr
     return w
 
 
-def sites(names: Iterable[str] = ("adelaide", "brisbane", "seville", "almeria", "cordoba", "bilbao", "port_augusta", "longreach"), out: str | None = None) -> dict[str, np.ndarray]:
+def sites(names: Iterable[str] = ("adelaide", "brisbane", "seville", "almeria", "cordoba", "bilbao", "port_augusta", "longreach", "murcia", "badajoz", "a_coruna", "whyalla", "mount_gambier", "roma_qld"), out: str | None = None) -> dict[str, np.ndarray]:
     """Writes site_wx.npz: hourly tables on the UTC clock, in SITE_COLS order. pvclean.weather.site_year moves them to the price clock."""
     arrs: dict[str, np.ndarray] = {"start_utc": np.array("2001-01-01 00:00:00")}
     for s in names:

@@ -78,6 +78,10 @@ The difference column is the largest absolute difference between the rerun and t
 | `results_r4_lowsoil.json` | r4_lowsoil | new in R4 | not rerun | 55 | `site_wx.npz`, `real_prices_v2.npz` |
 | `results_r4_cost.json` | r4_cost | new in R4 | not rerun | 146 | `site_wx.npz`, `real_prices_v2.npz` |
 | `results_r4_seeds.json` | r4_seeds | new in R4 | not rerun | 127 | `site_wx.npz`, `real_prices_v2.npz` |
+| `r5_rain.json` | r5_rain | new in R5 | not rerun | 1 | `site_wx.npz` |
+| `results_r5_merchant.json` | r5_merchant | new in R5 | not rerun | 43 | `site_wx.npz`, `real_prices_v2.npz` |
+| `results_r5_ppa.json` | r5_ppa | new in R5 | not rerun | 44 | `site_wx.npz`, `real_prices_v2.npz` |
+| `results_r5_kappa.json` | r5_kappa | new in R5 | not rerun | 70 | `site_wx.npz`, `real_prices_v2.npz` |
 | `results_exact.json` | exact | 1144 | 9.1e-13 (217 of 1144) | 43 | none |
 | `results_exact_matched.json` | exact_matched | 240 | 9.1e-13 (18 of 240) | 32 | none |
 | `results_mpc.json` | mpc | 240 | 4.5e-13 (10 of 240) | 35 | none |
@@ -114,3 +118,7 @@ Studies with `none` in the table run on a fresh clone. The others read these fil
 ## Phase R4 outputs
 
 `docs/R4_SUMMARY.md` comes from `python src/make_r4_summary.py`. `paper/fig_dryspell.pdf` and its preview come from `python src/make_fig_r4.py`. `python src/r4_sanity.py` writes `results/r4_sanity.json` and needs the data cache. The first two read stored results only.
+
+## Phase R5 outputs
+
+`docs/R5_SUMMARY.md` comes from `python src/make_r5_summary.py`, which reads stored results only. `python src/make_fig_r4.py` now also plots the R5 points. `python src/r5_sanity.py` writes `results/r5_sanity.json` and needs the data cache.
