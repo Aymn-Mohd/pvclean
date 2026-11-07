@@ -19,7 +19,7 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--no-figures", action="store_true", help="skip the R2 figures"); p.add_argument("--refresh-inputs", action="store_true", help="recompute results/macro_inputs.json from the data cache")
     p.add_argument("--summaries", action="store_true", help="also rewrite docs/records/R*_SUMMARY.md")
     d = sub.add_parser("download", help="fetch data into the cache, one attempt per URL")
-    d.add_argument("source"); d.add_argument("--limit", type=int)
+    d.add_argument("source"); d.add_argument("--limit", type=int); d.add_argument("--sites", nargs="*", help="only these sites; a failed site is dropped and the next one continues")
     a = ap.parse_args(argv)
     if a.cmd == "run":
         from pvclean.studies import run_study
@@ -37,7 +37,7 @@ def main(argv: list[str] | None = None) -> int:
             print(line)
     else:
         from pvclean.download import download
-        res = download(a.source, a.limit)
+        res = download(a.source, a.limit, a.sites)
         print(f"{a.source}: {res['status']}; {len(res['files'])} files in {data_dir()}")
         return 0 if res["status"] == "ok" else 1
     return 0

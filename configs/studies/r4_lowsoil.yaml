@@ -1,0 +1,7 @@
+study: r4_lowsoil
+label: POST HOC
+runner: r4_lowsoil
+output: results_r4_lowsoil.json
+params:
+  sites: new
+  soil_mean: 0.0011

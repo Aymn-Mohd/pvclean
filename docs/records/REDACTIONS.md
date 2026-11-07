@@ -54,3 +54,4 @@ Every replacement made for the public release, by file and line. The old value i
 | `docs/records/V10_CHANGELOG.md` | 22 | removed: sentence about a prospective co-author not on the paper | none |
 | `docs/records/V10_CHANGELOG.md` | 32 | removed: sentence about a prospective co-author not on the paper | none |
 | `docs/records/V10_CHANGELOG.md` | 48 | removed: sentence about a prospective co-author not on the paper | none |
+| `docs/records/EXPERIMENT_LOG.md` | 281 | home path | `HOME_DIR` |

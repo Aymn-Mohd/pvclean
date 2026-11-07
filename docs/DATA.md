@@ -13,6 +13,7 @@ python -m pvclean download omie         # December 2022 files, warm-up only
 - Each URL gets one attempt. There are no retries and no changed headers.
 - A failed request stops that source, because a block applies to the whole source.
 - The record goes to `<cache>/provenance/<source>.json`, with URL, status, size, sha256, expected sha256 and access date.
+- `python -m pvclean download nasa-power --sites <names>` fetches only those sites. A failed site is dropped and the next one continues; HTTP 403 or 429 stops the run. The R4 sites are recorded in `data/provenance/r4_nasa_power.json`.
 - On 2026-11-05 one file from each of the three sources was fetched this way, and each hash matched the stored record.
 
 ## Files the code reads

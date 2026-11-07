@@ -1,0 +1,7 @@
+study: r4_rain
+label: INPUT
+runner: r4_rain
+output: r4_rain.json
+params:
+  sites: new
+  years: [2024, 2025]

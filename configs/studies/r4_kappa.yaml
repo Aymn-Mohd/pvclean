@@ -1,0 +1,12 @@
+study: r4_kappa
+label: POST HOC
+runner: r4_kappa
+output: results_r4_kappa.json
+protocol:
+  grids:
+    proposed:
+      beta: [0, 0.5, 1.0]
+      kappa: [0, 0.5, 1, 2, 4, 8, 16, 32]
+params:
+  sites: new
+  kappa_grid: [0, 0.5, 1, 2, 4, 8, 16, 32]

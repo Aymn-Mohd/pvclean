@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.1.0 (2026-11-07)
+
+- Sites: Almería, Córdoba, Bilbao, Port Augusta and Longreach, with the same plant and tilt rules as the matched sites.
+- Studies: `r4_rain`, `r4_sites`, `r4_kappa`, `r4_shift`, `r4_lowsoil`, `r4_cost` and `r4_seeds`, in `pvclean/studies/r4.py`.
+- Results: the `results/results_r4_*.json` files, `results/r4_rain.json` and `results/r4_sanity.json`. `docs/R4_SUMMARY.md` applies the pre-registered dry-spell rule. Its verdict is PARTIAL.
+- Scripts: `src/make_r4_summary.py`, `src/make_fig_r4.py` and `src/r4_sanity.py`. The figure and trace PNG are written to `paper/`, which git ignores.
+- `pvclean download nasa-power --sites <names>` fetches only those sites. The new downloads are recorded in `data/provenance/r4_nasa_power.json`.
+- Statistics: `dry_rule`, `dry_prediction` and `cluster_spearman`.
+- Stored results used by the paper macros are unchanged. `docs/records/REDACTIONS.md` lists one new replacement.
+
 ## 1.0.1 (2026-11-06)
 
 - Tests: `test_files_found` checks tracked files only, so it passes after `pvclean report` has run in the same folder.

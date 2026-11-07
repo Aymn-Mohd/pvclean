@@ -269,3 +269,20 @@ Report planner minus FT and planner minus the training-selected best baseline. L
 All three gauge sources failed on 2026-11-05, so R3b has no gauge data. One request per URL, User-Agent `e1-r3b-research-client`, no retries and no workaround. URLs and reply hashes: `data/provenance/r3b_gauges.json`.
 1. BoM, Adelaide (Kent Town) 023090 and Brisbane 040913: Climate Data Online returned HTTP 403 for both stations: "Your access is blocked due to the detection of a potential automated access request. The Bureau of Meteorology website does not support web scraping: if you are trying to access Bureau data through automated means, you should stop." Adelaide and Brisbane are skipped, as the brief says. The reply offers an anonymous FTP channel and a Registered User service; neither was tried. No other station was tried: the fallback covers gaps above 5%, and a station's gaps cannot be measured without its data.
 2. AEMET, Sevilla Aeropuerto 5783: the OpenData daily endpoint returned HTTP 200 with an empty body when no API key is sent, and the portal issues API keys through registration. Seville is skipped, as the brief says. No key was requested.
+
+
+---
+## Phase R4 run log (2026-11-07)
+Pre-registration: docs/records/decisions.md, "Phase R4", committed alone as 177ff66 before any R4 simulation. Inputs commit 94389da.
+Runs, in order, 24 workers, nice 10: r4_sites, r4_kappa, r4_shift, r4_lowsoil, r4_cost, r4_seeds. All rc 0; user CPU 9477 s (2.63 h). Times: results/time_r4_*.txt.
+Deviations and fixes:
+1. Downloaded 2001 to 2025 for each new site, not 2023 to 2025: the R3 climatology and read_power need those years. 125 requests, one each, all HTTP 200, client pvclean-research-client.
+2. `pvclean download` gained `--sites`: a failed site is dropped and the next continues; HTTP 403 or 429 stops the run. tests/unit/test_download.py expected 75 NASA targets; it now expects 200.
+3. site_wx.npz was rebuilt with the five new tables. The R3 arrays are bit-identical (checked with numpy array_equal); the file's sha256 changed. The R3 file is kept at HOME_DIR/backups/pvclean/site_wx_r3.npz.
+4. The brief names decisions.md for the pre-registration; CLAUDE.md names this log. The entry is in decisions.md, as the brief says, and this log points to it.
+5. R4 scripts live in src/ and paper/, as the brief says; the package layout has neither directory otherwise.
+6. Rule order: DESCRIPTIVE tested first (implementation note 1). It did not matter: both sides have at least 4 case-years.
+7. Dubai marker: the 12 R1 case-years on the raw price series, not R1's MAIN aligned series (implementation note 11). Both values are in docs/R4_SUMMARY.md section 7.
+8. Figure additions not in the brief: marker shape shows the contract, merchant and PPA are moved 1.2 days apart so that they do not overprint, and the band is labelled "no prediction".
+9. Added after seeing results, labelled POST HOC: the by-contract table, the "how firm the label is" line, the new-sites-only count, and the rule column, which is not a verdict.
+10. src/make_r4_summary.py: fixed a keyword clash in dubai() on its first real run. No result changed.

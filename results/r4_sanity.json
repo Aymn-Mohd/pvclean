@@ -1,0 +1,107 @@
+{
+ "site": "almeria",
+ "year": 2024,
+ "seed": 0,
+ "same_seed_max_abs_diff_usd": 0.0,
+ "inputs_identical": true,
+ "none_energy_same_across_contracts": true,
+ "rain_vs_raw_file_max_abs_mm": 1.7763568394002505e-15,
+ "traces": {
+  "merchant|no cleaning": {
+   "mean_sr": 0.8655505608359475,
+   "n_clean": 0.0,
+   "n_missions": 0.0,
+   "net": 63096.85895077546,
+   "energy_mwh": 1546.8768351707427
+  },
+  "merchant|FT": {
+   "mean_sr": 0.9473402473378699,
+   "n_clean": 160.0,
+   "n_missions": 12.0,
+   "net": 71292.04770824366,
+   "energy_mwh": 1717.1880020032008
+  },
+  "merchant|planner": {
+   "mean_sr": 0.9607729542505458,
+   "n_clean": 320.0,
+   "n_missions": 24.0,
+   "net": 71462.6849905316,
+   "energy_mwh": 1744.128266628798
+  },
+  "ppa|no cleaning": {
+   "mean_sr": 0.8655505608359475,
+   "n_clean": 0.0,
+   "n_missions": 0.0,
+   "net": 70355.49320915302,
+   "energy_mwh": 1546.8768351707427
+  },
+  "ppa|FT": {
+   "mean_sr": 0.9623373414028552,
+   "n_clean": 280.0,
+   "n_missions": 27.0,
+   "net": 78317.82745345765,
+   "energy_mwh": 1748.0371718687743
+  },
+  "ppa|planner": {
+   "mean_sr": 0.9658627725230597,
+   "n_clean": 393.0,
+   "n_missions": 30.0,
+   "net": 78130.58898431121,
+   "energy_mwh": 1754.5413810680996
+  }
+ },
+ "split_merchant": {
+  "net": 205.369361084977,
+  "revenue": 929.249361084977,
+  "extra_cost": 723.88,
+  "quantity": 1104.5974447231858,
+  "timing": -175.3480836382088,
+  "extra_rows": 152.42,
+  "extra_missions": 11.42,
+  "energy_mwh": 26.648135964989923,
+  "v_ref": 0.0414512086764491
+ },
+ "split_ppa": {
+  "net": -221.09268280793214,
+  "revenue": 157.42731719206785,
+  "extra_cost": 378.52000000000004,
+  "quantity": 149.582902311269,
+  "timing": 7.844414880798832,
+  "extra_rows": 83.68,
+  "extra_missions": 4.38,
+  "energy_mwh": 3.2860416971540776,
+  "v_ref": 0.04552069513932748
+ },
+ "yields": {
+  "almeria": {
+   "dc_kwh_kwp": 1882.8035236872197,
+   "opposite_azimuth": 1346.36257131733
+  },
+  "cordoba": {
+   "dc_kwh_kwp": 1904.4778084092943,
+   "opposite_azimuth": 1354.2613413650365
+  },
+  "bilbao": {
+   "dc_kwh_kwp": 1412.724506113745,
+   "opposite_azimuth": 1071.283418668606
+  },
+  "port_augusta": {
+   "dc_kwh_kwp": 2105.467097028957,
+   "opposite_azimuth": 1519.1086088780694
+  },
+  "longreach": {
+   "dc_kwh_kwp": 2113.005862322187,
+   "opposite_azimuth": 1631.553042687614
+  }
+ },
+ "shift_vs_r3_max_abs_diff": 0.0,
+ "lines": [
+  "Same seed: fresh runs of planner and FT, both contracts, seeds 0 to 2, differ from the stored net by at most 0.00e+00 USD.",
+  "Identical inputs: production, rain, dust, row noise and rain flags are equal across rebuilt configs: True. No-cleaning energy under merchant and PPA differs by at most 0.00%.",
+  "Rain: daily totals rebuilt directly from the raw NASA POWER files differ from the model's rain by at most 1.78e-15 mm.",
+  "Almer\u00eda 2024, merchant: planner minus FT is +205 = revenue +929 minus extra cost +724 (+152 rows, +11 missions). Extra energy +26.6 MWh at a reference value of 0.041 USD/kWh; quantity +1105, timing -175.",
+  "Almer\u00eda 2024, ppa: planner minus FT is -221 = revenue +157 minus extra cost +379 (+84 rows, +4 missions). Extra energy +3.3 MWh at a reference value of 0.046 USD/kWh; quantity +150, timing +8.",
+  "DC yield 2024, kWh/kWp, with the opposite azimuth in brackets: almeria 1883 (1346), cordoba 1904 (1354), bilbao 1413 (1071), port_augusta 2105 (1519), longreach 2113 (1632). Equator-facing is higher at every site: True.",
+  "The 12 R3 rows of r4_shift differ from the stored R3 shift check by at most 0.00e+00 USD."
+ ]
+}

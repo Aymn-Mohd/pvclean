@@ -63,3 +63,18 @@ def spearman(x: Sequence[float], y: Sequence[float]) -> tuple[float, float]:
     """Spearman rank correlation and p-value."""
     r, p = stats.spearmanr(x, y)
     return float(r), float(p)
+
+
+def cluster_spearman(x: Sequence[float], y: Sequence[float], cluster: Sequence[str], B: int = 2000, seed: int = 0) -> dict[str, Any]:
+    """Spearman rho with a cluster bootstrap: whole clusters are drawn with replacement, B times, numpy default_rng(seed), percentile 95% interval. A resample with no variation in x or y has
+    no rho; it is dropped and counted."""
+    x = np.asarray(x, float); y = np.asarray(y, float); c = np.asarray(cluster)
+    names = sorted(set(c.tolist())); idx = [np.flatnonzero(c == n) for n in names]
+    rng = np.random.default_rng(seed); rhos = []; dropped = 0
+    for _ in range(B):
+        i = np.concatenate([idx[j] for j in rng.integers(0, len(names), len(names))])
+        if np.ptp(x[i]) == 0 or np.ptp(y[i]) == 0:
+            dropped += 1
+            continue
+        rhos.append(stats.spearmanr(x[i], y[i])[0])
+    return dict(rho=float(stats.spearmanr(x, y)[0]), lo=float(np.percentile(rhos, 2.5)), hi=float(np.percentile(rhos, 97.5)), n=len(x), clusters=len(names), B=B, seed=seed, dropped=dropped)

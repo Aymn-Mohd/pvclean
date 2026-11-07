@@ -1,0 +1,7 @@
+study: r4_shift
+label: POST HOC
+runner: r4_shift
+output: results_r4_shift.json
+params:
+  sites: all
+  shift_days: 182

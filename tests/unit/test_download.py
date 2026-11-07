@@ -38,4 +38,22 @@ def test_unknown_source():
 
 def test_nasa_targets_carry_recorded_hashes():
     t = download.nasa_targets()
-    assert len(t) == 75 and all(x["sha256"] for x in t)
+    assert len(t) == 200 and all(x["sha256"] for x in t)
+
+
+def test_sites_filter_drops_only_the_failed_site(tmp_path, monkeypatch):
+    monkeypatch.setenv("PVCLEAN_DATA", str(tmp_path))
+    calls = []
+    monkeypatch.setitem(download.SOURCES, "fake", lambda: [dict(path=f"raw/{s}{i}", url=f"http://x/{s}{i}", sha256="", site=s) for s in "ab" for i in range(2)])
+    monkeypatch.setattr(download, "fetch_once", lambda u: (calls.append(u), (500, b"", "HTTP 500") if u.endswith("a0") else (200, b"ok", ""))[1])
+    r = download.download("fake", sites=["a", "b"])
+    assert calls == ["http://x/a0", "http://x/b0", "http://x/b1"] and r["dropped_sites"] == ["a"]
+
+
+def test_sites_filter_stops_on_a_block(tmp_path, monkeypatch):
+    monkeypatch.setenv("PVCLEAN_DATA", str(tmp_path))
+    calls = []
+    monkeypatch.setitem(download.SOURCES, "fake", lambda: [dict(path=f"raw/{s}", url=f"http://x/{s}", sha256="", site=s) for s in "ab"])
+    monkeypatch.setattr(download, "fetch_once", lambda u: (calls.append(u), (403, b"", "HTTP 403"))[1])
+    download.download("fake", sites=["a", "b"])
+    assert calls == ["http://x/a"]

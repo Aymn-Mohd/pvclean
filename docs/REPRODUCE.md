@@ -71,6 +71,13 @@ The difference column is the largest absolute difference between the rerun and t
 | `r3_checks.json` | r3_checks | 2616 | 0 | 361 | `site_wx.npz`, `real_prices_v2.npz` |
 | `results_matched_posthoc_kappa.json` | r3_kappa | 35273 | 0 | 35 | `site_wx.npz`, `real_prices_v2.npz` |
 | `results_r3b_rain.json` | r3b_rain | 72 | 0 | 1 | `site_wx.npz` |
+| `r4_rain.json` | r4_rain | new in R4 | not rerun | 1 | `site_wx.npz` |
+| `results_r4_sites.json` | r4_sites | new in R4 | not rerun | 55 | `site_wx.npz`, `real_prices_v2.npz` |
+| `results_r4_kappa.json` | r4_kappa | new in R4 | not rerun | 59 | `site_wx.npz`, `real_prices_v2.npz` |
+| `results_r4_shift.json` | r4_shift | new in R4 | not rerun | 88 | `site_wx.npz`, `real_prices_v2.npz` |
+| `results_r4_lowsoil.json` | r4_lowsoil | new in R4 | not rerun | 55 | `site_wx.npz`, `real_prices_v2.npz` |
+| `results_r4_cost.json` | r4_cost | new in R4 | not rerun | 146 | `site_wx.npz`, `real_prices_v2.npz` |
+| `results_r4_seeds.json` | r4_seeds | new in R4 | not rerun | 127 | `site_wx.npz`, `real_prices_v2.npz` |
 | `results_exact.json` | exact | 1144 | 9.1e-13 (217 of 1144) | 43 | none |
 | `results_exact_matched.json` | exact_matched | 240 | 9.1e-13 (18 of 240) | 32 | none |
 | `results_mpc.json` | mpc | 240 | 4.5e-13 (10 of 240) | 35 | none |
@@ -88,7 +95,7 @@ Studies with `none` in the table run on a fresh clone. The others read these fil
 |---|---|
 | `real_prices.npz` | Cannot be rebuilt or downloaded. Needs a kept copy; `docs/DATA.md` has the hash. |
 | `real_prices_v2.npz` | `python -m pvclean download aemo`, `python -m pvclean download omie`, then `pvclean.markets.build.build()`. Also needs `new/omie.csv`, which no script fetches. |
-| `site_wx.npz` | `python -m pvclean download nasa-power`, then `pvclean.weather.build.sites()`. |
+| `site_wx.npz` | `python -m pvclean download nasa-power`, then `pvclean.weather.build.sites()`. All eight sites; the three R3 tables are unchanged by the five R4 ones. |
 | `dubai_wx.npz` | `pvclean.weather.build.dubai()`, from `new/nasa_dubai.csv.gz`, which no script fetches. |
 | `new/nlr_monthly.csv`, `new/nlr_sites.csv` | No script fetches these. See `data/provenance/NLR.md`. |
 
@@ -103,3 +110,7 @@ Studies with `none` in the table run on a fresh clone. The others read these fil
 - `results_matched.json` `part_a` is not in the stored file: it was dropped in fd55d5e. It remains in commit 1f25e6d. `belief_benchmark.yaml` regenerates it, and the rerun matches the archived code.
 - `results_extra_20yr.json`, `results_v1_old_exposure.json`, `results_v2_20yr.json`, `check_L7_vs_clairvoyant.json` and `manifest.json` have no producing script.
 - `exp01_reproduce_v9.json` needs the absent v9 tree. `horizon_summary_transcribed.json` is a hand transcription and is not used while `results_horizon.json` is present.
+
+## Phase R4 outputs
+
+`docs/R4_SUMMARY.md` comes from `python src/make_r4_summary.py`. `paper/fig_dryspell.pdf` and its preview come from `python src/make_fig_r4.py`. `python src/r4_sanity.py` writes `results/r4_sanity.json` and needs the data cache. The first two read stored results only.

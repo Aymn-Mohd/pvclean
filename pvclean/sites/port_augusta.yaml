@@ -1,0 +1,9 @@
+name: port_augusta
+lat: -32.49
+lon: 137.77
+tilt: 25.0
+azimuth: 0.0
+tz: Etc/GMT-10
+time_base: Etc/GMT-10
+market: SA1_raw
+weather_source: nasa_site

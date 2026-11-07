@@ -1,0 +1,6 @@
+study: r4_sites
+label: MAIN-R4
+runner: r4_sites
+output: results_r4_sites.json
+params:
+  sites: new

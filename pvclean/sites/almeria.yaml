@@ -1,0 +1,9 @@
+name: almeria
+lat: 36.84
+lon: -2.46
+tilt: 25.0
+azimuth: 180.0
+tz: Etc/GMT-1
+time_base: Europe/Madrid
+market: ES_raw
+weather_source: nasa_site

@@ -56,6 +56,7 @@ Each output and the study behind it:
 | `table_fore.tex` | `results_replay.json` | `python -m pvclean run configs/studies/replay.yaml` |
 | `table_exact.tex` | `results_exact.json`, `results_horizon.json`, `results_matched.json` | `python -m pvclean run configs/studies/exact.yaml`, then `horizon.yaml` and `belief_benchmark.yaml` |
 | `fig_price.pdf` | `results.json` | `python -m pvclean run configs/studies/generated.yaml` |
+| `paper/fig_dryspell.pdf`, `docs/R4_SUMMARY.md` | `r4_rain.json`, `results_r4_*.json`, `results_r3b_rain.json`, `results_matched.json`, `r3_checks.json`, `results_chrono.json` | `python src/make_fig_r4.py`, `python src/make_r4_summary.py` |
 | `numbers.tex`, `numbers_v10.tex`, `numbers_pes.tex` | all of the above | `for f in configs/studies/*.yaml; do python -m pvclean run "$f"; done` |
 
 Reruns write to `runs/<study>/`, so they never touch `results/`. Replays need the data cache (see `docs/DATA.md`). `docs/REPRODUCE.md` lists every study and how exactly each one reproduces.

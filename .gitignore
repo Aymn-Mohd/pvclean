@@ -22,6 +22,9 @@ runs/
 papers/e1_pes/table_real.tex
 results/figures/
 
+# Written by src/make_fig_r4.py and src/r4_sanity.py
+paper/
+
 # LaTeX
 papers/**/*.aux
 papers/**/*.log

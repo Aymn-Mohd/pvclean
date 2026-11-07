@@ -1,0 +1,7 @@
+study: r4_cost
+label: SENSITIVITY
+runner: r4_cost
+output: results_r4_cost.json
+params:
+  sites: all
+  multipliers: [0.5, 2]

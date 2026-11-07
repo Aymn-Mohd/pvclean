@@ -1,0 +1,103 @@
+{
+ "_meta": {
+  "label": "INPUT",
+  "note": "Local-day NASA POWER rain on the price clock, 365 days, 29 Feb dropped. Longest run: longest stretch without a day >= 5 mm, including the stretches before the first and after the last such day."
+ },
+ "sites": {
+  "almeria": {
+   "market": "ES_raw",
+   "lat": 36.84,
+   "lon": -2.46,
+   "years": {
+    "2024": {
+     "total_mm": 219.43,
+     "days_5mm": 13,
+     "days_1mm": 54,
+     "longest_run_without_5mm": 195
+    },
+    "2025": {
+     "total_mm": 269.47,
+     "days_5mm": 13,
+     "days_1mm": 64,
+     "longest_run_without_5mm": 238
+    }
+   }
+  },
+  "cordoba": {
+   "market": "ES_raw",
+   "lat": 37.88,
+   "lon": -4.78,
+   "years": {
+    "2024": {
+     "total_mm": 528.95,
+     "days_5mm": 31,
+     "days_1mm": 65,
+     "longest_run_without_5mm": 158
+    },
+    "2025": {
+     "total_mm": 702.5799999999999,
+     "days_5mm": 42,
+     "days_1mm": 90,
+     "longest_run_without_5mm": 119
+    }
+   }
+  },
+  "bilbao": {
+   "market": "ES_raw",
+   "lat": 43.26,
+   "lon": -2.93,
+   "years": {
+    "2024": {
+     "total_mm": 1247.4099999999999,
+     "days_5mm": 72,
+     "days_1mm": 168,
+     "longest_run_without_5mm": 24
+    },
+    "2025": {
+     "total_mm": 942.53,
+     "days_5mm": 56,
+     "days_1mm": 161,
+     "longest_run_without_5mm": 38
+    }
+   }
+  },
+  "port_augusta": {
+   "market": "SA1_raw",
+   "lat": -32.49,
+   "lon": 137.77,
+   "years": {
+    "2024": {
+     "total_mm": 172.92,
+     "days_5mm": 10,
+     "days_1mm": 42,
+     "longest_run_without_5mm": 197
+    },
+    "2025": {
+     "total_mm": 118.69999999999999,
+     "days_5mm": 4,
+     "days_1mm": 36,
+     "longest_run_without_5mm": 158
+    }
+   }
+  },
+  "longreach": {
+   "market": "QLD1_raw",
+   "lat": -23.44,
+   "lon": 144.25,
+   "years": {
+    "2024": {
+     "total_mm": 235.95999999999998,
+     "days_5mm": 11,
+     "days_1mm": 34,
+     "longest_run_without_5mm": 230
+    },
+    "2025": {
+     "total_mm": 275.86,
+     "days_5mm": 12,
+     "days_1mm": 32,
+     "longest_run_without_5mm": 138
+    }
+   }
+  }
+ }
+}

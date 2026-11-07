@@ -10,6 +10,11 @@ REGISTRY: dict[str, str] = {
     "adelaide": os.path.join(HERE, "adelaide.yaml"),
     "brisbane": os.path.join(HERE, "brisbane.yaml"),
     "seville": os.path.join(HERE, "seville.yaml"),
+    "almeria": os.path.join(HERE, "almeria.yaml"),
+    "cordoba": os.path.join(HERE, "cordoba.yaml"),
+    "bilbao": os.path.join(HERE, "bilbao.yaml"),
+    "port_augusta": os.path.join(HERE, "port_augusta.yaml"),
+    "longreach": os.path.join(HERE, "longreach.yaml"),
 }
 
 

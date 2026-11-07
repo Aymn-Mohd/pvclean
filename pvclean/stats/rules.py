@@ -42,3 +42,24 @@ def robust_rule(default: dict[str, Any], var: dict[str, Any]) -> str:
     else:
         other_side = False
     return "ROBUST" if (same_sign and not other_side) else "NOT ROBUST"
+
+
+DRY_HIGH = 120      # days: at or above, predict planner minus FT above 0
+DRY_LOW = 70        # days: at or below, predict planner minus FT at or below 0
+
+
+def dry_prediction(days: int) -> str | None:
+    """R4 prediction from the longest dry spell: '+', '<=0', or None when no prediction is made."""
+    return "+" if days >= DRY_HIGH else "<=0" if days <= DRY_LOW else None
+
+
+def dry_rule(rows: Iterable[tuple[int, float]]) -> dict[str, Any]:
+    """H-R4 over (longest dry spell, mean planner minus FT) pairs, predicted case-years only. DESCRIPTIVE if either predicted side has fewer than 4 case-years; otherwise SUPPORTED at
+    80% or more with the predicted sign, NOT SUPPORTED at 60% or fewer, PARTIAL otherwise. An exact tie counts as <= 0."""
+    pred = [(dry_prediction(d), m) for d, m in rows]
+    use = [(p, m) for p, m in pred if p is not None]
+    hit = sum((m > 0) if p == "+" else (m <= 0) for p, m in use)
+    n_pos = sum(p == "+" for p, _ in use); n_neg = len(use) - n_pos
+    share = hit / len(use) if use else float("nan")
+    v = "DESCRIPTIVE" if min(n_pos, n_neg) < 4 else "SUPPORTED" if share >= 0.8 else "NOT SUPPORTED" if share <= 0.6 else "PARTIAL"
+    return dict(verdict=v, n_all=len(pred), n_predicted=len(use), n_no_prediction=len(pred) - len(use), n_predicted_pos=n_pos, n_predicted_nonpos=n_neg, n_correct=hit, share_correct=share)
