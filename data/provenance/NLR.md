@@ -41,7 +41,11 @@ All three cited values reproduce: 146 sites, 0.10 %/day and 0.30 %/day.
 
 ## Download date and hashes (added in release 1.4.1)
 
-- Download date: not recorded. The earliest record is the files' first commit to the private development repository, on 2026-10-11 (commit 3d4e18c), with the sha256 hashes above. The copies in the data cache had the same hashes on 2026-11-08.
+- Download date: not recorded exactly. The evidence:
+  - The paper's reference `nlrsoiling` says "Accessed Oct. 2026".
+  - The files were first committed to the private development repository on 2026-10-11 at 19:07 (UTC+4), in commit 3d4e18c, with the sha256 hashes above.
+  - The files' modification time in the data cache is 2026-10-11 19:18 (UTC+4). That is after the commit, so it is probably the time of a later checkout or copy, not of the download.
+  - So the download was in October 2026, on or before 11 October 2026; the exact day is unknown. The copies in the data cache had the same hashes on 2026-11-08.
 - `data/new/nlr_monthly.csv`: 92,427 bytes, sha256 `a4ae1bd5aa8ae13a07d5a82697c6bbf0338e07c0786965ca7d2f805e13f15f8d`.
 - `data/new/nlr_sites.csv`: 30,975 bytes, sha256 `ae0961d2c0d106fd507b1bca843d10406c10f276241bc9fd418694ecb0b5e321`.
 - No script in this repository fetches these files. Download the site table and the monthly soiling rates from https://www.nlr.gov/pv/soiling, save them under the names above, and compare the sha256 hashes.

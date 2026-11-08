@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.4.2 (2026-11-08)
+
+- `CITATION.cff`, the README and the 1.0.0 entry below: new paper title "Simple Price Forecasts Add Little to PV Cleaning".
+- `data/provenance/NLR.md`: the NLR download date, as far as the records show it (October 2026, on or before 11 October), with the evidence.
+- No code, config or result file changed.
+
 ## 1.4.1 (2026-11-08)
 
 - `docs/ORACLE_BOUND.md`: how the oracle repairs an over-full night (removed rows are barred from that night) and why its Lagrangian bound with the K-row night cap bounds every feasible schedule, from `pvclean/exact/oracle.py` only.
@@ -64,6 +70,6 @@
 
 ## 1.0.0 (2026-11-06)
 
-- First public release, for the paper now titled "Causal Price Forecasts Add Little to PV Cleaning", submitted to IEEE PES General Meeting 2027.
+- First public release, for the paper now titled "Simple Price Forecasts Add Little to PV Cleaning", submitted to IEEE PES General Meeting 2027.
 - The package, study configs, tests, documentation, stored results and generated paper macros and tables.
 - No market or weather data is included.

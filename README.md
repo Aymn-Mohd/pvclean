@@ -2,7 +2,7 @@
 
 ## What it does
 
-pvclean simulates dust on PV rows, rain, and a night-time cleaning robot, one year at a time. It compares cleaning policies by the net value they earn under fixed-tariff, merchant, PPA and export-cap contracts. It also holds the code, configs and stored results behind the paper "Causal Price Forecasts Add Little to PV Cleaning".
+pvclean simulates dust on PV rows, rain, and a night-time cleaning robot, one year at a time. It compares cleaning policies by the net value they earn under fixed-tariff, merchant, PPA and export-cap contracts. It also holds the code, configs and stored results behind the paper "Simple Price Forecasts Add Little to PV Cleaning".
 
 ## Install
 
@@ -188,7 +188,7 @@ data/provenance/ download records; the data itself stays outside git
 
 Cite the paper and this repository, with the release you used. `CITATION.cff` has the details.
 
-> A. M. M. Rafiq, K. Thiagarajan and M. Nassereddine, "Causal Price Forecasts Add Little to PV Cleaning", submitted to IEEE PES General Meeting 2027.
+> A. M. M. Rafiq, K. Thiagarajan and M. Nassereddine, "Simple Price Forecasts Add Little to PV Cleaning", submitted to IEEE PES General Meeting 2027.
 
 ## Licence
 
