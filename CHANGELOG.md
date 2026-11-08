@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.4.1 (2026-11-08)
+
+- `docs/ORACLE_BOUND.md`: how the oracle repairs an over-full night (removed rows are barred from that night) and why its Lagrangian bound with the K-row night cap bounds every feasible schedule, from `pvclean/exact/oracle.py` only.
+- `data/provenance/NLR.md`: the NLR file hashes, the earliest record of their download, and download instructions for AEMO, OMIE (`marginalpdbc`) and NASA POWER (hourly point API, community RE, UTC).
+- `docs/records/decisions.md`: an index of phases R3 to R7, with where each was defined and the commits that registered and reported it.
+- README: one command that rebuilds Tables I and II and the figures from the stored results.
+- No code, config or result file changed.
+
 ## 1.4.0 (2026-11-08)
 
 - Sensitivity runs (Phase R7, no decision rules): price forecasts F2, F7d, F56d, FHW, F3 and F4; a planner that may abstain (kappa up to inf); dust rates; rain cleaning effectiveness; cleaning costs; and an oracle split that removes one kind of information at a time (rain, prices, per-row soiling). Studies `r7_forecast`, `r7_abstain`, `r7_dust`, `r7_rain`, `r7_cost` and `r7_oracle_split`, in `pvclean/studies/r7.py`.

@@ -42,11 +42,13 @@ Value of cleaning is net value minus the net value of no cleaning. Three seeds s
 
 ## Reproduce the paper results
 
-One command rebuilds every macro, table and figure from the stored results in `results/`. It needs no data:
+One command rebuilds Tables I to III (`table_rq1_pes.tex`, `table_fore.tex`, `table_exact.tex`), every macro, `fig_price.pdf`, and `paper/fig_policies.pdf` from the stored results in `results/`. It needs no data:
 
 ```bash
-python -m pvclean report
+python -m pvclean report && python src/make_fig_r7.py
 ```
+
+Tables I and II are `table_rq1_pes.tex` and `table_fore.tex` in `papers/e1_pes/`. The figures are `fig_price.pdf` (written by `pvclean report`) and `paper/fig_policies.pdf` (written by `src/make_fig_r7.py`).
 
 Each paper table and figure, the config that produced its stored results, and the commands. "Rebuild" reads only `results/` and needs no data; "rerun" runs the study again into `runs/<study>/` (add `--out results` to replace the stored file).
 

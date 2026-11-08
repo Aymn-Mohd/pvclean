@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the paper below and this release."
 title: pvclean
-version: 1.4.0
+version: 1.4.1
 date-released: "2026-11-08"
 license: MIT
 repository-code: "https://github.com/Aymn-Mohd/pvclean"

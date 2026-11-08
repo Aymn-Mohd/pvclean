@@ -233,3 +233,17 @@ Sanity triggers: C below a policy at any seed (a bug); F4 FT value below F2 FT v
 During development: single simulations (FT, planner, fixed parameters, Seville merchant 2024, seed 0) under roll, roll_hw, dayahead, perfect and roll_days 7 and 56, to check that each mode runs; and three oracle-split timing units on Seville merchant 2024 seed 0: A 10,418, B 10,460, D 10,601 USD/yr against C 10,597, 23 to 116 s each. For that unit D's planned value equals its true value to 0.12 USD: when most rows are cleaned on the same nights, the plant total is nearly linear in mean exposure, which is 1, and the station belief costs almost nothing.
 Release audit: docs/R7_RELEASE_AUDIT.md (written before any run; changes nothing public).
 ---
+
+## Index of phases R3 to R7 (added for release 1.4.1)
+Where each phase's definitions and rules were written before its runs, and the commits that registered and reported it. Commit hashes refer to the private development repository from which each release is exported; the public releases are listed last. The R3 and R3b pre-registrations were kept in the experiment log, the later ones in this file.
+
+| phase | definitions, written before the runs | registered | results |
+|---|---|---|---|
+| R3 matched sites | `docs/records/EXPERIMENT_LOG.md`, "Phase R3 (2026-11-05), PRE-REGISTERED before any R3 run" | ab9dfdb (2026-11-05) | d69f238 (replay), a0ec103 (summary); POST HOC wider kappa grid: note 61a4ad3, run ab4c5ac |
+| R3b gauge rain | `docs/records/EXPERIMENT_LOG.md`, "Phase R3b (2026-11-05), PRE-REGISTERED before any R3b run" | 2421d93 (2026-11-05) | c69283b, 51464a0, 7008040 (rule not evaluable: gauge downloads blocked) |
+| R4 new sites, dry-spell rule | this file, "Phase R4 (2026-11-07), PRE-REGISTERED before any R4 simulation" | 177ff66 (2026-11-07) | 11a209c (2026-11-07) |
+| R5 merchant test at unseen sites | this file, "Phase R5 (2026-11-07), PRE-REGISTERED before any R5 simulation" | 37f1aa2 (2026-11-07) | b48ffd1 (2026-11-07) |
+| R6 oracle headroom, price-awareness | this file, "Phase R6 (2026-11-07), PRE-REGISTERED before any R6 run" | a0c0684 (2026-11-07) | 795d20a (2026-11-08); "Phase R6 results" in this file |
+| R7 sensitivity (no decision rules) | this file, "Phase R7 (sensitivity, specified before the runs), 2026-11-08" | eb7f39d (2026-11-08); tools 426446e | 0d4038f (2026-11-08) |
+
+Public releases: v1.1.0 (R4, 0c1f68e), v1.2.0 (R5, f47a2d8), v1.3.0 (R6, 962ef53), v1.4.0 (R7, f216484). The R3 code and results are in every release.
