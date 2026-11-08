@@ -1,0 +1,9 @@
+study: r6_seeds
+label: DESCRIPTIVE
+runner: r6_seeds
+output: results_r6_seeds.json
+params:
+  retune:
+    train1005: [1005, 1006, 1007, 1008, 1009]
+    train1010: [1010, 1011, 1012, 1013, 1014]
+    train1015: [1015, 1016, 1017, 1018, 1019]

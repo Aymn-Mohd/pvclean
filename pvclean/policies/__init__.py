@@ -8,6 +8,7 @@ from .ft import ForecastThreshold
 from .mpc import RecedingHorizon
 from .none import NoCleaning
 from .planner import Planner, PlannerNoBatching, PlannerNoValuation
+from .replay import ScheduleReplay
 from .threshold import LossThreshold
 
 REGISTRY: dict[str, Type[Policy]] = {
@@ -20,6 +21,7 @@ REGISTRY: dict[str, Type[Policy]] = {
     "proposed_noval": PlannerNoValuation,
     "proposed_nobatch": PlannerNoBatching,
     "mpc": RecedingHorizon,
+    "replay": ScheduleReplay,
 }
 
 

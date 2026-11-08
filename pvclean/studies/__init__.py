@@ -17,6 +17,7 @@ RUNNERS: dict[str, str] = {
     "failure_diag": "failure_diag:run", "mission_trace": "mission_trace:run", "r2_checks": "r2_checks:run", "r3_checks": "r3_checks:run", "audit_counts": "audit_counts:run",
     "r4_rain": "r4:rain", "r4_sites": "r4:sites_job", "r4_kappa": "r4:kappa_job", "r4_shift": "r4:shift_job", "r4_lowsoil": "r4:lowsoil_job", "r4_cost": "r4:cost_job", "r4_seeds": "r4:seeds_job",
     "r5_contract": "r5:contract_job", "r5_kappa": "r5:kappa_job",
+    "r6_oracle": "r6:oracle_job", "r6_plain": "r6:plain_job", "r6_seeds": "r6:seeds_job",
 }
 
 

@@ -1,0 +1,4 @@
+study: r6_plain
+label: MAIN-R6
+runner: r6_plain
+output: results_r6_plain.json

@@ -146,3 +146,44 @@ POST HOC: the wider kappa grid {0, 0.5, 1, 2, 4, 8, 16, 32} on all 24.
 - **PPA (DESCRIPTIVE):** 6 of 10 = 60.0% with the predicted sign; predicted above 0: 5; predicted at or below 0: 5; no prediction: 2. The rule would say NOT SUPPORTED; this is not a verdict.
 - **All 24 (DESCRIPTIVE):** 11 of 20 = 55.0% with the predicted sign; predicted above 0: 10; predicted at or below 0: 10; no prediction: 4. The rule would say NOT SUPPORTED; this is not a verdict.
 Tables and checks: docs/R5_SUMMARY.md. Deviations: docs/records/EXPERIMENT_LOG.md, "Phase R5 run log".
+
+---
+## Phase R6 (2026-11-07), PRE-REGISTERED before any R6 run
+Set: all 56 matched-site case-years (R3, R4 and R5 sites: 14 sites; merchant and PPA; 2024 and 2025), with F2 and the R3 settings.
+H-R6a (headroom), MAIN: in case-years where the oracle's value of cleaning is at least 1,000 USD/yr, FT captures at least 90% of the oracle value.
+- SUPPORTED if this holds in at least 80% of those case-years;
+- NOT SUPPORTED if it holds in 60% or fewer;
+- PARTIAL otherwise.
+- Also report the planner's share of the oracle value, and both shares for case-years below 1,000 USD/yr (DESCRIPTIVE).
+
+H-R6b (value of price-awareness), MAIN: under the merchant contract, FT outperforms the plain loss-threshold rule (no price forecast, tuned on the same years), over the merchant case-years where FT's value of cleaning is at least 1,000 USD/yr.
+- SUPPORTED if the mean of FT minus plain threshold is positive in at least 80% of them and no interval lies wholly below 0;
+- NOT SUPPORTED if the mean is at or below 0 in at least 50% of them;
+- PARTIAL otherwise.
+- PPA: the same comparison as DESCRIPTIVE.
+
+DESCRIPTIVE, tuning-inclusive intervals: for planner minus FT in all 56 case-years, combine the 50 test replicates with 4 tuning-seed sets (the main set + 3) by nested bootstrap: resample seed sets, then replicates; B = 2000, numpy default_rng(0), percentile 95%. Report how many intervals lie wholly above 0, wholly below 0, or span 0, against the main intervals.
+
+### R6 implementation notes, fixed before any R6 run
+1. Oracle method. The subset MILP (pvclean/exact/milp.py) cannot reach a plant-year: one night has about 1e10 feasible row sets at 40 rows and 360 minutes. pvclean/exact/oracle.py (commit 0c34b63) keeps the same per-row path model. It returns a feasible schedule, by local search over mission nights with exact per-row dynamic programmes inside, and a Lagrangian upper bound. The true optimum lies between them. It equals the subset MILP exactly on 4 of its small instances (6 rows, 60 days), with the bound closed.
+2. Constraints. The feasible schedule enforces everything, with no relaxation: known prices, rain, dust, row noise and exposure; night budget (mission_time, 360 min); access windows; c_row and c_mission per mission; robot availability 1.0. Only the upper bound relaxes the night budget, to the largest row count any night can hold. Each schedule is checked with schedule_violations and replayed through the simulator by the new  policy, so its value comes from the simulator's own ledger.
+3. Oracle value of a case-year: mean over seeds of (feasible schedule net minus no cleaning). This is a lower bound on the true oracle value, so FT's share can be overstated by at most the bound gap. Verdict uses the feasible value. The summary also reports each share against the upper bound and what the rule would say on it, DESCRIPTIVE. Share = mean policy value / mean oracle value. A share with oracle value at or below 0 is undefined and dropped from medians.
+4. Timing: 3 full units took 8, 46 and 58 s on one core, so at most about 1.9 h for 2,800 units on 24 workers. Under the 6 h limit, so all 50 seeds are used and no seed reduction applies. Those 3 timing units (Almeria merchant 2024 seed 0, Bilbao PPA 2024 seed 3, Seville merchant 2025 seed 7) were seen before this entry. For Almeria seed 0 the feasible value is 8769, FT's is 8195 (stored), and the path tables equal the simulator to rounding.
+5. H-R6b is not a clean test of price alone. FT differs from the plain threshold in more than its price forecast: it also has a forward-looking net benefit rule with costs, the rain gate, the production climatology and access anticipation. A positive result says "FT beats the plain threshold", and does not isolate price. No price-blind FT arm is in this phase.
+6. H-R6b is not blind. FT and plain-threshold test nets for all 56 case-years have been in stored results since R3 to R5, and R3 summary tables printed some related values. I have not computed FT minus plain for this phase, and will not until this entry is pushed. The FT-value selection (>= 1,000 USD/yr) is also known in advance from stored values. H-R6a has no such problem, because oracle values do not exist yet.
+7. Plain threshold: the stored `threshold` baseline is that rule, tuned on the same years. r6_plain tunes it again for all 56 and must match the stored parameters and test nets exactly.
+8. Seeds. The brief says R4 already has the 3 extra sets, but results_r4_seeds.json keeps summaries only, and the nested bootstrap needs per-replicate differences. r6_seeds therefore runs all 56 case-years, with train seeds 1005-1009, 1010-1014 and 1015-1019, keeps per-replicate differences, and must match the stored R3 and R4 means. The main set comes from the stored records.
+9. Nested bootstrap: per case-year, a fresh numpy default_rng(0); draw 4 sets with replacement; inside each drawn set, draw 50 replicates with replacement, independently of the other drawn sets; statistic = mean of all drawn values. The 4 sets share their 50 test seeds, and 4 sets is few, so this interval is descriptive. The main interval is the paired t-interval.
+10. Oracle below a policy. If a tuned policy beats the feasible oracle schedule at a seed, that is a search shortfall, not a bug: that seed is solved again from the policy's mission nights, and the count is reported. An upper bound below any policy would be a bug. Policies compared: fixed, threshold, econ, FT, planner.
+11. Sanity triggers, per case-year means, as the brief lists: oracle below any policy; FT below plain threshold by more than 500 USD/yr; FT share above 100%. Each gets a same-seed rerun, identical inputs and a trace overlay, labelled REAL EFFECT or BUG.
+12. The oracle knows true row exposure, dust and rain, while FT and the planner have station information and a rain forecast. Headroom therefore includes the value of that information as well as of better decisions.
+13. The R6 regression tests run R6 jobs, so they are held out of git and of test runs until this entry is pushed.
+---
+
+---
+## Phase R6 results (2026-11-08)
+Rules applied as written by src/make_r6_summary.py; numbers from docs/R6_SUMMARY.md.
+- **H-R6a: NOT SUPPORTED.** FT reaches 90% of the oracle value in 16 of 30 case-years at or above 1,000 USD/yr (53.3%; the rule's line is 60% or fewer). FT share median 90.6%, range 56.9% to 98.2%; planner share median 92.1%, range 55.9% to 98.5%, also 16 of 30 at target (DESCRIPTIVE). Against the upper bound: 15 of 30 (DESCRIPTIVE).
+- **H-R6b: NOT SUPPORTED.** FT minus plain threshold is positive in 7 of 14 merchant case-years with FT value at or above 1,000 USD/yr, and at or below 0 in 7 (50%, the rule's line); 7 intervals lie wholly below 0. Median +66 USD/yr. PPA (DESCRIPTIVE): 6 of 12 positive, 4 wholly below 0, median +2.
+- **Tuning-inclusive intervals (DESCRIPTIVE):** 22 above 0, 25 below 0, 9 span 0, against 20, 25 and 11 for the main intervals; 10 of 56 change side.
+- One oracle fix after the run (BUG in the re-solve step, 24 units below the cut, no verdict changed): docs/records/EXPERIMENT_LOG.md, "Phase R6 run log", item 2.

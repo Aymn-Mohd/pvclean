@@ -1,0 +1,4 @@
+study: r6_oracle
+label: MAIN-R6
+runner: r6_oracle
+output: results_r6_oracle.json

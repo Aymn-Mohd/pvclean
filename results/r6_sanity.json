@@ -1,0 +1,11 @@
+{
+ "label": "POST HOC",
+ "lines": [
+  "Trigger 1, oracle below a policy: 0 case-years on means. At seed level, 24 of 2800 seeds had a tuned policy above the oracle schedule after the first re-solve, by at most 5.61 USD, in 6 case-years, 0 of them at or above the cut. **BUG**, in the re-solve step: a policy's nights were scored as a start but searched only if they ranked in the top 2, and the night repair could end below the policy's own rows. Fixed (every start searched; the policy's schedule kept as an incumbent); only those 24 units ran again; 24 improved. Seeds below a policy now: 0. Upper bound below a policy: 0.",
+  "Trigger 2, FT below the plain threshold by more than 500 USD/yr: 0 case-years. Most negative: Port Augusta merchant 2024, -415 [-467, -363]. Not triggered.",
+  "Trigger 3, FT share above 100%: 0 case-years. Highest: Seville ppa 2024, 98.2%. Not triggered.",
+  "Identical inputs: largest difference between the oracle's no-cleaning net and the stored policies' no-cleaning net, over all 2800 units: 0.00e+00 USD.",
+  "Same-seed rerun, A Coru\u00f1a ppa fold Y2, seed 1: two reruns 317.1101 and 317.1101, stored 317.1101; the threshold policy 317.1101. Identical: True.",
+  "Trace: `paper/fig_r6_sanity_trace.png`, A Coru\u00f1a ppa fold Y2 seed 1: mean row soiling ratio and rows cleaned per night, before and after the fix."
+ ]
+}

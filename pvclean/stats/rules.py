@@ -63,3 +63,21 @@ def dry_rule(rows: Iterable[tuple[int, float]]) -> dict[str, Any]:
     share = hit / len(use) if use else float("nan")
     v = "DESCRIPTIVE" if min(n_pos, n_neg) < 4 else "SUPPORTED" if share >= 0.8 else "NOT SUPPORTED" if share <= 0.6 else "PARTIAL"
     return dict(verdict=v, n_all=len(pred), n_predicted=len(use), n_no_prediction=len(pred) - len(use), n_predicted_pos=n_pos, n_predicted_nonpos=n_neg, n_correct=hit, share_correct=share)
+
+
+HEADROOM_CUT = 1000.0   # USD/yr: oracle value at or above which H-R6a applies; FT value at or above which H-R6b applies
+SHARE_TARGET = 0.90
+
+
+def headroom_rule(shares: Iterable[float]) -> dict[str, Any]:
+    """H-R6a over the FT shares of the case-years at or above the cut: SUPPORTED if at least 80% reach the target, NOT SUPPORTED at 60% or fewer, PARTIAL otherwise."""
+    v = list(shares); hold = sum(x >= SHARE_TARGET for x in v); p = hold / len(v) if v else float("nan")
+    return dict(verdict="SUPPORTED" if p >= 0.8 else "NOT SUPPORTED" if p <= 0.6 else "PARTIAL", n=len(v), hold=hold, share_holding=p)
+
+
+def ft_plain_rule(rows: Iterable[dict[str, Any]]) -> dict[str, Any]:
+    """H-R6b over paired FT minus plain threshold: SUPPORTED if the mean is positive in at least 80% and no interval lies wholly below 0; NOT SUPPORTED if the mean is at or below 0 in at least
+    50%; PARTIAL otherwise."""
+    v = list(rows); n = len(v); pos = sum(x["mean"] > 0 for x in v); below = sum(x["hi"] < 0 for x in v)
+    verdict = "SUPPORTED" if pos >= 0.8 * n and below == 0 else "NOT SUPPORTED" if (n - pos) >= 0.5 * n else "PARTIAL"
+    return dict(verdict=verdict, n=n, mean_pos=pos, mean_nonpos=n - pos, ci_wholly_below=below, ci_wholly_above=sum(x["lo"] > 0 for x in v))

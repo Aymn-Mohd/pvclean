@@ -57,7 +57,10 @@ Each output and the study behind it:
 | `table_exact.tex` | `results_exact.json`, `results_horizon.json`, `results_matched.json` | `python -m pvclean run configs/studies/exact.yaml`, then `horizon.yaml` and `belief_benchmark.yaml` |
 | `fig_price.pdf` | `results.json` | `python -m pvclean run configs/studies/generated.yaml` |
 | `paper/fig_dryspell.pdf`, `docs/R4_SUMMARY.md`, `docs/R5_SUMMARY.md` | `r4_rain.json`, `r5_rain.json`, `results_r4_*.json`, `results_r5_*.json`, `results_r3b_rain.json`, `results_matched.json`, `r3_checks.json`, `results_chrono.json` | `python src/make_fig_r4.py`, `python src/make_r4_summary.py`, `python src/make_r5_summary.py` |
+| `paper/fig_headroom.pdf`, `docs/R6_SUMMARY.md` | `results_r6_oracle.json`, `results_r6_plain.json`, `results_r6_seeds.json`, `r6_sanity.json`, and the R3 to R5 results above | `python src/make_r6_summary.py`, `python src/make_fig_r6.py` |
 | `numbers.tex`, `numbers_v10.tex`, `numbers_pes.tex` | all of the above | `for f in configs/studies/*.yaml; do python -m pvclean run "$f"; done` |
+
+The perfect-foresight benchmark (`configs/studies/r6_oracle.yaml`, 56 case-years with 50 seeds each) took about 200 CPU hours for the full set, about 8 hours on 24 cores. It needs no separate MILP solver: it uses dynamic programming and a Lagrangian bound in numpy. The small-instance MILP check in `pvclean/exact/milp.py` uses the HiGHS solver that comes with scipy.
 
 Reruns write to `runs/<study>/`, so they never touch `results/`. Replays need the data cache (see `docs/DATA.md`). `docs/REPRODUCE.md` lists every study and how exactly each one reproduces.
 
@@ -179,7 +182,7 @@ data/provenance/ download records; the data itself stays outside git
 
 Cite the paper and this repository, with the release you used. `CITATION.cff` has the details.
 
-> A. M. M. Rafiq, K. Thiagarajan and M. Nassereddine, "Price-Aware Thresholds Suffice for PV Cleaning", submitted to IEEE PES General Meeting 2027.
+> A. M. M. Rafiq, K. Thiagarajan and M. Nassereddine, "Price Forecasts Add Little to PV Cleaning Rules", submitted to IEEE PES General Meeting 2027.
 
 ## Licence
 

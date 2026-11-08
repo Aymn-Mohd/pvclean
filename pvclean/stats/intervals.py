@@ -78,3 +78,13 @@ def cluster_spearman(x: Sequence[float], y: Sequence[float], cluster: Sequence[s
             continue
         rhos.append(stats.spearmanr(x[i], y[i])[0])
     return dict(rho=float(stats.spearmanr(x, y)[0]), lo=float(np.percentile(rhos, 2.5)), hi=float(np.percentile(rhos, 97.5)), n=len(x), clusters=len(names), B=B, seed=seed, dropped=dropped)
+
+
+def nested_bootstrap(D: Any, B: int = 2000, seed: int = 0) -> dict[str, Any]:
+    """Interval of the mean of D[set, replicate]: draw the sets with replacement, then, inside each drawn set, draw the replicates with replacement. numpy default_rng(seed), percentile 95%."""
+    D = np.asarray(D, float); S, R = D.shape
+    rng = np.random.default_rng(seed); m = np.empty(B)
+    for b in range(B):
+        sets = rng.integers(0, S, S); reps = rng.integers(0, R, (S, R))
+        m[b] = D[sets[:, None], reps].mean()
+    return dict(mean=float(D.mean()), lo=float(np.percentile(m, 2.5)), hi=float(np.percentile(m, 97.5)), B=B, seed=seed, sets=S, replicates=R)

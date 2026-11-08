@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.3.0 (2026-11-08)
+
+- Perfect-foresight benchmark: `pvclean/exact/oracle.py` finds a feasible full-year schedule with known prices, rain and dust, under the same robot, night budget, access windows and costs, and a Lagrangian upper bound. `pvclean/policies/replay.py` scores a schedule in the simulator.
+- Studies: `r6_oracle`, `r6_plain` and `r6_seeds`, in `pvclean/studies/r6.py`. Statistics: `headroom_rule`, `ft_plain_rule` and `nested_bootstrap`.
+- Results: the `results/results_r6_*.json` files and `results/r6_sanity.json`. `docs/R6_SUMMARY.md` applies the two pre-registered rules over 56 case-years. Both verdicts are NOT SUPPORTED: FT reaches 90% of the oracle value in 16 of 30 case-years worth at least 1,000 USD/yr, and beats the plain loss threshold in 7 of 14 merchant case-years.
+- One fix after the R6 run, in the oracle's re-solve step, is described in `docs/records/EXPERIMENT_LOG.md`, "Phase R6 run log". `scripts/r6_resolve_oracle.py` reruns the affected units.
+- Scripts: `src/make_r6_summary.py`, `src/make_fig_r6.py` and `src/make_r6_sanity.py`. Figures are written to `paper/`, which git ignores.
+- `CITATION.cff`, the README and the 1.0.0 entry below: new paper title. The README now gives the compute cost of the benchmark.
+- Stored results used by the paper macros are unchanged.
+
 ## 1.2.0 (2026-11-07)
 
 - Sites: Murcia, Badajoz, A Coruña, Whyalla, Mount Gambier and Roma, with the same plant and tilt rules as the matched sites.
@@ -33,6 +43,6 @@
 
 ## 1.0.0 (2026-11-06)
 
-- First public release, for the paper now titled "Price-Aware Thresholds Suffice for PV Cleaning", submitted to IEEE PES General Meeting 2027.
+- First public release, for the paper now titled "Price Forecasts Add Little to PV Cleaning Rules", submitted to IEEE PES General Meeting 2027.
 - The package, study configs, tests, documentation, stored results and generated paper macros and tables.
 - No market or weather data is included.

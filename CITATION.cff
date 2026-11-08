@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the paper below and this release."
 title: pvclean
-version: 1.2.0
-date-released: "2026-11-07"
+version: 1.3.0
+date-released: "2026-11-08"
 license: MIT
 repository-code: "https://github.com/Aymn-Mohd/pvclean"
 contact:
@@ -18,7 +18,7 @@ authors:
     given-names: Mohamad
 preferred-citation:
   type: conference-paper
-  title: "Price-Aware Thresholds Suffice for PV Cleaning"
+  title: "Price Forecasts Add Little to PV Cleaning Rules"
   authors:
     - family-names: Rafiq
       given-names: Ayman Mohammed Mohamed
