@@ -1,0 +1,8 @@
+study: r7_rain
+label: SENSITIVITY
+runner: r7_rain
+output: results_r7_rain.json
+params:
+  rain:
+    rain_full_recov: [0.7, 1.0]
+    rain_light_recov: [0.1, 0.3]

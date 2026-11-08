@@ -42,7 +42,7 @@ def simulate(policy: str, params: dict[str, Any], contract: str, seed: int, info
     rng = np.random.default_rng(seed + cfg["seed_offset_info"])
     sr_clean = 1.0 - cfg["clean_residual"]
 
-    s = State()
+    s = State(); s.seed = seed
     s.cfg, s.n, s.black, s.fc, s.clim, s.vexp, s.pbar, s.val, s.warm, s.pdc = cfg, n, black, fc, clim, vexp, pbar, val, warm, pdc
     s.capped, s.lim, s.sr_clean, s.H, s.wrap = capped, export_limit(cfg), sr_clean, cfg["horizon_days"] * 24, bool(cfg.get("wrap_horizon"))
     s.expo, s.inc, s.rain, s.row_noise = expo, inc, rain, row_noise

@@ -187,3 +187,49 @@ Rules applied as written by src/make_r6_summary.py; numbers from docs/R6_SUMMARY
 - **H-R6b: NOT SUPPORTED.** FT minus plain threshold is positive in 7 of 14 merchant case-years with FT value at or above 1,000 USD/yr, and at or below 0 in 7 (50%, the rule's line); 7 intervals lie wholly below 0. Median +66 USD/yr. PPA (DESCRIPTIVE): 6 of 12 positive, 4 wholly below 0, median +2.
 - **Tuning-inclusive intervals (DESCRIPTIVE):** 22 above 0, 25 below 0, 9 span 0, against 20, 25 and 11 for the main intervals; 10 of 56 change side.
 - One oracle fix after the run (BUG in the re-solve step, 24 units below the cut, no verdict changed): docs/records/EXPERIMENT_LOG.md, "Phase R6 run log", item 2.
+
+---
+## Phase R7 (sensitivity, specified before the runs), 2026-11-08
+Requested by reviewers. Every output is SENSITIVITY: there are no hypotheses and no decision rules, and no result is a verdict. Tools: commit 426446e. No R7 job has run before this entry.
+Set: the 56 matched-site case-years of R6 (14 sites x merchant, PPA x 2024, 2025), with the R3 settings unless a variant says otherwise. Policies reported: FT, planner and the plain loss threshold (`threshold`). In every variant all policies are retuned on the training years only, with chrono.run_fold, 5 train seeds (1000-1004), 50 test seeds (0-49). "Value" = mean over the test seeds of net minus no cleaning. Paired intervals are the t-intervals over the 50 test seeds, as in R3 to R6.
+Qualifying case-years (used where stated): the 30 with R6 oracle value >= 1,000 USD/yr in results/results_r6_oracle.json. They lie at 8 sites.
+
+### a) r7_forecast
+Forecasts of the contract value, all causal except F4:
+- F2: 28-day rolling hour-of-day mean (fc_mode roll, roll_days 28), as in R3 to R6.
+- F7d: the same with roll_days 7. F56d: roll_days 56. The price file has 28 warm-up days, so for days 0-27 of a year F56d averages over the 28 + d days that exist; it never reads a later day.
+- FHW: 28-day rolling hour-of-day mean taken separately over past weekdays and past weekend days (Saturday, Sunday), matched to the target day's type (pvclean/forecasts/roll_hw.py). Day types come from the price file's local timestamps. No public holidays.
+- F3: the existing day-ahead mode: F2 plus the operating day's values. For ES these are day-ahead prices; for SA and QLD, the operating day's realised prices (a proxy: no day-ahead market).
+- F4: the existing perfect mode: realised values over the planning window. Labelled INFORMATION UPPER BOUND, not deployable.
+The plain threshold reads no prices, so it is retuned in each arm and must come out identical in all six; this is checked. The F2 arm must reproduce the stored R3 to R5 F2 nets of FT, planner and threshold exactly; this is checked.
+Outputs per forecast: FT minus plain (value of price information), planner minus FT (value of planner design); for each, over the 56: count with mean > 0, count with the interval wholly above 0 and wholly below 0. Over the 30 qualifying: median, IQR (25th and 75th percentiles, numpy default) and range of the per-case-year mean FT minus plain, in USD/yr, and a cluster bootstrap 95% interval of that median: draw the 8 sites with replacement, pool their qualifying case-years, take the median; B = 2000, numpy default_rng(0), percentiles 2.5 and 97.5.
+
+### b) r7_abstain
+F2. Planner grid beta {0, 0.5, 1.0} x kappa {0, 0.5, 1, 2, 4, 8, 16, 32, inf}. kappa = inf means no mission is ever sent (excess >= c_mission x inf never holds). Other policies keep their grids. Outputs: planner minus FT sign counts over the 56 as in a), against the stored R3 to R5 counts; the four Brisbane rows; how many case-years tune to kappa = inf.
+
+### c) r7_dust
+F2. soil_mean 0.0010, 0.0015 and 0.0050 per day (0.0030 is the stored baseline). Outputs: sign counts as in a) for planner minus FT and for FT minus plain; median over the 56 of the share of each policy's value against the plain policy's value (FT / plain and planner / plain; plain / plain is 1 by definition). A case-year with plain value <= 0 has no share; it is dropped from that median and counted.
+
+### d) r7_rain
+F2. One setting at a time: rain_full_recov (>= 5 mm) 0.7 and 1.0 (0.9 now); rain_light_recov (1 to 5 mm) 0.1 and 0.3 (0.2 now). The policies' estimates use the same effectiveness as the plant. rain_reset_recov stays 0.9, so at rain_full_recov 0.7 a full rain no longer resets the policies' day and loss counters; at 1.0 it does, as now. Outputs as c).
+
+### e) r7_cost
+F2. c_row (4 USD) and c_mission (10 USD) scaled together by 0.5 and 2. Outputs as c).
+
+### f) r7_oracle_split
+The 30 qualifying case-years and the first 10 test seeds (0-9) only, to bound runtime. Each oracle is an open-loop plan for the whole year, solved by pvclean/exact/oracle.py (solve_oracle, as in R6, with no policy schedule as a start) on path tables built from the stated information, then scored in the simulator with the truth.
+- C: the stored R6 oracle on seeds 0-9 (perfect prices, rain, dust and per-row soiling). Not rerun.
+- A: true prices; rain known only through the policies' rain forecast flags (pvclean.core.soiling.rain_forecast, hit rate 0.8, false-alarm rate 0.05, for rain >= 5 mm): a flagged day is planned as rain_full_mm, every other day as dry. Closest valid variant, not the brief's exact definition: an open-loop plan cannot use the 2-day window, so A sees all flags of the year at once (more lead time than a policy), but never observes realised rain or light rain (less than a policy, whose estimate is corrected by realised rain each day). A can therefore fall below a policy; such cases are reported, not treated as bugs.
+- B: F2 prices, perfect rain: every hour of day d is planned at the F2 value issued at the start of day d (the 28-day hour-of-day mean of the days before d), the same value a policy's F2 forecast gives for day d on night d.
+- D: perfect prices and rain, but each row soils as the policies' station estimate assumes: the true site increment with exposure 1 + station_bias (= 1) and no row noise. This answers the question whether the oracle uses per-row true soiling: R6 and C do (true per-row exposure and daily row noise).
+Outputs per oracle: value; FT, planner and plain shares = mean policy value over seeds 0-9 / mean oracle value over seeds 0-9 (policy nets from the stored R3 to R5 F2 records); median and range over the 30; and each oracle's value against C.
+Prices and soiling cannot be separated further inside one open-loop plan; the oracle has no separate input for the 2-day rain window.
+
+### Figure, sanity checks and outputs
+src/make_r7_summary.py writes docs/R7_SUMMARY.md, labelled SENSITIVITY, every number generated. src/make_fig_r7.py writes paper/fig_policies.pdf (vector, 3.5 in, two stacked panels: (a) share of the R6 oracle value for FT, planner and plain in the 30 qualifying case-years, by oracle value on a log axis, with a dashed 90% line; (b) planner minus FT and FT minus plain, USD/yr, all 56, F2, strip plot over a box, zero line) and a 200 dpi PNG. No clipping: any value outside the default axis extends it, and the summary says so.
+Sanity triggers: C below a policy at any seed (a bug); F4 FT value below F2 FT value by more than 500 USD/yr (case-year mean). Each gets a same-seed rerun, an identical-inputs check and a trace, and is labelled REAL EFFECT or BUG.
+
+### Seen before this entry
+During development: single simulations (FT, planner, fixed parameters, Seville merchant 2024, seed 0) under roll, roll_hw, dayahead, perfect and roll_days 7 and 56, to check that each mode runs; and three oracle-split timing units on Seville merchant 2024 seed 0: A 10,418, B 10,460, D 10,601 USD/yr against C 10,597, 23 to 116 s each. For that unit D's planned value equals its true value to 0.12 USD: when most rows are cleaned on the same nights, the plant total is nearly linear in mean exposure, which is 1, and the station belief costs almost nothing.
+Release audit: docs/R7_RELEASE_AUDIT.md (written before any run; changes nothing public).
+---

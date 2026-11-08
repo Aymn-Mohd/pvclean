@@ -1,0 +1,4 @@
+study: r7_forecast
+label: SENSITIVITY
+runner: r7_forecast
+output: results_r7_forecast.json

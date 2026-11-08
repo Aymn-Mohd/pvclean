@@ -4,7 +4,7 @@ from dataclasses import dataclass
 from typing import Any
 import numpy as np
 from pvclean.core.plant import row_ac
-from pvclean.forecasts import fc_value
+from pvclean.forecasts import day_types, fc_value
 
 
 @dataclass
@@ -43,6 +43,7 @@ class State:
     inc: np.ndarray
     rain: np.ndarray
     row_noise: np.ndarray
+    seed: int                # the run's seed; picks the price year, for calendar-only inputs such as day_types()
 
     def rain_soon(self) -> bool:
         """Is full-cleaning rain forecast within the rain forecast window?"""
@@ -59,8 +60,12 @@ class State:
 
     def forecast(self, hh: np.ndarray) -> np.ndarray:
         """Value forecast of cfg fc_mode for hours hh."""
-        cfg = self.cfg
-        return fc_value(cfg.get("fc_mode", "clim"), self.d, hh, self.val, self.vexp, cfg.get("roll_min_hist", cfg["roll_min_hist_default"]), self.warm, roll_days=cfg["roll_days"])
+        cfg = self.cfg; mode = cfg.get("fc_mode", "clim"); dt = None
+        if mode == "roll_hw":
+            if getattr(self, "_day_type", None) is None:
+                self._day_type = day_types(cfg, self.seed)
+            dt = self._day_type
+        return fc_value(mode, self.d, hh, self.val, self.vexp, cfg.get("roll_min_hist", cfg["roll_min_hist_default"]), self.warm, roll_days=cfg["roll_days"], day_type=dt)
 
     def closing_soon(self) -> tuple[np.ndarray, np.ndarray] | None:
         """Days each open row will be closed in the look-ahead window, for rows that close tomorrow; None if no open row closes tomorrow."""

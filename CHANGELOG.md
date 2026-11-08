@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.4.0 (2026-11-08)
+
+- Sensitivity runs (Phase R7, no decision rules): price forecasts F2, F7d, F56d, FHW, F3 and F4; a planner that may abstain (kappa up to inf); dust rates; rain cleaning effectiveness; cleaning costs; and an oracle split that removes one kind of information at a time (rain, prices, per-row soiling). Studies `r7_forecast`, `r7_abstain`, `r7_dust`, `r7_rain`, `r7_cost` and `r7_oracle_split`, in `pvclean/studies/r7.py`.
+- Forecast FHW (`pvclean/forecasts/roll_hw.py`): the 28-day rolling hour-of-day mean taken separately over past weekdays and weekend days. The other forecasts are unchanged.
+- Oracle (`pvclean/exact/oracle.py`): optional rain, price and station-soiling inputs, so it can plan on restricted information. The defaults reproduce R6.
+- Statistics: `cluster_median_ci`, a cluster bootstrap interval of a median.
+- Results: the `results/results_r7_*.json` files, `results/r7_sanity.json` and `results/r7_fig_axes.json`. `docs/R7_SUMMARY.md` reports them; `docs/R7_RELEASE_AUDIT.md` says which release reproduces R3 to R6.
+- Scripts: `src/make_r7_summary.py`, `src/make_fig_r7.py` (`paper/fig_policies.pdf`) and `src/make_r7_sanity.py`.
+- Records: the R7 definitions in `docs/records/decisions.md` and the R7 run log in `docs/records/EXPERIMENT_LOG.md`.
+- The README maps every paper table and figure to its config and commands, and gives the compute cost of the R7 oracle split (about 60 CPU hours).
+- `CITATION.cff`, the README and the 1.0.0 entry below: new paper title "Causal Price Forecasts Add Little to PV Cleaning".
+- Stored results used by the paper macros are unchanged.
+
 ## 1.3.0 (2026-11-08)
 
 - Perfect-foresight benchmark: `pvclean/exact/oracle.py` finds a feasible full-year schedule with known prices, rain and dust, under the same robot, night budget, access windows and costs, and a Lagrangian upper bound. `pvclean/policies/replay.py` scores a schedule in the simulator.
@@ -43,6 +56,6 @@
 
 ## 1.0.0 (2026-11-06)
 
-- First public release, for the paper now titled "Price Forecasts Add Little to PV Cleaning Rules", submitted to IEEE PES General Meeting 2027.
+- First public release, for the paper now titled "Causal Price Forecasts Add Little to PV Cleaning", submitted to IEEE PES General Meeting 2027.
 - The package, study configs, tests, documentation, stored results and generated paper macros and tables.
 - No market or weather data is included.

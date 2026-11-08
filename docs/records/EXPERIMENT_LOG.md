@@ -315,3 +315,16 @@ Deviations and fixes:
 6. fig_headroom: 16 shares below -60% (all below the cut) are drawn on the bottom edge, and the figure says so.
 7. tests/regression/test_r6_jobs.py (held out until the pre-registration was pushed, note 13) is now in git, with one more test for fix 2. Suite: 370 passed.
 8. Triggers 2 and 3 did not fire: the most negative FT minus plain threshold is -415 USD/yr (Port Augusta merchant 2024), and the highest FT share is 98.2%.
+
+## Phase R7 run log (2026-11-08)
+SENSITIVITY: no decision rules. Definitions: docs/records/decisions.md, "Phase R7 (sensitivity, specified before the runs)", committed alone as eb7f39d before any R7 run. Tools commit 426446e.
+Runs, in order, 24 workers, nice 10: r7_forecast, r7_abstain, r7_dust, r7_rain, r7_cost, r7_oracle_split, all rc 0. User + system CPU: forecast 3.09 h, abstain 0.90 h, dust 1.68 h, rain 2.16 h, cost 1.23 h, oracle_split 60.16 h; 69.2 h in all. Wall: 32 min for the five arm jobs, 2.5 h for the oracle split. Times: results/time_r7_*.txt; order and rc: results/r7_jobs.tsv.
+Deviations and notes:
+1. Neither pre-specified sanity trigger fired (results/r7_sanity.json): no seed has a policy above oracle C, and F4 FT is never below F2 FT by more than 500 USD/yr. So no same-seed rerun or trace was made; the definitions ask for them only when a trigger fires. src/make_r7_sanity.py stops if the F4 trigger fires, so that the rerun is made first.
+2. Added, labelled SENSITIVITY in the sanity file, not in the definitions: (i) the F2 arm reproduces the stored nets, the no-cleaning nets agree across arms, and the plain threshold is identical in all six forecast arms (all checked as specified, 0 differences); (ii) A, B and D below the best policy at seed level, reported as expected, as the definitions say; (iii) A, B and D above C. Oracle D is above C at 92 of 300 seeds, by at most 37.40 USD, and never above C's Lagrangian upper bound. This is the search gap of C's local search (median gap of C to its bound 41.3 USD), not a bug: with station soiling the D search sometimes ends on a schedule that scores better under the truth. It means C is a near-optimum within its bound, not an exact optimum, as R6 already stated through the bound.
+3. The oracle split took 2.5 h wall against the estimate of about 1 h: B and D units ran longer than the timing units. No seed was dropped.
+4. fig_policies: the dataviz palette validator needs node, which is not installed, so the colours are the skill's documented validated default slots 1 to 3, each with its own marker shape. Default axes (40% to 105%; -600 to +600 USD/yr) held every value; nothing was extended or clipped (results/r7_fig_axes.json).
+5. Shares against plain drop case-years with plain value <= 0 and count them, as defined. Shares against an oracle with value <= 0 would be dropped and counted the same way; none occurred in the final results.
+6. src/make_r7_summary.py states in section 4 what the oracle split can and cannot separate (A, B and D are fixed plans, not upper bounds; the losses are not a decomposition). This is fixed text, no numbers.
+7. Release audit (docs/R7_RELEASE_AUDIT.md) is by file comparison; R6 was not rerun from v1.3.0 (about 200 CPU hours).
+8. tests: tests/unit/test_r7_forecasts.py (5) and tests/regression/test_r7_jobs.py (6, short horizon, 2 seeds) added. Suite: 387 passed.

@@ -2,7 +2,7 @@
 
 ## What it does
 
-pvclean simulates dust on PV rows, rain, and a night-time cleaning robot, one year at a time. It compares cleaning policies by the net value they earn under fixed-tariff, merchant, PPA and export-cap contracts. It also holds the code, configs and stored results behind the paper "Contract-Aware Soiling Mitigation for Photovoltaic Plants Under Historical Electricity Market Prices".
+pvclean simulates dust on PV rows, rain, and a night-time cleaning robot, one year at a time. It compares cleaning policies by the net value they earn under fixed-tariff, merchant, PPA and export-cap contracts. It also holds the code, configs and stored results behind the paper "Causal Price Forecasts Add Little to PV Cleaning".
 
 ## Install
 
@@ -48,19 +48,23 @@ One command rebuilds every macro, table and figure from the stored results in `r
 python -m pvclean report
 ```
 
-Each output and the study behind it:
+Each paper table and figure, the config that produced its stored results, and the commands. "Rebuild" reads only `results/` and needs no data; "rerun" runs the study again into `runs/<study>/` (add `--out results` to replace the stored file).
 
-| paper output | stored result | rerun the study |
-|---|---|---|
-| `table_rq1.tex`, `table_rq1_pes.tex` | `results.json` | `python -m pvclean run configs/studies/generated.yaml` |
-| `table_fore.tex` | `results_replay.json` | `python -m pvclean run configs/studies/replay.yaml` |
-| `table_exact.tex` | `results_exact.json`, `results_horizon.json`, `results_matched.json` | `python -m pvclean run configs/studies/exact.yaml`, then `horizon.yaml` and `belief_benchmark.yaml` |
-| `fig_price.pdf` | `results.json` | `python -m pvclean run configs/studies/generated.yaml` |
-| `paper/fig_dryspell.pdf`, `docs/R4_SUMMARY.md`, `docs/R5_SUMMARY.md` | `r4_rain.json`, `r5_rain.json`, `results_r4_*.json`, `results_r5_*.json`, `results_r3b_rain.json`, `results_matched.json`, `r3_checks.json`, `results_chrono.json` | `python src/make_fig_r4.py`, `python src/make_r4_summary.py`, `python src/make_r5_summary.py` |
-| `paper/fig_headroom.pdf`, `docs/R6_SUMMARY.md` | `results_r6_oracle.json`, `results_r6_plain.json`, `results_r6_seeds.json`, `r6_sanity.json`, and the R3 to R5 results above | `python src/make_r6_summary.py`, `python src/make_fig_r6.py` |
-| `numbers.tex`, `numbers_v10.tex`, `numbers_pes.tex` | all of the above | `for f in configs/studies/*.yaml; do python -m pvclean run "$f"; done` |
+| paper table or figure | config (`configs/studies/`) | stored result (`results/`) | rebuild | rerun |
+|---|---|---|---|---|
+| `table_rq1.tex`, `table_rq1_pes.tex` | `generated.yaml` | `results.json` | `python -m pvclean report` | `python -m pvclean run configs/studies/generated.yaml` |
+| `table_fore.tex` | `replay.yaml` | `results_replay.json` | `python -m pvclean report` | `python -m pvclean run configs/studies/replay.yaml` |
+| `table_exact.tex` | `exact.yaml`, `horizon.yaml`, `belief_benchmark.yaml` | `results_exact.json`, `results_horizon.json`, `results_matched.json` | `python -m pvclean report` | `python -m pvclean run configs/studies/<config>` for each config |
+| `fig_price.pdf` | `generated.yaml` | `results.json` | `python -m pvclean report` | `python -m pvclean run configs/studies/generated.yaml` |
+| `numbers.tex`, `numbers_v10.tex`, `numbers_pes.tex` | all configs | all of the above | `python -m pvclean report` | `for f in configs/studies/*.yaml; do python -m pvclean run "$f"; done` |
+| `paper/fig_dryspell.pdf`, `docs/R4_SUMMARY.md` (R4) | `r4_*.yaml` | `r4_rain.json`, `results_r4_*.json`, `r4_sanity.json`, with `results_r3b_rain.json`, `results_matched.json`, `r3_checks.json`, `results_chrono.json` | `python src/make_fig_r4.py`, `python src/make_r4_summary.py` | `python -m pvclean run configs/studies/r4_<name>.yaml` |
+| `docs/R5_SUMMARY.md` (R5; also plotted in `fig_dryspell.pdf`) | `r5_*.yaml` | `r5_rain.json`, `results_r5_*.json`, `r5_sanity.json` | `python src/make_r5_summary.py` | `python -m pvclean run configs/studies/r5_<name>.yaml` |
+| `paper/fig_headroom.pdf`, `docs/R6_SUMMARY.md` (R6) | `r6_oracle.yaml`, `r6_plain.yaml`, `r6_seeds.yaml` | `results_r6_*.json`, `r6_sanity.json`, and the R3 to R5 results | `python src/make_fig_r6.py`, `python src/make_r6_summary.py` | `python -m pvclean run configs/studies/r6_<name>.yaml` |
+| `paper/fig_policies.pdf`, `docs/R7_SUMMARY.md` (R7) | `r7_forecast.yaml`, `r7_abstain.yaml`, `r7_dust.yaml`, `r7_rain.yaml`, `r7_cost.yaml`, `r7_oracle_split.yaml` | `results_r7_*.json`, `r7_sanity.json`, `r7_fig_axes.json`, and the R3 to R6 results | `python src/make_fig_r7.py`, `python src/make_r7_sanity.py`, `python src/make_r7_summary.py` | `python -m pvclean run configs/studies/r7_<name>.yaml` |
 
-The perfect-foresight benchmark (`configs/studies/r6_oracle.yaml`, 56 case-years with 50 seeds each) took about 200 CPU hours for the full set, about 8 hours on 24 cores. It needs no separate MILP solver: it uses dynamic programming and a Lagrangian bound in numpy. The small-instance MILP check in `pvclean/exact/milp.py` uses the HiGHS solver that comes with scipy.
+Figures written to `paper/` are not tracked in git. The R4 to R7 reruns need the data cache: the real prices (`real_prices_v2.npz`) and site weather (`site_wx.npz`), both rebuilt from public downloads (see `docs/DATA.md`).
+
+Compute: the perfect-foresight benchmark (`r6_oracle.yaml`, 56 case-years with 50 seeds each) took about 200 CPU hours, about 8 hours on 24 cores. The R7 oracle split (`r7_oracle_split.yaml`, 30 case-years with 10 seeds and three restricted-information oracles) took about 60 CPU hours, about 2.5 hours on 24 cores. The other R7 studies took about 9 CPU hours together. The oracle needs no separate MILP solver: it uses dynamic programming and a Lagrangian bound in numpy. The small-instance MILP check in `pvclean/exact/milp.py` uses the HiGHS solver that comes with scipy.
 
 Reruns write to `runs/<study>/`, so they never touch `results/`. Replays need the data cache (see `docs/DATA.md`). `docs/REPRODUCE.md` lists every study and how exactly each one reproduces.
 
@@ -182,7 +186,7 @@ data/provenance/ download records; the data itself stays outside git
 
 Cite the paper and this repository, with the release you used. `CITATION.cff` has the details.
 
-> A. M. M. Rafiq, K. Thiagarajan and M. Nassereddine, "Price Forecasts Add Little to PV Cleaning Rules", submitted to IEEE PES General Meeting 2027.
+> A. M. M. Rafiq, K. Thiagarajan and M. Nassereddine, "Causal Price Forecasts Add Little to PV Cleaning", submitted to IEEE PES General Meeting 2027.
 
 ## Licence
 

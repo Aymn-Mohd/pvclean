@@ -1,0 +1,7 @@
+study: r7_oracle_split
+label: SENSITIVITY
+runner: r7_oracle_split
+output: results_r7_oracle_split.json
+params:
+  seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  kinds: [A, B, D]

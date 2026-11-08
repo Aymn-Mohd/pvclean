@@ -1,0 +1,25 @@
+{
+ "panel_a": {
+  "lim": [
+   40.0,
+   105.0
+  ],
+  "extended": false,
+  "data": [
+   53.43593714092114,
+   98.4947534959826
+  ]
+ },
+ "panel_b": {
+  "lim": [
+   -600.0,
+   600.0
+  ],
+  "extended": false,
+  "data": [
+   -414.9079876913167,
+   551.1275809811117
+  ]
+ },
+ "note": "panel (a) y axis 40.0% to 105.0% (default 40% to 105%, every share inside); panel (b) y axis -600 to +600 USD/yr (default -600 to +600, every value inside). No value is clipped."
+}

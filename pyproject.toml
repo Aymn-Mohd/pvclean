@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pvclean"
-version = "1.3.0"
+version = "1.4.0"
 description = "Simulates row-level PV soiling and robot cleaning, and compares cleaning policies under electricity contracts."
 readme = "README.md"
 license = "MIT"

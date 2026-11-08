@@ -88,3 +88,12 @@ def nested_bootstrap(D: Any, B: int = 2000, seed: int = 0) -> dict[str, Any]:
         sets = rng.integers(0, S, S); reps = rng.integers(0, R, (S, R))
         m[b] = D[sets[:, None], reps].mean()
     return dict(mean=float(D.mean()), lo=float(np.percentile(m, 2.5)), hi=float(np.percentile(m, 97.5)), B=B, seed=seed, sets=S, replicates=R)
+
+
+def cluster_median_ci(x: Sequence[float], cluster: Sequence[str], B: int = 2000, seed: int = 0) -> dict[str, Any]:
+    """Median of x with a cluster bootstrap: whole clusters drawn with replacement, their values pooled, the median taken; B times, numpy default_rng(seed), percentile 95%."""
+    x = np.asarray(x, float); c = np.asarray(cluster)
+    names = sorted(set(c.tolist())); idx = [np.flatnonzero(c == n) for n in names]
+    rng = np.random.default_rng(seed)
+    m = np.array([np.median(x[np.concatenate([idx[j] for j in rng.integers(0, len(names), len(names))])]) for _ in range(B)])
+    return dict(median=float(np.median(x)), lo=float(np.percentile(m, 2.5)), hi=float(np.percentile(m, 97.5)), n=len(x), clusters=len(names), B=B, seed=seed)

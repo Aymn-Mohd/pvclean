@@ -17,11 +17,16 @@ def window(cfg: dict[str, Any]) -> tuple[int, int]:
     return d0, cfg.get("d1", 365) - d0
 
 
-def sr_tables(seed: int, cfg: dict[str, Any], world: World = DEFAULT_WORLD) -> np.ndarray:
-    """SR[k, i, c]: soiling ratio of row i on window day k if its last reset was window night c <= k (c = 0 is the clean start). The update order is the simulator's."""
+def sr_tables(seed: int, cfg: dict[str, Any], world: World = DEFAULT_WORLD, rain: np.ndarray | None = None, station: bool = False) -> np.ndarray:
+    """SR[k, i, c]: soiling ratio of row i on window day k if its last reset was window night c <= k (c = 0 is the clean start). The update order is the simulator's.
+    rain replaces the true daily rain; station=True replaces each row's exposure and daily noise by what the policies' station estimate uses (the site increment times
+    1 + station_bias for every row). Both serve information-restricted plans only; the defaults are the truth."""
     n = cfg["n_rows"]; d0, D = window(cfg)
-    rain = world.weather(seed, cfg)["rain"]
+    if rain is None:
+        rain = world.weather(seed, cfg)["rain"]
     inc, rn = world.dust(seed, cfg); expo = world.exposure(cfg)
+    if station:
+        expo = np.full(n, 1.0 + cfg.get("station_bias", 0.0)); rn = np.ones_like(rn)
     sc = 1.0 - cfg["clean_residual"]
     SR = np.zeros((D, n, D)); cur = np.full((n, D), sc)
     for k in range(D):
@@ -35,12 +40,14 @@ def sr_tables(seed: int, cfg: dict[str, Any], world: World = DEFAULT_WORLD) -> n
     return SR
 
 
-def path_values(seed: int, contract: str, cfg: dict[str, Any], SR: np.ndarray | None = None, world: World = DEFAULT_WORLD) -> np.ndarray:
-    """G[i, c, e]: revenue of row i over window days c .. e-1 with last reset c."""
+def path_values(seed: int, contract: str, cfg: dict[str, Any], SR: np.ndarray | None = None, world: World = DEFAULT_WORLD, val: np.ndarray | None = None) -> np.ndarray:
+    """G[i, c, e]: revenue of row i over window days c .. e-1 with last reset c. val replaces the true hourly contract value (information-restricted plans only)."""
     n = cfg["n_rows"]; d0, D = window(cfg)
     if SR is None:
         SR = sr_tables(seed, cfg, world)
-    pdc = world.weather(seed, cfg)["pdc"]; val = contract_value(contract, seed, cfg, world.hourly_value)[0]
+    pdc = world.weather(seed, cfg)["pdc"]
+    if val is None:
+        val = contract_value(contract, seed, cfg, world.hourly_value)[0]
     cap = cfg["row_kwp"] / cfg["dc_ac"]; kwp = cfg["row_kwp"]
     G = np.zeros((n, D, D + 1))
     for k in range(D):

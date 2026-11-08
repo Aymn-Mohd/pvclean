@@ -1,0 +1,6 @@
+study: r7_dust
+label: SENSITIVITY
+runner: r7_dust
+output: results_r7_dust.json
+params:
+  soil_mean: [0.0010, 0.0015, 0.0050]

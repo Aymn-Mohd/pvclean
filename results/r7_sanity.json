@@ -1,0 +1,18 @@
+{
+ "label": "SENSITIVITY",
+ "lines": [
+  "The F2 arm reproduces the stored R3 to R5 per-seed nets of plain, FT and planner: differs in 0 of 56 case-years. No-cleaning nets differ between forecast arms in 0 case-years; the plain threshold's nets differ from F2 in 0 case-year-arms (it reads no prices).",
+  "F4 FT worse than F2 FT by more than 500 USD/yr (case-year mean value): 0 of 56. Lowest: Roma ppa 2025, -112 USD/yr; FT tuned to {'Hb': 14, 'antic': 0, 'b': 4} under F4 and {'Hb': 14, 'antic': 0, 'b': 8} under F2, training-year mean net 55445 and 55451. Not triggered.",
+  "Oracle C (stored R6, full information) below the best policy: 0 of 300 seeds, 0 case-years on means. Not triggered.",
+  "Identical inputs, oracle C: largest difference between its no-cleaning net and the stored policies' no-cleaning net: 0.00e+00 USD.",
+  "Oracle A below the best policy: 258 of 300 seeds, 30 case-years on means. Expected, not a bug: A plans with less information than the policies in one respect (realised rain) and is an open-loop plan, while the policies react to observations.",
+  "Oracle A above oracle C: 0 of 300 seeds (largest difference A minus C: -67.04 USD); above C's Lagrangian upper bound: 0. Not triggered.",
+  "Identical inputs, oracle A: largest difference between its no-cleaning net and the stored policies' no-cleaning net: 0.00e+00 USD.",
+  "Oracle B below the best policy: 23 of 300 seeds, 0 case-years on means. Expected, not a bug: B plans with less information than the policies in one respect (prices beyond the F2 forecast) and is an open-loop plan, while the policies react to observations.",
+  "Oracle B above oracle C: 0 of 300 seeds (largest difference B minus C: -0.19 USD); above C's Lagrangian upper bound: 0. Not triggered.",
+  "Identical inputs, oracle B: largest difference between its no-cleaning net and the stored policies' no-cleaning net: 0.00e+00 USD.",
+  "Oracle D below the best policy: 0 of 300 seeds, 0 case-years on means. Not triggered.",
+  "Oracle D above oracle C: 92 of 300 seeds (largest difference D minus C: +37.40 USD); above C's Lagrangian upper bound: 0. Not a bug: C is a local-search optimum within its bound (median gap to the bound 41.3 USD), and the D search sometimes ends on a better true schedule.",
+  "Identical inputs, oracle D: largest difference between its no-cleaning net and the stored policies' no-cleaning net: 0.00e+00 USD."
+ ]
+}

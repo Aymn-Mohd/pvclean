@@ -1,0 +1,6 @@
+study: r7_cost
+label: SENSITIVITY
+runner: r7_cost
+output: results_r7_cost.json
+params:
+  multipliers: [0.5, 2]
